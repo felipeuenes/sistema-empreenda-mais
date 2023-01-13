@@ -1,7 +1,8 @@
 import { Routes, Route} from 'react-router-dom'
 import { Header } from '../components/Header'
-import { App } from '../pages/App'
 
+import { Home } from '../pages/Home/App'
+import { Empreendimentos } from '../pages/Empreendimentos/App'
 export function AppRoutes() {
     
 
@@ -10,7 +11,8 @@ export function AppRoutes() {
 
         <>
         <Routes>
-            <Route path={'/'} element={<App/>}></Route>
+            <Route path={'/'} element={<Home/>}></Route>
+            <Route path={'/empreendimentos'} element={<Empreendimentos/>}></Route>
            
         </Routes>
         </>

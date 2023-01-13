@@ -2,12 +2,12 @@
 
 import './App.css'
 
-export function App() {
+export function Empreendimentos() {
   
 
   return (
   <div className='container'>
-      <h1>Test</h1>
+      <h1>Empreendimentos</h1>
   </div>
   )
 }
