@@ -4,7 +4,7 @@ import { Header } from '../components/Header'
 import { Home } from '../pages/Home/App'
 import { Empreendimentos } from '../pages/Empreendimentos/App'
 import { Pessoas } from '../pages/Pessoas/App'
-
+import { CadastroEmpre } from '../pages/Empreendimentos/Cadastro-empreendimentos'
 
 
 export function AppRoutes() {
@@ -18,6 +18,7 @@ export function AppRoutes() {
             <Route path={'/'} element={<Home/>}></Route>
             <Route path={'/empreendimentos'} element={<Empreendimentos/>}></Route>
             <Route path={'/pessoas'} element={<Pessoas/>}></Route>
+            <Route path={'/cadastro-empreendimentos'} element={<CadastroEmpre/>}></Route>
            
         </Routes>
         </>

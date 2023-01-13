@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-
+import { Link, NavLink } from 'react-router-dom'
 import './App.css'
 
 export function Empreendimentos() {
@@ -11,7 +11,7 @@ export function Empreendimentos() {
 
       <h1>Empreendimentos</h1>
 
-        <button>Cadastrar novo</button>
+        <Link to="/cadastro-empreendimentos" ><button>Cadastrar novo</button></Link>
       </div>
 
 

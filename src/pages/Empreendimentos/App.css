@@ -3,6 +3,7 @@ body{
 }
 .lista-empreendedores{
   border: 1px solid;
+  margin-top: 25px;
 }
 
 .container h1{
@@ -18,6 +19,7 @@ body{
 
 .cabecalho button{
   width: 200px;
+  height: 40px;
   border-radius: 15px;
   border: none;
   background-color: #00546b;
