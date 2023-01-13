@@ -77,7 +77,7 @@ export function CadastroEmpre(){
                        
                 </section>
                 <section className='buttonCadas'>
-                    <button>CADASTRAR</button>
+                    <button>SALVAR INFORMAÇÕES</button>
                 </section>
 
             </form>
