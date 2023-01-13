@@ -15,9 +15,10 @@ export function Header() {
 <nav>
 
         <ul>
-            <Link to="/"><li>Home</li></Link>
+            <NavLink to="/" className={({isAtive}) => isAtive ? 'active' : ''}><li>Home</li></NavLink>
             <Link to="/empreendimentos"><li>Empreendimentos</li></Link>
-            {/* <li>Empreendimentos</li> */}
+            <Link to="/pessoas"><li>Pessoas</li></Link>
+            
             <li>Atendimentos</li>
             <li>Protocolos</li>
             <li>Eventos</li>

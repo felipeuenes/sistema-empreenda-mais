@@ -8,6 +8,14 @@ header{
     justify-content: center;
 }
 
+a{
+    color: white;
+}
+
+.active{
+    color: black;
+}
+
 ul{
     display: flex;
     flex-direction: row;
