@@ -15,8 +15,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Header/>
     <main>
       <AppRoutes/>
+    
+    
     </main>
-    <Home />
     
     </BrowserRouter>
     
