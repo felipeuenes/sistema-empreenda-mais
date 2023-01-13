@@ -8,6 +8,7 @@ import { AppRoutes } from './Routes'
 
 import { BrowserRouter } from 'react-router-dom'
 import { Header } from './components/Header'
+import { Footer } from './components/Footer'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -18,7 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     
     
     </main>
-    
+    <Footer/>
     </BrowserRouter>
     
   </React.StrictMode>,
