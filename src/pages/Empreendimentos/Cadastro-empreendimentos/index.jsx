@@ -9,53 +9,83 @@ export function CadastroEmpre(){
         <div className='formulario-empreedimento'>
 
             <form action="">
-               <section className='primeiros-inputs'>
-                    <label htmlFor="name">Nome fantasia: *</label>
+                <div className='primeiros-inputs'>
+
+               <section >
+                        <label htmlFor="name">Nome fantasia: *</label>
                         <input type="text" id='name'/>
+               </section>
+                <section>
 
                         <label htmlFor="razao">Razão Social:*</label>
                         <input type="text" name="" id="razao" />
+                </section>
 
-               </section>
+                </div>
                 
-               <section className='segunda-part'>
-                    <label htmlFor="cnpj">CNPJ:*</label>
+                <div className='block2'>
+                    
+               <section>
+                        <label htmlFor="cnpj">CNPJ:*</label>
                         <input type="text" name="" id="cnpj" />
+               </section>
 
+                <section>
 
                         <label htmlFor="datacpnj">Data CNPJ:</label>
                         <input type="date" name="" id="datacpnj" />
+                </section>
+                <section>
 
                         <label htmlFor="inscricaoEs">Inscrição Estadual:*</label>
                         <input type="number" name="" id="inscricaoEs" />
+                </section>
+                <section>
 
                         <label htmlFor="inscricaoMu">Inscrição Municipal:*</label>
                         <input type="text" name="" id="nscricaoMu" />
+                </section>
+                <section>
 
 
                         <label htmlFor="telefone">Telefone:</label>
                         <input type="text" id='telefone'/>
+                </section>
+                <section>
+
                         
                         <label htmlFor="whats">Whatsapp:</label>
                         <input type="text" name="" id="whats" />
-               </section>
-                <section className='terceira-part'>
+                </section>
+                
 
+                </div>
+
+
+
+                <div className='block3'>
+
+                <section>
                         <label htmlFor="endereco">Endereço:</label>
                         <input type="text" name="" id="endereco" />
+                </section>
+                <section>
 
                         <label htmlFor="bairro">Bairro:</label>
                         <input type="text" name="" id="bairro" />
-
-
+                </section>
+                <section>
                         <label htmlFor="atvPrincipal">Atividade principal:</label>
                         <input type="text" name="" id="atvPrincipal" />
-
-
+                </section>
+                <section>
                         <label htmlFor="atvSecundaria">Atividade secundária:</label>
                         <input type="text" name="" id="atvSecundaria" />
                 </section>
-                <section className='ultima-part'>
+                </div>
+                <div className='block4'>
+
+                <section>
                         <label htmlFor="categoria">Categoria de negócio:</label>
                         <select name="" id="categoria">
                             <option value="">Vestuário</option>
@@ -67,6 +97,8 @@ export function CadastroEmpre(){
                             <option value="">Decorações / festas</option>
                             <option value="">Depositos e distribuidoras</option>
                         </select>
+                </section>
+                <section>
 
                         <label htmlFor="situacao">Situação atual:</label>
                         <select name="" id="situacao">
@@ -76,6 +108,7 @@ export function CadastroEmpre(){
                         </select>
                        
                 </section>
+                </div>
                 <section className='buttonCadas'>
                     <button>SALVAR INFORMAÇÕES</button>
                 </section>
