@@ -40,6 +40,10 @@ input{
     gap: 32px;
     padding: 20px;
 }
+.block2 input{
+    height: 30px;
+}
+
 
 .block3{
     display: flex;
@@ -48,6 +52,11 @@ input{
     /* margin-top: 20px; */
     padding: 20px;
 }
+
+.block3 input{
+    height: 30px;
+}
+
 .block4{
     display: flex;
     flex-direction: row;
@@ -55,7 +64,9 @@ input{
     /* margin-top: 20px; */
     padding: 20px;
 }
-
+.block4 select{
+    height: 30px;
+}
 
 .primeiros-inputs input{
     width: 450px;
@@ -95,9 +106,7 @@ input{
     padding: 20px;
 }
 
-.terceira-part input{
-    height: 30px;
-}
+
 
 .ultima-part{
     margin-top: 20px;
