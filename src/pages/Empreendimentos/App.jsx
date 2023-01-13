@@ -7,7 +7,13 @@ export function Empreendimentos() {
 
   return (
   <div className='container'>
+      <div className='cabecalho'>
+
       <h1>Empreendimentos</h1>
+
+        <button>Cadastrar novo</button>
+      </div>
+
 
       <div className='lista-empreendedores'>
        

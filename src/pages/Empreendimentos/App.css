@@ -4,3 +4,22 @@ body{
 .lista-empreendedores{
   border: 1px solid;
 }
+
+.container h1{
+  text-align: center;
+}
+
+.cabecalho{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.cabecalho button{
+  width: 200px;
+  border-radius: 15px;
+  border: none;
+  background-color: #00546b;
+  color: white;
+}
