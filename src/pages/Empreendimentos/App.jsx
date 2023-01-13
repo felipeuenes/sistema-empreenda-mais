@@ -8,6 +8,10 @@ export function Empreendimentos() {
   return (
   <div className='container'>
       <h1>Empreendimentos</h1>
+
+      <div className='lista-empreendedores'>
+       
+      </div>
   </div>
   )
 }
