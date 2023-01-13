@@ -1,0 +1,32 @@
+.formulario-empreedimento{
+    margin: 30px;
+    border: 2px solid;
+    display: grid;
+    
+}
+
+
+.primeiros-inputs{
+    padding: 20px;
+}
+
+.primeiros-inputs input{
+    width: 500px;
+    height: 30px;
+    
+}
+
+
+
+.segunda-part{
+    padding: 20px;
+}
+
+.segunda-part input{
+    height: 30px;
+}
+
+
+#inscricaoEs{
+    width: 60px;
+}
