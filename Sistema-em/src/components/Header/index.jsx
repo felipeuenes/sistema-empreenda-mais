@@ -1,6 +1,7 @@
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 import './style.css'
+import logoEM from '../../images/logo-empreenda-mais.png'
 
 
 export function Header() {
@@ -10,10 +11,10 @@ export function Header() {
         <>
        
        <header>
-        <img src="../images/logo-empreenda-mais.png" alt="empreenda-mais" />
+        <img src={logoEM} />
 
         <ul>
-            <NavLink to={'/pessoas'}><li>Pessoas</li></NavLink>
+            {/* <NavLink to={'/pessoas'}><li>Pessoas</li></NavLink> */}
             <li>Empreendimentos</li>
             <li>Atendimentos</li>
             <li>Protocolos</li>
