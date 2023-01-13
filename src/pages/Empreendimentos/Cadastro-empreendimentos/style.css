@@ -1,8 +1,22 @@
+.titulo{
+    text-align: center;
+    margin-top: 16px;
+}
+
+/* label{
+    position:relative;
+    margin-top: -20px;
+   
+} */
+input{
+    margin: 6px;
+}
+
 .formulario-empreedimento{
-    margin: 30px;
+    margin: 20px;
     border: 2px solid;
     display: grid;
-    
+    padding: 20px;
 }
 
 
@@ -11,7 +25,7 @@
 }
 
 .primeiros-inputs input{
-    width: 500px;
+    width: 450px;
     height: 30px;
     
 }
@@ -26,7 +40,56 @@
     height: 30px;
 }
 
+#telefone, #whats{
+    width: 130px;
+}
+
+
+#nscricaoMu{
+    width: 100px;
+}
+
+#cnpj{
+    width: 120px;
+}
 
 #inscricaoEs{
     width: 60px;
+}
+
+
+.terceira-part{
+    padding: 20px;
+}
+
+.terceira-part input{
+    height: 30px;
+}
+
+.ultima-part{
+    margin-top: 20px;
+    padding: 20px;
+    
+}
+.ultima-part select{
+    height: 30px;
+}
+
+
+
+.buttonCadas{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonCadas button{
+    width: 400px;
+    height: 40px;
+    background-color: #0095bf;
+    color: white;
+    border: none;
+    font-weight: 600;
+
+    border-radius: 10px;
 }
