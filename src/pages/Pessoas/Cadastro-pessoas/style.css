@@ -1,3 +1,26 @@
 .container h1{
     text-align: center;
+    margin-top: 20px;
+}
+
+.container{
+    padding: 16px;
+}
+
+.formulario-pessoas{
+    border: 1px solid black;
+    padding: 16px;
+}
+
+
+.block{
+    display: flex;
+}
+.block section{
+    display: flex;
+    flex-direction: column;
+}
+.block input{
+    height: 30px;
+    width: 400px;
 }
