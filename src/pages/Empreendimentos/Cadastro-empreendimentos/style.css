@@ -43,7 +43,12 @@ input[type=number] {
     padding: 20px;
     display: flex;
     flex-direction: row;
+
     
+}
+
+#razao{
+    width: 500px;
 }
 
 .block2{

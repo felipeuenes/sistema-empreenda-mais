@@ -27,7 +27,7 @@ export function CadastroEmpre(){
                     
                <section>
                         <label htmlFor="cnpj">CNPJ:*</label>
-                        <input type="text" name="" id="cnpj" />
+                        <input type="number" name="" id="cnpj" />
                </section>
 
                 <section>

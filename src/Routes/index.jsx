@@ -5,6 +5,7 @@ import { Home } from '../pages/Home/App'
 import { Empreendimentos } from '../pages/Empreendimentos/App'
 import { Pessoas } from '../pages/Pessoas/App'
 import { CadastroEmpre } from '../pages/Empreendimentos/Cadastro-empreendimentos'
+import { CadasPessoas } from '../pages/Pessoas/Cadastro-pessoas'
 
 
 export function AppRoutes() {
@@ -19,7 +20,8 @@ export function AppRoutes() {
             <Route path={'/empreendimentos'} element={<Empreendimentos/>}></Route>
             <Route path={'/pessoas'} element={<Pessoas/>}></Route>
             <Route path={'/cadastro-empreendimentos'} element={<CadastroEmpre/>}></Route>
-           
+            <Route path={'/cadaspessoa'} element={<CadasPessoas/>}/>
+
         </Routes>
         </>
     )
