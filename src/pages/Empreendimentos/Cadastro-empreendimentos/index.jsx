@@ -43,19 +43,19 @@ export function CadastroEmpre(){
                 <section>
 
                         <label htmlFor="inscricaoMu">Inscrição Municipal:*</label>
-                        <input type="text" name="" id="nscricaoMu" />
+                        <input type="number" name="" id="nscricaoMu" />
                 </section>
                 <section>
 
 
                         <label htmlFor="telefone">Telefone:</label>
-                        <input type="text" id='telefone'/>
+                        <input type="text" id='telefone' placeholder='(  )9 XXXX-XXXX'/>
                 </section>
                 <section>
 
                         
                         <label htmlFor="whats">Whatsapp:</label>
-                        <input type="text" name="" id="whats" />
+                        <input type="text" name="" id="whats" placeholder='(  )9 XXXX-XXXX'/>
                 </section>
                 
 
@@ -67,7 +67,7 @@ export function CadastroEmpre(){
 
                 <section>
                         <label htmlFor="endereco">Endereço:</label>
-                        <input type="text" name="" id="endereco" />
+                        <input type="text" name="" id="endereco" placeholder='Rua, avenida...'/>
                 </section>
                 <section>
 
@@ -107,6 +107,10 @@ export function CadastroEmpre(){
                             <option value="">Em processo de formalização</option>
                         </select>
                        
+                </section>
+                <section>
+                        <label htmlFor="nameEmpresario">Nome do empresário:</label>
+                        <input type="text" name="" id="nameEmpresario" />
                 </section>
                 </div>
                 <section className='buttonCadas'>

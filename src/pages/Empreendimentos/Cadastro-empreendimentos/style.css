@@ -12,6 +12,18 @@ input{
     margin: 6px;
 }
 
+
+/* retirar setas do input NUMBER */
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
 .formulario-empreedimento{
     margin: 20px;
     border: 1px solid;
@@ -101,6 +113,10 @@ input{
     width: 90px;
 }
 
+#nameEmpresario{
+    height: 30px;
+    width: 450px;
+}
 
 .terceira-part{
     padding: 20px;
