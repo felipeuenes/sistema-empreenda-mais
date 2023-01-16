@@ -15,6 +15,7 @@
 
 .block{
     display: flex;
+    padding: 20px;
 }
 .block section{
     display: flex;
@@ -30,6 +31,10 @@
     margin: 6px;
 }
 
+#email{
+    width: 200px;
+}
+
 #cpf{
     width: 150px;
     margin-left: 20px;
@@ -37,4 +42,35 @@
 
 #labelCPF{
     margin-left: 20px;
+}
+
+#rg{
+    width: 150px;
+}
+
+
+.block2{
+    display: flex;
+}
+.block2 section{
+    display: flex;
+    flex-direction: column;
+}
+.block2 input{
+    height: 30px;
+    width: 400px;
+}
+.block2 select{
+    height: 30px;
+    width: 100px;
+    margin: 6px;
+}
+
+
+#escolaridade{
+    width: 200px;
+}
+
+#renda{
+    width: 200px;
 }
