@@ -74,3 +74,24 @@
 #renda{
     width: 200px;
 }
+
+.block3{
+    display: flex;
+}
+.block3 section{
+    display: flex;
+    flex-direction: column;
+}
+.block3 input{
+    height: 30px;
+    width: 400px;
+}
+.block3 select{
+    height: 30px;
+    width: 100px;
+    margin: 6px;
+}
+
+#telefone{
+    width: 150px;
+}

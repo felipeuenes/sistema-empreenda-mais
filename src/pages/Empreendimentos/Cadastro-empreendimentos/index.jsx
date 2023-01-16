@@ -23,7 +23,7 @@ export function CadastroEmpre(){
 
                 </div>
                 
-                <div className='block2'>
+                <div className='bloc2'>
                     
                <section>
                         <label htmlFor="cnpj">CNPJ:*</label>
@@ -63,7 +63,7 @@ export function CadastroEmpre(){
 
 
 
-                <div className='block3'>
+                <div className='bloc3'>
 
                 <section>
                         <label htmlFor="endereco">Endereço:</label>
@@ -83,7 +83,7 @@ export function CadastroEmpre(){
                         <input type="text" name="" id="atvSecundaria" />
                 </section>
                 </div>
-                <div className='block4'>
+                <div className='bloc4'>
 
                 <section>
                         <label htmlFor="categoria">Categoria de negócio:</label>

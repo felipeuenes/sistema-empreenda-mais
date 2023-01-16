@@ -1,4 +1,4 @@
-import './style.css'
+import './styleCadas.css'
 
 import { Link, NavLink } from 'react-router-dom'
 
@@ -94,6 +94,18 @@ export function CadasPessoas() {
                                     </select>
                                 </section>
                         </div>
+                        <div className='block3'>
+                                <section>
+                                    <label htmlFor="endereco">Endereço:</label>
+                                    <input type="text" name="" id="endereco" placeholder='Rua, avenida...'/>
+                                </section>
+                               
+                                <section>
+                                    <label htmlFor="telefone">Telefone:</label>
+                                    <input type="number" placeholder='(00)X XXXX-XXXX' id='telefone'/>
+                                </section>
+                        </div>
+                        
 
 
                     </form>

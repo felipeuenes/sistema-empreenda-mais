@@ -1,3 +1,6 @@
+body{
+    width: 100%;
+}
 .titulo{
     text-align: center;
     margin-top: 16px;
@@ -31,6 +34,7 @@ input[type=number] {
     padding: 20px;
     justify-content: center;
     align-items: center;
+   
 }
 
 .formulario-empreedimento section{
@@ -51,18 +55,18 @@ input[type=number] {
     width: 500px;
 }
 
-.block2{
+.bloc2{
     display: flex;
     flex-direction: row;
     gap: 32px;
     padding: 20px;
 }
-.block2 input{
+.bloc2 input{
     height: 30px;
 }
 
 
-.block3{
+.bloc3{
     display: flex;
     flex-direction: row;
     gap: 32px;
@@ -70,11 +74,11 @@ input[type=number] {
     padding: 20px;
 }
 
-.block3 input{
+.bloc3 input{
     height: 30px;
 }
 
-.block4{
+.bloc4{
     display: flex;
     flex-direction: row;
     gap: 32px;
@@ -137,7 +141,6 @@ input[type=number] {
 .ultima-part select{
     height: 30px;
 }
-
 
 
 .buttonCadas{
