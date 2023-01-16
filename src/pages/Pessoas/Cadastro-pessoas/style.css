@@ -1,6 +1,6 @@
 .container h1{
     text-align: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .container{
@@ -23,4 +23,18 @@
 .block input{
     height: 30px;
     width: 400px;
+}
+.block select{
+    height: 30px;
+    width: 100px;
+    margin: 6px;
+}
+
+#cpf{
+    width: 150px;
+    margin-left: 20px;
+}
+
+#labelCPF{
+    margin-left: 20px;
 }
