@@ -129,6 +129,10 @@ input[type=number] {
     width: 450px;
 }
 
+#cpnj{
+    height: 30px;
+}
+
 .terceira-part{
     padding: 20px;
 }

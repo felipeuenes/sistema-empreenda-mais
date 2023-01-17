@@ -23,6 +23,7 @@ export function Header() {
             <li>Protocolos</li>
             <li>Eventos</li>
             <li>Cursos</li>
+            <li>Mentorias</li>
         </ul>
 </nav>
        </header>
