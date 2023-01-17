@@ -10,10 +10,11 @@
 .formulario-pessoas{
     border: 1px solid black;
     padding: 16px;
+    margin: 16px;
 }
 
 
-.block{
+.block, .block2, .block3{
     display: flex;
     padding: 20px;
 }
@@ -51,6 +52,7 @@
 
 .block2{
     display: flex;
+    gap: 24px;
 }
 .block2 section{
     display: flex;

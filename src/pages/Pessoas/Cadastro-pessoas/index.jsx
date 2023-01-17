@@ -13,21 +13,21 @@ export function CadasPessoas() {
                     <form action="">
                         <div className='block'>
                             <section>
-                            <label htmlFor="name">Nome de empreendedor:</label>
-                        <input type="text" name="" id="name" placeholder='Nome...'/>
+                            <label htmlFor="name">Nome de empreendedor:*</label>
+                        <input type="text" name="" id="name" placeholder='Nome...' required/>
                             </section>
 
                             <section>
                                 <label htmlFor="tipo">Qual o tipo de pessoa? *</label>
                                 <select name="" id="tipo">
-                                    <option value="">Apoiador</option>
-                                    <option value="">Apoiado</option>
+                                    <option value="">Cliente</option>
+                                    <option value="">Patrocinador</option>
                                 </select>
 
                             </section>
                             <section>
                                 <label htmlFor="cpf" id='labelCPF'>CPF: *</label>
-                                <input type="number" name="" id="cpf" placeholder='CPF...'/>
+                                <input type="number" name="" id="cpf" placeholder='CPF...' required/>
 
                             </section>
                             <section>
@@ -105,7 +105,9 @@ export function CadasPessoas() {
                                     <input type="number" placeholder='(00)X XXXX-XXXX' id='telefone'/>
                                 </section>
                         </div>
-                        
+                        <section className='buttonCadas'>
+                    <button>SALVAR INFORMAÇÕES</button>
+                </section>
 
 
                     </form>

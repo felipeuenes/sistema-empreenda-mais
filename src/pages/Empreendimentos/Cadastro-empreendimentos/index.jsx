@@ -1,4 +1,5 @@
 import './style.css'
+import { Link } from 'react-router-dom'
 
 
 export function CadastroEmpre(){
@@ -13,12 +14,12 @@ export function CadastroEmpre(){
 
                <section >
                         <label htmlFor="name">Nome fantasia: *</label>
-                        <input type="text" id='name'/>
+                        <input type="text" id='name' required/>
                </section>
                 <section>
 
                         <label htmlFor="razao">Razão Social:*</label>
-                        <input type="text" name="" id="razao" />
+                        <input type="text" name="" id="razao" required/>
                 </section>
 
                 </div>
@@ -27,7 +28,7 @@ export function CadastroEmpre(){
                     
                <section>
                         <label htmlFor="cnpj">CNPJ:*</label>
-                        <input type="number" name="" id="cnpj" />
+                        <input type="number" name="" id="cnpj" required/>
                </section>
 
                 <section>
@@ -49,7 +50,7 @@ export function CadastroEmpre(){
 
 
                         <label htmlFor="telefone">Telefone:</label>
-                        <input type="text" id='telefone' placeholder='(  )9 XXXX-XXXX'/>
+                        <input type="text" id='telefone' placeholder='(  )9 XXXX-XXXX' required/>
                 </section>
                 <section>
 
@@ -67,7 +68,7 @@ export function CadastroEmpre(){
 
                 <section>
                         <label htmlFor="endereco">Endereço:</label>
-                        <input type="text" name="" id="endereco" placeholder='Rua, avenida...'/>
+                        <input type="text" name="" id="endereco" placeholder='Rua, avenida...' required/>
                 </section>
                 <section>
 
@@ -76,7 +77,7 @@ export function CadastroEmpre(){
                 </section>
                 <section>
                         <label htmlFor="atvPrincipal">Atividade principal:</label>
-                        <input type="text" name="" id="atvPrincipal" />
+                        <input type="text" name="" id="atvPrincipal" required/>
                 </section>
                 <section>
                         <label htmlFor="atvSecundaria">Atividade secundária:</label>
