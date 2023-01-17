@@ -1,8 +1,11 @@
 import './style.css'
 import { Link } from 'react-router-dom'
-
+import { useState } from 'react'
 
 export function CadastroEmpre(){
+
+
+        // const [isFormal, setIsFormal] = useState;
 
     return(
         <>
@@ -21,8 +24,18 @@ export function CadastroEmpre(){
                         <label htmlFor="razao">Razão Social:*</label>
                         <input type="text" name="" id="razao" required/>
                 </section>
+                <section>
+                <label htmlFor="situacao">Situação atual:</label>
+                        <select name="" id="situacao">
+                            <option value="true">Formal</option>
+                            <option value="false">Não formal</option>
+                            <option value="false">Em processo de formalização</option>
+                        </select>
+                </section>
 
                 </div>
+
+                
                 
                 <div className='bloc2'>
                     
@@ -101,12 +114,12 @@ export function CadastroEmpre(){
                 </section>
                 <section>
 
-                        <label htmlFor="situacao">Situação atual:</label>
+                        {/* <label htmlFor="situacao">Situação atual:</label>
                         <select name="" id="situacao">
-                            <option value="">Formal</option>
-                            <option value="">Não formal</option>
-                            <option value="">Em processo de formalização</option>
-                        </select>
+                            <option value="true">Formal</option>
+                            <option value="false">Não formal</option>
+                            <option value="false">Em processo de formalização</option>
+                        </select> */}
                        
                 </section>
                 <section>
