@@ -85,13 +85,11 @@ input[type=number] {
     /* margin-top: 20px; */
     padding: 20px;
 }
-.block4 select{
+.bloc4 select{
     height: 30px;
 }
 
-select{
-    height: 30px;
-}
+
 
 .primeiros-inputs input{
     width: 450px;
