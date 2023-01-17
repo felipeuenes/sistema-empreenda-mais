@@ -1,0 +1,49 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.formulario-protocolo{
+  border: 1px solid;
+  padding: 16px;
+  margin: 16px;
+}
+
+.block{
+  display: flex;
+
+}
+
+.block section{
+  display: flex;
+  flex-direction: column;
+}
+
+#data{
+  width: 130px;
+}
+
+
+.block2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block2 section{
+  display: flex;
+  flex-direction: column;
+}
+
+.botaoGerar{
+  width: 200px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  background-color: #0095bf;
+  color: white;
+}
+
+.botaoGerar:hover{
+  background-color: #007191;
+}

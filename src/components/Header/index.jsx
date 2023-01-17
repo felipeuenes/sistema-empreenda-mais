@@ -20,7 +20,7 @@ export function Header() {
             <Link to="/pessoas"><li>Pessoas</li></Link>
             
             <li>Atendimentos</li>
-            <li>Protocolos</li>
+            <Link to="/protocolos"><li>Protocolos</li></Link>
             <li>Eventos</li>
             <li>Cursos</li>
             <li>Mentorias</li>
