@@ -1,6 +1,7 @@
 
 import { useState } from 'react'
 import './styleProtocolo.css'
+import { render } from 'react-dom';
 
 import { Link } from 'react-router-dom';
 
@@ -19,23 +20,27 @@ export function Proto() {
   console.log(data + atendimento);
 
 
-  function formProto(e) {
-    e.preventDefault();
-    setNome(nome)
+ 
+
+  function clicado() {
+    console.log('fui clicado');
+
+
+    let nomeEmpreendedor = document.querySelector('#nome').value;
+    console.log(nomeEmpreendedor);
+
   }
-
-
 
 
   return (
   <div className='container'>
       <h1 id='h1Proto'>GERAR PROTOCOLO</h1>
       <div className='formulario-protocolo'>
-          <form action="" onSubmit={formProto}>
+          <form action="">
             <div className='block'>
                 <section>
                   <label htmlFor="nome">Nome da pessoa:</label>
-                  <input type="text" name="" id="nome" placeholder='Nome...' onChange={(nome) => setNome(nome.target.value)}/>
+                  <input type="text" name="" id="nome" placeholder='Nome...'/>
                 </section>
                 <section>
                   <label htmlFor="data">Data do atendimento</label>
@@ -73,9 +78,11 @@ export function Proto() {
 
             <div className='block2'>
                   <section>
-                    <Link to="/imprimir"><button className='botaoGerar'>GERAR</button></Link>
+                    <Link to="/imprimir"><button className='botaoGerar' onClick={clicado}>GERAR</button></Link>
                   </section>
             </div>
+
+            
 
         
           </form>

@@ -4,6 +4,8 @@ import { Proto } from '../../pages/Protocolos/App'
 export function Folha(){
     
 
+
+
     return(
         <>
          <h1 id='ptAtendimento'>PROTOCOLO DE ATENDIMENTO</h1>
@@ -15,10 +17,10 @@ export function Folha(){
 
               </section>
               <section>
-                <label htmlFor="">Nome da empresa: </label>
+                <label htmlFor="">Nome da empresa: {Proto.nomeEmpreendedor}</label>
               </section>
               <section>
-                <label htmlFor="">{"Data do atendimento: "+ Proto.data}</label>
+                <label htmlFor="">{"Data do atendimento: "}</label>
               </section>
               <section>
                 <label htmlFor="">Observações: Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores amet officiis beatae iure soluta nesciunt ea est eveniet deserunt dolores veniam dignissimos similique libero aperiam, accusamus ex totam eligendi ducimus!</label>
