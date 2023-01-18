@@ -1,16 +1,24 @@
-// import { useState } from 'react'
+
 import { useState } from 'react'
 import './styleProtocolo.css'
-import ImageConstru from '../../images/contrucao.jpg'
+import { render } from 'react-dom';
+import { Link } from 'react-router-dom';
 
 export function Proto() {
   
   const [atendimento, setAtendimento] = useState('')
+  const [data, setData] = useState('');
+  
+  console.log(data);
   console.log(atendimento);
+
+
+
+  console.log(data + atendimento);
 
   return (
   <div className='container'>
-      <h1>GERAR PROTOCOLO</h1>
+      <h1 id='h1Proto'>GERAR PROTOCOLO</h1>
       <div className='formulario-protocolo'>
           <form action="">
             <div className='block'>
@@ -20,7 +28,7 @@ export function Proto() {
                 </section>
                 <section>
                   <label htmlFor="data">Data do atendimento</label>
-                  <input type="date" name="" id="data" />
+                  <input type="date" name="" id="data" onChange={(dat) => setData(dat.target.value)} />
                 </section>
                 <section>
                   <label htmlFor="nomeEmpresa">Nome da Empresa:</label>
@@ -54,9 +62,11 @@ export function Proto() {
 
             <div className='block2'>
                   <section>
-                    <button className='botaoGerar'>GERAR</button>
+                    <Link to="/imprimir"><button className='botaoGerar'>GERAR</button></Link>
                   </section>
             </div>
+
+        
           </form>
       </div>
   </div>

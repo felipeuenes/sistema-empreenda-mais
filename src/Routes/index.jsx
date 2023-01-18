@@ -7,6 +7,9 @@ import { Pessoas } from '../pages/Pessoas/App'
 import { CadastroEmpre } from '../pages/Empreendimentos/Cadastro-empreendimentos'
 import { CadasPessoas } from '../pages/Pessoas/Cadastro-pessoas'
 import { Proto } from '../pages/Protocolos/App'
+import { ProtoImpri } from '../pages/Protocolos/ProtocoloImpressao/App'
+
+
 
 export function AppRoutes() {
     
@@ -22,6 +25,7 @@ export function AppRoutes() {
             <Route path={'/cadastro-empreendimentos'} element={<CadastroEmpre/>}></Route>
             <Route path={'/cadaspessoa'} element={<CadasPessoas/>}/>
             <Route path={'/protocolos'} element={<Proto/>}/>
+            <Route path={'/imprimir'} element={<ProtoImpri/>}/>
 
         </Routes>
         </>
