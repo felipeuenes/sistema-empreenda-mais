@@ -18,11 +18,20 @@ export function Proto() {
 
   console.log(data + atendimento);
 
+
+  function formProto(e) {
+    e.preventDefault();
+    setNome(nome)
+  }
+
+
+
+
   return (
   <div className='container'>
       <h1 id='h1Proto'>GERAR PROTOCOLO</h1>
       <div className='formulario-protocolo'>
-          <form action="">
+          <form action="" onSubmit={formProto}>
             <div className='block'>
                 <section>
                   <label htmlFor="nome">Nome da pessoa:</label>

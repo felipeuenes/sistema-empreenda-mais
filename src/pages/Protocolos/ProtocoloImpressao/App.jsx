@@ -3,45 +3,15 @@ import { useState } from 'react'
 import './styleimpressao.css'
 import { render } from 'react-dom';
 import { Proto } from '../App';
+import { Folha } from '../../../components/ProtocoloFolha';
 
 export function ProtoImpri() {
   
-
+ 
 
   return (
     <>
-      <h1 id='ptAtendimento'>PROTOCOLO DE ATENDIMENTO</h1>
-  <div className='container2'>
-        <div className='dadosProtocolo'>
-            <form action="">
-              <section>
-              <label htmlFor="">{"Nome da pessoa: "+ Proto.nome}</label>
-
-              </section>
-              <section>
-                <label htmlFor="">Nome da empresa: </label>
-              </section>
-              <section>
-                <label htmlFor="">{"Data do atendimento: "+ Proto.data}</label>
-              </section>
-              <section>
-                <label htmlFor="">Observações: Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores amet officiis beatae iure soluta nesciunt ea est eveniet deserunt dolores veniam dignissimos similique libero aperiam, accusamus ex totam eligendi ducimus!</label>
-              </section>
-            </form>
-
-        </div>
-        <div className='dadosProtocolo'>
-              <form action="">
-                <section>
-                  <label htmlFor="">Numero do protocolo: 1615151515</label>
-                </section>
-                <section>
-                  <label htmlFor="">Recebido em: 18/01/2023</label>
-                </section>
-              </form>
-        </div>
-      
-  </div>
+      <Folha/>
     </>
   )
 }
