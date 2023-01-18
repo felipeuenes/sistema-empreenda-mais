@@ -11,7 +11,7 @@ body{
 
 .block{
   display: flex;
-
+  gap: 16px;
 }
 
 .block section{
@@ -21,6 +21,18 @@ body{
 
 #data{
   width: 130px;
+}
+#nome{
+  width: 300px;
+}
+
+
+#atendimento{
+  width: 200px;
+}
+
+#nomeEmpresa{
+  width: 250px;
 }
 
 
