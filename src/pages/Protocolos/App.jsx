@@ -1,10 +1,12 @@
 // import { useState } from 'react'
-
+import { useState } from 'react'
 import './styleProtocolo.css'
 import ImageConstru from '../../images/contrucao.jpg'
 
 export function Proto() {
   
+  const [atendimento, setAtendimento] = useState('')
+  console.log(atendimento);
 
   return (
   <div className='container'>
@@ -13,7 +15,7 @@ export function Proto() {
           <form action="">
             <div className='block'>
                 <section>
-                  <label htmlFor="nome">Nome do cliente:</label>
+                  <label htmlFor="nome">Nome da pessoa:</label>
                   <input type="text" name="" id="nome" placeholder='Nome...'/>
                 </section>
                 <section>
@@ -26,7 +28,7 @@ export function Proto() {
                 </section>
                 <section>
                   <label htmlFor="atendimento">Tipo de atendimento:</label>
-                  <select name="" id="atendimento">
+                  <select name="" id="atendimento" onChange={(e) => setAtendimento(e.target.value)}>
                     <option value="150">Visitas em geral</option>
                     <option value="250">Atendimento para prestação de serviço</option>
                     <option value="350">Assinatura de documento em ambiente interno</option>
