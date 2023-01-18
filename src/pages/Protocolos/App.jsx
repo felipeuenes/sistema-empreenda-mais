@@ -1,7 +1,7 @@
 
 import { useState } from 'react'
 import './styleProtocolo.css'
-import { render } from 'react-dom';
+
 import { Link } from 'react-router-dom';
 
 export function Proto() {
