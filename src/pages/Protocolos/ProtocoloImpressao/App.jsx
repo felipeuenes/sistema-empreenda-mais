@@ -2,19 +2,11 @@
 import { useState } from 'react'
 import './styleimpressao.css'
 import { render } from 'react-dom';
-
+import { Proto } from '../App';
 
 export function ProtoImpri() {
   
-  const [atendimento, setAtendimento] = useState('')
-  const [data, setData] = useState('');
-  
-  console.log(data);
-  console.log(atendimento);
 
-
-
-  console.log(data + atendimento);
 
   return (
     <>
@@ -23,14 +15,14 @@ export function ProtoImpri() {
         <div className='dadosProtocolo'>
             <form action="">
               <section>
-              <label htmlFor="">Nome da pessoa: Felipe Uenes de Souza</label>
+              <label htmlFor="">{"Nome da pessoa: "+ Proto.nome}</label>
 
               </section>
               <section>
                 <label htmlFor="">Nome da empresa: Apenas um teste</label>
               </section>
               <section>
-                <label htmlFor="">Data do atendimento: 18/01/2023</label>
+                <label htmlFor="">{"Data do atendimento: "+ Proto.data}</label>
               </section>
               <section>
                 <label htmlFor="">Observações: Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores amet officiis beatae iure soluta nesciunt ea est eveniet deserunt dolores veniam dignissimos similique libero aperiam, accusamus ex totam eligendi ducimus!</label>

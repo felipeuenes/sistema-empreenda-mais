@@ -8,6 +8,7 @@ export function Proto() {
   
   const [atendimento, setAtendimento] = useState('')
   const [data, setData] = useState('');
+  const [nome, setNome] = useState('');
   
   console.log(data);
   console.log(atendimento);
@@ -24,7 +25,7 @@ export function Proto() {
             <div className='block'>
                 <section>
                   <label htmlFor="nome">Nome da pessoa:</label>
-                  <input type="text" name="" id="nome" placeholder='Nome...'/>
+                  <input type="text" name="" id="nome" placeholder='Nome...' onChange={(nome) => setNome(nome.target.value)}/>
                 </section>
                 <section>
                   <label htmlFor="data">Data do atendimento</label>
