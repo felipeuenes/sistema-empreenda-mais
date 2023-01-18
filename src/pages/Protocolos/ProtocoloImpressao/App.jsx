@@ -19,7 +19,7 @@ export function ProtoImpri() {
 
               </section>
               <section>
-                <label htmlFor="">Nome da empresa: Apenas um teste</label>
+                <label htmlFor="">Nome da empresa: </label>
               </section>
               <section>
                 <label htmlFor="">{"Data do atendimento: "+ Proto.data}</label>

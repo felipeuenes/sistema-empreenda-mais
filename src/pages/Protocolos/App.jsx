@@ -12,6 +12,7 @@ export function Proto() {
   
   console.log(data);
   console.log(atendimento);
+  console.log(nome);
 
 
 
