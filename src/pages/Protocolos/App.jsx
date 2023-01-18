@@ -37,9 +37,21 @@ export function Proto() {
                     <option value="650">Palestras, oficinas, outros...</option>
                   </select>
                 </section>
+                
               
 
             </div>
+              <div className='block3'>
+                    <section>
+                      <label htmlFor="refere">Refere-se a:</label>
+                      <textarea name="" id="refere" cols="50" rows="8"></textarea>
+                    </section>
+                    <section>
+                      <label htmlFor="obs">Observações:</label>
+                      <textarea name="" id="" cols="50" rows="8"></textarea>
+                    </section>
+              </div>
+
             <div className='block2'>
                   <section>
                     <button className='botaoGerar'>GERAR</button>
