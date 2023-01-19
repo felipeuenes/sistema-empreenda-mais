@@ -1,16 +1,18 @@
 import './styleFolha.css'
 import { Proto } from '../../pages/Protocolos/App'
 
+
+
 export function Folha(){
     
 
-  let nome = name
-    console.log(nome);
+  // let nome = name
+  //   console.log(nome);
 
-  let data = Proto.name;
-    console.log(data);
+  // let data = Proto();
+  //   console.log(data);
   
-  
+ 
     
   
   
@@ -22,7 +24,7 @@ export function Folha(){
         <div className='dadosProtocolo'>
             <form action="">
               <section>
-              <label htmlFor="">Nome da pessoa: {data} </label>
+              <label htmlFor="">Nome da pessoa:  </label>
 
               </section>
               <section>
