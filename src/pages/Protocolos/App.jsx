@@ -4,6 +4,7 @@ import './styleProtocolo.css'
 import { render } from 'react-dom';
 
 import { Link } from 'react-router-dom';
+import { LocalStorage } from './localStore';
 
 export function Proto() {
   
@@ -19,15 +20,11 @@ export function Proto() {
 
   console.log(data + atendimento);
 
-
- 
-
+  
   function clicado() {
     console.log('fui clicado');
-
-
-    let nomeEmpreendedor = document.querySelector('#nome').value;
-    console.log(nomeEmpreendedor);
+    
+   
 
   }
 

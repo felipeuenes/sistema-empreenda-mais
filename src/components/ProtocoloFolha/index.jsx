@@ -4,7 +4,17 @@ import { Proto } from '../../pages/Protocolos/App'
 export function Folha(){
     
 
+  let nome = Proto.name
+    console.log(nome);
 
+  let data = Proto.data;
+    console.log(data);
+
+
+
+
+  const name = localStorage.getItem("name")
+  console.log(name);
 
     return(
         <>
@@ -13,14 +23,14 @@ export function Folha(){
         <div className='dadosProtocolo'>
             <form action="">
               <section>
-              <label htmlFor="">{"Nome da pessoa: "}</label>
+              <label htmlFor="">Nome da pessoa: {nome}</label>
 
               </section>
               <section>
-                <label htmlFor="">Nome da empresa: {Proto.nomeEmpreendedor}</label>
+                <label htmlFor="">Nome da empresa: {name}</label>
               </section>
               <section>
-                <label htmlFor="">{"Data do atendimento: "}</label>
+                <label htmlFor="">Data do atendimento: {data}</label>
               </section>
               <section>
                 <label htmlFor="">Observações: Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores amet officiis beatae iure soluta nesciunt ea est eveniet deserunt dolores veniam dignissimos similique libero aperiam, accusamus ex totam eligendi ducimus!</label>
