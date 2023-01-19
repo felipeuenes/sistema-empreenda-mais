@@ -30,13 +30,35 @@ ul{
     color: white;
 }
 
-img{
+#imgLogo{
     width: 100px;
    
     position: absolute;
     left: 50px;
+    top: 25px;
+
+
+}
+#imgLogo:hover{
+    animation-name: escalaAnimation;
+    animation-duration: 0.2s;
+    
+    animation-fill-mode: forwards;
+
 }
 
 li:hover{
     color: rgb(223, 223, 223);
+}
+
+
+
+@keyframes escalaAnimation {
+    0%{
+        scale: 1.0;
+    }
+    100%{
+        
+        scale: 1.05;
+    }
 }

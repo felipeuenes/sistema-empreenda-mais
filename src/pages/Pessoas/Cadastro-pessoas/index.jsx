@@ -106,7 +106,7 @@ export function CadasPessoas() {
                                 </section>
                         </div>
                         <section className='buttonCadas'>
-                    <button>SALVAR INFORMAÇÕES</button>
+                    <button id='btPessoas'>SALVAR INFORMAÇÕES</button>
                 </section>
 
 

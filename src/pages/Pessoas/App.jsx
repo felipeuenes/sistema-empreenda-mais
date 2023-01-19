@@ -10,7 +10,7 @@ export function Pessoas() {
   <div className='container'>
       <div className='cabecalho'>
       <h1>Pessoas</h1>
-      <Link to='/cadaspessoa'><button>CADASTRAR PESSOA</button></Link>
+      <Link to='/cadaspessoa'><button id='btPessoas'>CADASTRAR PESSOA</button></Link>
       </div>
   </div>
   )

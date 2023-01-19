@@ -11,11 +11,11 @@ export function Header() {
         <>
        
        <header>
-        <img src={logoEM} />
+        <Link to='/'><img src={logoEM} id='imgLogo'/></Link>
 <nav>
 
         <ul>
-            <NavLink to="/" className={({isAtive}) => isAtive ? 'active' : ''}><li>Home</li></NavLink>
+            {/* <NavLink to="/" className={({isAtive}) => isAtive ? 'active' : ''}><li>Home</li></NavLink> */}
             <Link to="/empreendimentos"><li>Empreendimentos</li></Link>
             <Link to="/pessoas"><li>Pessoas</li></Link>
             

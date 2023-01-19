@@ -109,3 +109,7 @@
 #telefone{
     width: 150px;
 }
+
+#btPessoas{
+    cursor: pointer;
+}
