@@ -11,6 +11,11 @@
     border: 1px solid black;
     padding: 16px;
     margin: 16px;
+
+    background-image: url('../../../images/logo-em-azul.png');
+    background-size: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 

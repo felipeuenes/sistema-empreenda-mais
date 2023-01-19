@@ -34,7 +34,16 @@ input[type=number] {
     padding: 20px;
     justify-content: center;
     align-items: center;
-   
+
+    background-image: url('../../../images/logo-em-azul.png');
+    background-size: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.formulario-empreedimento label{
+    font-weight: 700;
 }
 
 .formulario-empreedimento section{

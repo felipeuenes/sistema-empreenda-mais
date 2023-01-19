@@ -17,8 +17,8 @@ export function Proto() {
   console.log(nome);
 
 
-  // testando
-  export const dados = {
+ 
+  const dados = {
     nome: nome,
     tipoAt: atendimento,
     data: data,
@@ -37,7 +37,7 @@ export function Proto() {
             <div className='block'>
                 <section>
                   <label htmlFor="nome">Nome da pessoa:</label>
-                  <input type="text" name="" id="nome" placeholder='Nome...'/>
+                  <input type="text" name="" id="nome" placeholder='Nome...' onChange={(name) => setNome(name.target.value)}/>
                 </section>
                 <section>
                   <label htmlFor="data">Data do atendimento</label>
@@ -75,7 +75,7 @@ export function Proto() {
 
             <div className='block2'>
                   <section>
-                    <Link to="/imprimir"><button className='botaoGerar' onClick={clicado}>GERAR</button></Link>
+                    <Link to="/imprimir"><button className='botaoGerar'>GERAR</button></Link>
                   </section>
             </div>
 
