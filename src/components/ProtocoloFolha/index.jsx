@@ -4,7 +4,7 @@ import { Proto } from '../../pages/Protocolos/App'
 export function Folha(){
     
 
-  let nome = Proto.name
+  let nome = name
     console.log(nome);
 
   let data = Proto.data;
@@ -13,8 +13,8 @@ export function Folha(){
 
 
 
-  const name = localStorage.getItem("name")
-  console.log(name);
+  // const name = localStorage.getItem("name")
+  // console.log(name);
 
     return(
         <>

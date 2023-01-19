@@ -4,7 +4,7 @@ import './styleProtocolo.css'
 import { render } from 'react-dom';
 
 import { Link } from 'react-router-dom';
-import { LocalStorage } from './localStore';
+
 
 export function Proto() {
   
@@ -17,17 +17,17 @@ export function Proto() {
   console.log(nome);
 
 
-
-  console.log(data + atendimento);
-
-  
-  function clicado() {
-    console.log('fui clicado');
-    
-   
-
+  // testando
+  export const dados = {
+    nome: nome,
+    tipoAt: atendimento,
+    data: data,
   }
 
+
+  
+  
+  
 
   return (
   <div className='container'>
