@@ -10,11 +10,9 @@ export function Folha(){
   let data = Proto.data;
     console.log(data);
 
-
-
-
-  // const name = localStorage.getItem("name")
-  // console.log(name);
+    
+  
+  
 
     return(
         <>
@@ -23,14 +21,14 @@ export function Folha(){
         <div className='dadosProtocolo'>
             <form action="">
               <section>
-              <label htmlFor="">Nome da pessoa: {nome}</label>
+              <label htmlFor="">Nome da pessoa:  </label>
 
               </section>
               <section>
-                <label htmlFor="">Nome da empresa: {name}</label>
+                <label htmlFor="">Nome da empresa: </label>
               </section>
               <section>
-                <label htmlFor="">Data do atendimento: {data}</label>
+                <label htmlFor="">Data do atendimento: </label>
               </section>
               <section>
                 <label htmlFor="">Observações: Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores amet officiis beatae iure soluta nesciunt ea est eveniet deserunt dolores veniam dignissimos similique libero aperiam, accusamus ex totam eligendi ducimus!</label>

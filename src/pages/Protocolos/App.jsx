@@ -6,23 +6,40 @@ import { render } from 'react-dom';
 import { Link } from 'react-router-dom';
 
 
-export function Proto() {
+export function Proto(dadosProto) {
+
+
+  function dadosProto() {
+    const dados = [{
+      nome: nome,
+      tipoAt: atendimento,
+      data: data,
+      
+    }];
+
+    console.log(dados);
+  }
   
   const [atendimento, setAtendimento] = useState('')
   const [data, setData] = useState('');
   const [nome, setNome] = useState('');
   
-  console.log(data);
-  console.log(atendimento);
-  console.log(nome);
+  // console.log(data);
+  // console.log(atendimento);
+  // console.log(nome);
 
 
- 
-  const dados = {
-    nome: nome,
-    tipoAt: atendimento,
-    data: data,
-  }
+//  function buttonClick() {
+//    const dados = [{
+//      nome: nome,
+//      tipoAt: atendimento,
+//      data: data,
+//    }];
+//    console.log(dados);
+
+
+
+//  }
 
 
   
@@ -75,7 +92,7 @@ export function Proto() {
 
             <div className='block2'>
                   <section>
-                    <Link to="/imprimir"><button className='botaoGerar'>GERAR</button></Link>
+                    <Link to="/imprimir"><button className='botaoGerar' onClick={dadosProto}>GERAR</button></Link>
                   </section>
             </div>
 
@@ -83,7 +100,9 @@ export function Proto() {
 
         
           </form>
+        
       </div>
+      
   </div>
   )
 }

@@ -18,7 +18,7 @@ export function CadasPessoas() {
                             </section>
 
                             <section>
-                                <label htmlFor="tipo">Qual o tipo de pessoa? *</label>
+                                <label htmlFor="tipo">Qual o tipo de pessoa?*</label>
                                 <select name="" id="tipo">
                                     <option value="">Cliente</option>
                                     <option value="">Patrocinador</option>
