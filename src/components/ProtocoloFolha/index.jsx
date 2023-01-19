@@ -7,9 +7,10 @@ export function Folha(){
   let nome = name
     console.log(nome);
 
-  let data = Proto.data;
+  let data = Proto.name;
     console.log(data);
-
+  
+  
     
   
   
@@ -21,7 +22,7 @@ export function Folha(){
         <div className='dadosProtocolo'>
             <form action="">
               <section>
-              <label htmlFor="">Nome da pessoa:  </label>
+              <label htmlFor="">Nome da pessoa: {data} </label>
 
               </section>
               <section>

@@ -10,12 +10,12 @@ export function Proto(dadosProto) {
 
 
   function dadosProto() {
-    const dados = [{
+    const dados = {
       nome: nome,
       tipoAt: atendimento,
       data: data,
       
-    }];
+    };
 
     console.log(dados);
   }
@@ -23,23 +23,6 @@ export function Proto(dadosProto) {
   const [atendimento, setAtendimento] = useState('')
   const [data, setData] = useState('');
   const [nome, setNome] = useState('');
-  
-  // console.log(data);
-  // console.log(atendimento);
-  // console.log(nome);
-
-
-//  function buttonClick() {
-//    const dados = [{
-//      nome: nome,
-//      tipoAt: atendimento,
-//      data: data,
-//    }];
-//    console.log(dados);
-
-
-
-//  }
 
 
   
