@@ -16,6 +16,9 @@
     background-size: 700px;
     background-repeat: no-repeat;
     background-position: center;
+
+    background-color: white;
+    border-radius: 10px;
 }
 
 .formulario-pessoas label{

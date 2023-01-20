@@ -1,6 +1,6 @@
 header{
     background-color: #0095bf;
-    height: 100px;
+    height: 90px;
     width: 100%;
     
     display: flex;
@@ -35,7 +35,7 @@ ul{
    
     position: absolute;
     left: 50px;
-    top: 25px;
+    top: 20px;
 
 
 }
@@ -45,6 +45,10 @@ ul{
     
     animation-fill-mode: forwards;
 
+}
+
+li{
+    font-size: 17px;
 }
 
 li:hover{
