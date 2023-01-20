@@ -4,27 +4,13 @@ import './styleProtocolo.css'
 import { render } from 'react-dom';
 
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
 
 
 export function Proto(dadosProto) {
 
 
-  function dadosProto() {
-    const dados = {
-      nome: nome,
-      tipoAt: atendimento,
-      data: data,
-      
-    };
 
-
-
-    console.log(dados);
-  }
-  
-  const [atendimento, setAtendimento] = useState('')
-  const [data, setData] = useState('');
-  const [nome, setNome] = useState('');
 
 
   
@@ -39,11 +25,11 @@ export function Proto(dadosProto) {
             <div className='block'>
                 <section>
                   <label htmlFor="nome">Nome da pessoa:</label>
-                  <input type="text" name="" id="nome" placeholder='Nome...' onChange={(name) => setNome(name.target.value)}/>
+                  <input type="text" name="" id="nome" placeholder='Nome...' />
                 </section>
                 <section>
                   <label htmlFor="data">Data do atendimento</label>
-                  <input type="date" name="" id="data" onChange={(dat) => setData(dat.target.value)} />
+                  <input type="date" name="" id="data" />
                 </section>
                 <section>
                   <label htmlFor="nomeEmpresa">Nome da Empresa:</label>
@@ -51,7 +37,7 @@ export function Proto(dadosProto) {
                 </section>
                 <section>
                   <label htmlFor="atendimento">Tipo de atendimento:</label>
-                  <select name="" id="atendimento" onChange={(e) => setAtendimento(e.target.value)}>
+                  <select name="" id="atendimento">
                     <option value="150">Visitas em geral</option>
                     <option value="250">Atendimento para prestação de serviço</option>
                     <option value="350">Assinatura de documento em ambiente interno</option>
@@ -77,7 +63,7 @@ export function Proto(dadosProto) {
 
             <div className='block2'>
                   <section>
-                    <Link to="/imprimir"><button className='botaoGerar' onClick={dadosProto}>GERAR</button></Link>
+                    <Link to="/imprimir"><button className='botaoGerar'>GERAR</button></Link>
                   </section>
             </div>
 
