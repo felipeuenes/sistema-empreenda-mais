@@ -40,6 +40,8 @@ input[type=number] {
     background-repeat: no-repeat;
     background-position: center;
     
+    background-color: white;
+    border-radius: 10px;
 }
 
 .formulario-empreedimento label{
@@ -62,6 +64,7 @@ input[type=number] {
 
 #razao{
     width: 500px;
+    
 }
 
 .bloc2{

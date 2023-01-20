@@ -20,6 +20,8 @@ export function Folha(){
     return(
         <>
          <h1 id='ptAtendimento'>PROTOCOLO DE ATENDIMENTO</h1>
+  
+  <div className='center'>
   <div className='container2'>
         <div className='dadosProtocolo'>
             <form action="">
@@ -34,25 +36,57 @@ export function Folha(){
                 <label htmlFor="">Data do atendimento: </label>
               </section>
               <section>
-                <label htmlFor="">Observações: Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores amet officiis beatae iure soluta nesciunt ea est eveniet deserunt dolores veniam dignissimos similique libero aperiam, accusamus ex totam eligendi ducimus!</label>
+                <label htmlFor="">Refere-se a: <span></span></label>
+              </section>
+              <section>
+                <label htmlFor="">Observações: <span></span></label>
               </section>
             </form>
 
         </div>
-        <div className='dadosProtocolo'>
+        <div className='dadosProtocolo2'>
               <form action="">
                 <section>
-                  <label htmlFor="">Numero do protocolo: 1615151515</label>
+                  <label htmlFor="">Numero do protocolo: <span>1615151515</span></label>
                 </section>
                 <section>
-                  <label htmlFor="">Recebido em: 18/01/2023</label>
+                  <label htmlFor="">Recebido em: <span>18/01/2023</span></label>
                 </section>
               </form>
         </div>
       
   </div>
+  </div>
         
-        
+        <div className='assinatura'>
+          <section>
+              <label htmlFor="">Assinatura: ___________________________________________</label>
+            </section> 
+          </div>
+
+          
+              <h1 id='viaCliente'>VIA DO CLIENTE</h1>
+         
+         <div className='center'>
+         <div className='DoCliente'>
+            <section>
+
+            </section>
+
+              <section>
+                <label htmlFor="">Nº______________</label>
+              </section>
+              <section>
+                <label htmlFor="">Assinatura: ________________________________________________________</label>
+              </section>
+
+              <section>
+                <label htmlFor="">Data___/___/____</label>
+              </section>
+
+          </div>
+         </div>
+       
         </>
 
     )

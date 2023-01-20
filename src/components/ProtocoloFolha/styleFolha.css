@@ -7,6 +7,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 95%;
   }
   #ptAtendimento{
   
@@ -19,19 +20,35 @@ body{
   .dadosProtocolo{
     border: 1px solid black;
     display: flex;
-  
-    margin: 24px;
     
+    margin: 24px;
+    width: 100%;
     
   }
-  
+
   .dadosProtocolo form{
     padding: 24px;
     
   }
   
+  .dadosProtocolo2{
+    border: 1px solid black;
+    display: flex;
+  
+    margin: 24px;
+    padding: 24px;
+    width: 30%;
+    
+  }
+
+  
   label{
     margin-top: 16px;
+    font-weight: 700;
+  }
+
+  label span{
+    font-weight: 300;
   }
   
   
@@ -41,4 +58,44 @@ body{
     
   }
   
+.assinatura label{
+  margin-top: 26px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.DoCliente{
+  margin-top: 26px;
+  border: 1px solid black;
+  /* width: 90%; */
+
+  margin: 24px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  padding: 42px;
+
+  gap: 32px;
   
+}
+
+.DoCliente label{
+  font-weight: 300;
+}
+
+#viaCliente{
+  text-align: center;
+  margin-top: 64px;
+}
+
+
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
