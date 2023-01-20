@@ -1,42 +1,47 @@
 header{
-    background-color: #0095bf;
-    height: 100px;
+    background-color: #0095ba;
+    height: 60px;
     width: 100%;
-    
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 a{
-    color: white;
+    color: #ffffff;
+
 }
 
 .active{
     color: black;
 }
 
-ul{
+ul {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 40px;
     list-style: none;
-    display: flex;
     align-items: center;
     justify-content: center;
+    color: #ffffff;
 
-
-    font-weight: 700;
-    color: white;
 }
 
-img{
-    width: 100px;
-   
-    position: absolute;
-    left: 50px;
+li {   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.1s;
+}
+li:hover {
+    transform: scale(1.1);
 }
 
-li:hover{
-    color: rgb(223, 223, 223);
+#logoEM {
+    height: 40px;
+    transition:  0.1s;
+}
+
+#logoEM:hover {
+    transform: scale(1.05);
 }

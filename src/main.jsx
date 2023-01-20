@@ -1,7 +1,7 @@
-import React from 'react'
+import React    from 'react'
 import ReactDOM from 'react-dom/client'
 import { Home } from './pages/Home/App'
-import './index.css'
+import               './index.css'
 
 import { AppRoutes } from './Routes'
 
