@@ -1,14 +1,11 @@
 /*CSS principal do sistema*/
-@font-face {
-  font-family: Roboto;
-  src: url('../src/fonts/roboto-medium.ttf');
-}
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Roboto;
-  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a{

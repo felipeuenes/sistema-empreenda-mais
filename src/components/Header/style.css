@@ -5,6 +5,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+
+
 }
 
 a{
@@ -16,7 +18,7 @@ a{
     color: black;
 }
 
-ul {
+header ul {
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -25,6 +27,7 @@ ul {
     justify-content: center;
     color: #ffffff;
 
+    font-weight: 600;
 }
 
 li {   
@@ -34,7 +37,7 @@ li {
     transition: 0.1s;
 }
 li:hover {
-    transform: scale(1.02);
+    color: rgb(221, 221, 221);
 }
 
 #logoEM {
