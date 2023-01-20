@@ -5,42 +5,41 @@ import { render } from 'react-dom';
 
 import { Link } from 'react-router-dom';
 
-export function Proto() {
+
+export function Proto(dadosProto) {
+
+
+  function dadosProto() {
+    const dados = {
+      nome: nome,
+      tipoAt: atendimento,
+      data: data,
+      
+    };
+
+
+
+    console.log(dados);
+  }
   
   const [atendimento, setAtendimento] = useState('')
   const [data, setData] = useState('');
   const [nome, setNome] = useState('');
+
+
   
-  console.log(data);
-  console.log(atendimento);
-  console.log(nome);
-
-
-
-  console.log(data + atendimento);
-
-
- 
-
-  function clicado() {
-    console.log('fui clicado');
-
-
-    let nomeEmpreendedor = document.querySelector('#nome').value;
-    console.log(nomeEmpreendedor);
-
-  }
-
+  
+  
 
   return (
   <div className='container'>
       <h1 id='h1Proto'>GERAR PROTOCOLO</h1>
       <div className='formulario-protocolo'>
-          <form action="">
+          <form action="" >
             <div className='block'>
                 <section>
                   <label htmlFor="nome">Nome da pessoa:</label>
-                  <input type="text" name="" id="nome" placeholder='Nome...'/>
+                  <input type="text" name="" id="nome" placeholder='Nome...' onChange={(name) => setNome(name.target.value)}/>
                 </section>
                 <section>
                   <label htmlFor="data">Data do atendimento</label>
@@ -78,7 +77,7 @@ export function Proto() {
 
             <div className='block2'>
                   <section>
-                    <Link to="/imprimir"><button className='botaoGerar' onClick={clicado}>GERAR</button></Link>
+                    <Link to="/imprimir"><button className='botaoGerar' onClick={dadosProto}>GERAR</button></Link>
                   </section>
             </div>
 
@@ -86,7 +85,9 @@ export function Proto() {
 
         
           </form>
+        
       </div>
+      
   </div>
   )
 }

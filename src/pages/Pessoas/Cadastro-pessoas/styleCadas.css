@@ -11,12 +11,23 @@
     border: 1px solid black;
     padding: 16px;
     margin: 16px;
+
+    background-image: url('../../../images/logo-em-azul.png');
+    background-size: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.formulario-pessoas label{
+    font-weight: 700;
+   
 }
 
 
 .block, .block2, .block3{
     display: flex;
     padding: 20px;
+    
 }
 .block section{
     display: flex;
@@ -30,6 +41,7 @@
     height: 30px;
     width: 100px;
     margin: 6px;
+    
 }
 
 #email{
@@ -52,7 +64,7 @@
 
 .block2{
     display: flex;
-    gap: 24px;
+    gap: 26px;
 }
 .block2 section{
     display: flex;
@@ -96,4 +108,8 @@
 
 #telefone{
     width: 150px;
+}
+
+#btPessoas{
+    cursor: pointer;
 }

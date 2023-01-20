@@ -11,7 +11,7 @@ export function Empreendimentos() {
 
       <h1>Empreendimentos</h1>
 
-        <Link to="/cadastro-empreendimentos" ><button>Cadastrar novo</button></Link>
+        <Link to="/cadastro-empreendimentos" ><button id='btEmpre'>Cadastrar novo</button></Link>
       </div>
 
 
