@@ -1,6 +1,6 @@
 header{
     background-color: #0095ba;
-    height: 60px;
+    height: 80px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -34,7 +34,7 @@ li {
     transition: 0.1s;
 }
 li:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 #logoEM {
