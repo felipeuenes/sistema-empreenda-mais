@@ -8,14 +8,14 @@ export function Home() {
   
 
   return (
-  <div>
+  
     
     <div className='container'>
       <div className='imageConstru'>
         <img src={ImageConstru} alt="" srcset="" />
       </div>
     </div>
-  </div>
+  
   )
 }
 
