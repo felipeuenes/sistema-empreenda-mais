@@ -10,19 +10,22 @@ export function CadastroEvento(){
     return(
         <>
             <h1 className='titulo'>CADASTRO EVENTO</h1>
-        <div className='formulario-empreedimento'>
+        <div className='formulario-eventos'>
 
             <form action="">
                 <div className='primeiros-inputs'>
 
                <section >
-                        <label htmlFor="name">Nome fantasia: *</label>
+                        <label htmlFor="name">Nome do evento: *</label>
                         <input type="text" id='name' required/>
                </section>
                 <section>
 
-                        <label htmlFor="razao">Razão Social:*</label>
-                        <input type="text" name="" id="razao" required/>
+                        <label htmlFor="tipo">Tipo de evento: *</label>
+                        <select name="" id="tipo">
+                                <option value="">Público geral</option>
+                                <option value="">Participantes do Empreenda Mais</option>
+                        </select>
                 </section>
                 
                
