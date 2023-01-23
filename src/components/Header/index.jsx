@@ -15,7 +15,7 @@ return(
             <li>Cursos</li>
             <li>Mentorias</li>
             <li>Atendimentos</li>
-            <Link to="/protocolos"><li title='Cadastro de protocolos'>Protocolos</li></Link>
+            <Link to="/protocolos"><li>Protocolos</li></Link>
             
         </ul>
         <div className='titulos-pagina'>

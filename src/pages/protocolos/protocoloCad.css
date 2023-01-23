@@ -19,6 +19,10 @@ textarea{
   border-radius: 10px;
 }
 
+.formulario-protocolo input ,select{
+  height: 30px;
+}
+
 .block{
   display: flex;
   align-items: center;
@@ -54,6 +58,7 @@ textarea{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .block2 section{
