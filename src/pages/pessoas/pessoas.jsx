@@ -5,7 +5,7 @@
 import { Link, NavLink } from 'react-router-dom'
 import './pessoas.css'
 
-export function ListaPessoas() {
+export function Pessoas() {
 return (
 <div>
     <div className='abas'>
