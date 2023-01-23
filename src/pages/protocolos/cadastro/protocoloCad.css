@@ -1,0 +1,88 @@
+/*PROTOCOLO > CADASTRO > ESTILO*/
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+
+textarea{
+  resize: none;
+}
+
+.formulario-protocolo{
+  border: 1px solid;
+  padding: 16px;
+  margin: 16px;
+
+  background-color: white;
+  border-radius: 10px;
+}
+
+.block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.block section{
+  display: flex;
+  flex-direction: column;
+}
+
+#data{
+  width: 130px;
+}
+#nome{
+  width: 300px;
+}
+
+
+#atendimento{
+  width: 200px;
+}
+
+#nomeEmpresa{
+  width: 250px;
+}
+
+
+
+
+.block2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block2 section{
+  display: flex;
+  flex-direction: column;
+}
+
+.botaoGerar{
+  width: 200px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  background-color: #0095bf;
+  color: white;
+}
+
+.botaoGerar:hover{
+  background-color: #007191;
+}
+
+
+.block3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.block3 section{
+  display: flex;
+  flex-direction: column;
+}

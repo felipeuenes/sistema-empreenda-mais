@@ -1,14 +1,13 @@
+//PRINCIPAL > PÁGINA
 import React    from 'react'
 import ReactDOM from 'react-dom/client'
-import { Home } from './pages/Home/App'
-import               './index.css'
+import                 './index.css'
 
-import { AppRoutes } from './Routes'
-
-
+import { AppRoutes } from './routes/routesIndex.jsx'
 import { BrowserRouter } from 'react-router-dom'
-import { Header } from './components/Header'
-import { Footer } from './components/Footer'
+
+import { Header } from './components/header/header.jsx'
+import { Footer } from './components/footer/footer.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -16,11 +15,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Header/>
     <main>
       <AppRoutes/>
-    
-    
     </main>
     <Footer/>
     </BrowserRouter>
-    
   </React.StrictMode>,
 )
