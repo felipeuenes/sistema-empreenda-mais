@@ -1,15 +1,16 @@
-import './style.css'
+//NEGÓCIOS > CADASTRO > PÁGINA
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import './negociosCad.css'
 
-export function CadastroEmpre(){
+export function CadNegocios(){
 
 
         
 
     return(
         <>
-            <h1 className='titulo'>CADASTRO EMPREENDIMENTO</h1>
+            <h1 className='titulo'>CADASTRO NEGÓCIOS</h1>
         <div className='formulario-empreedimento'>
 
             <form action="">

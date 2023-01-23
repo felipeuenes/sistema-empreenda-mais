@@ -1,16 +1,84 @@
-/*CSS principal do sistema*/
-
+/*PRINCIPAL > ESTILO*/
+@font-face {
+  font-family: Doris;
+  src: url(../src/fonts/doris-pp.ttf);
+}
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto;
+  letter-spacing: 0.5px;
 }
 
 a{
   text-decoration: none;
 }
 body {
-  background-color: #f0f0f0
+  background-color: #dbdbdb
+}
+
+.abas {
+  display: flex;
+  flex-direction: row;
+  background-color: #007997;
+  justify-content: left;
+  align-items: center;
+  padding: 0px 0px 0px 20px;
+}
+
+.abas a {
+  font-size: 12pt;
+  padding: 5px;
+  margin: 8px;
+  font-size: 10pt;
+  border: #ffffff solid 1px;
+  border-radius: 5px;
+  z-index: 1;
+}
+.abas p {
+  color: #ffd000;
+  font-weight: bold;
+  font-size: 12pt;
+}
+.abas a:hover {
+  color: #ffd000;
+}
+
+.sub-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.secao {
+  display: flex;
+  overflow: hidden;
+  background-color: #ffffff;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 500px;
+}
+.secao h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #0095ba;
+}
+.secao div {
+  width: 100%;
+}
+.secao td, th {
+  border: #000000 solid 1px;
+  margin: 0;
+}
+.secao#secao-lista {
+  float: left;
+}
+.secao#secao-cadastro {
+  float: right;
 }

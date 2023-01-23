@@ -1,13 +1,13 @@
-
+//PROTOCOLO > CADASTRO > PÁGINA
 import { useState } from 'react'
-import './styleProtocolo.css'
+import './protocoloCad.css'
 import { render } from 'react-dom';
 
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 
 
-export function Proto(dadosProto) {
+export function CadProtocolo(dadosProto) {
 
 
 

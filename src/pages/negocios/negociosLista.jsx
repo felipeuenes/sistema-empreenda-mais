@@ -1,8 +1,10 @@
+//NEGÓCIOS > LISTAGEM > PÁGINA
+
 // import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import './App.css'
+import './negociosLista.css'
 
-export function Empreendimentos() {
+export function ListaNegocios() {
   
 
   return (

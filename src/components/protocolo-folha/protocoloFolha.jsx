@@ -1,9 +1,10 @@
-import './styleFolha.css'
-import { Proto } from '../../pages/Protocolos/App'
+//PROTOCOLO > PÁGINA
+import './protocoloFolha.css'
+//import { CadProtocolo } from './protocoloFolha.jsx'
 
 
 
-export function Folha(){
+export function ProtocoloFolha(){
     
 
   // let nome = name

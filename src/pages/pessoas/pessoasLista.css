@@ -1,0 +1,33 @@
+/*PESSOAS > LISTAGEM > ESTILO*/
+#btPessoas{
+  cursor: pointer;
+}
+
+#email{
+  width: 200px;
+}
+
+#cpf{
+  width: 150px;
+  margin-left: 20px;
+}
+
+#rg{
+  width: 150px;
+}
+
+#escolaridade{
+  width: 200px;
+}
+
+#renda{
+  width: 200px;
+}
+
+#telefone{
+  width: 150px;
+}
+
+#btPessoas{
+  cursor: pointer;
+}
