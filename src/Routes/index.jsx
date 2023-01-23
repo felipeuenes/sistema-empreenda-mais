@@ -6,8 +6,8 @@ import { Negocios } from '../pages/negocios/negocios'
 import { Pessoas } from '../pages/Pessoas/pessoas'
 import { CadNegocios } from '../pages/negocios/cadastro/negociosCad'
 import { CadPessoas } from '../pages/pessoas/cadastro/pessoasCad'
-import { ImpProto } from '../pages/Protocolos/protocoloImp'
-// import { ProtoImpri } from '../pages/Protocolos/ProtocoloImpressao/App'
+import { ImpProto } from '../pages/protocolos/folha-protocolo/protocoloImp'
+import { CadProtocolo } from '../pages/protocolos/protocoloCad'
 import { ProtocoloFolha } from '../components/protocolo-folha/protocoloFolha'
 
 import { Eventos } from '../pages/Eventos/App'
@@ -26,7 +26,7 @@ export function AppRoutes() {
             <Route path={'/pessoas'} element={<Pessoas/>}></Route>
             <Route path={'/cadastro-empreendimentos'} element={<CadNegocios/>}></Route>
             <Route path={'/cadaspessoa'} element={<CadPessoas/>}/>
-            <Route path={'/protocolos'} element={<ImpProto/>}/>
+            <Route path={'/protocolos'} element={<CadProtocolo/>}/>
             <Route path={'/imprimir'} element={<ImpProto/>}/>
             <Route path={'/eventos'} element={<Eventos/>}/>
             <Route path={'/cadasEvento'} element={<CadastroEvento/>}/>

@@ -4,6 +4,9 @@ body{
   
 }
 
+#h1Proto{
+  margin-top: 24px;
+}
 
 
 textarea{
@@ -17,6 +20,10 @@ textarea{
 
   background-color: white;
   border-radius: 10px;
+}
+
+.formulario-protocolo input ,select{
+  height: 30px;
 }
 
 .block{
@@ -54,6 +61,7 @@ textarea{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .block2 section{

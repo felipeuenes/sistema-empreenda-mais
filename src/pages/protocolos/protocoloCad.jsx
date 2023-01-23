@@ -9,12 +9,6 @@ import { useContext } from 'react';
 
 export function CadProtocolo(dadosProto) {
 
-
-
-
-
-  
-  
   
 
   return (
