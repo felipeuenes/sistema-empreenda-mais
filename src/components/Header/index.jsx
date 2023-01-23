@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
-import './style.css'
+import './header.css'
 import logoEM from '../../images/logo-em.png'
 
 export function Header() {
