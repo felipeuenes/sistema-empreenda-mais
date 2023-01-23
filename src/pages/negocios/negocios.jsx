@@ -2,9 +2,9 @@
 
 // import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import './negociosLista.css'
+import './negocios.css'
 
-export function ListaNegocios() {
+export function Negocios() {
   
 
   return (

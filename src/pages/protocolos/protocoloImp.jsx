@@ -2,10 +2,10 @@
 
 // import { useState } from 'react'
 import { useState } from 'react'
-import './protocolosImp.css'
+import './protocoloImp.css'
 import { render } from 'react-dom';
-import { Proto } from '../protocoloCad.jsx';
-import { protocoloFolha } from '../../../components/ProtocoloFolha';
+
+import { protocoloFolha } from '../../components/protocolo-folha/protocoloFolha';
 
 export function ImpProto() {
   

@@ -3,7 +3,7 @@
 // import { useState } from 'react'
 // import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import './pessoasLista.css'
+import './pessoas.css'
 
 export function ListaPessoas() {
 return (
