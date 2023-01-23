@@ -11,10 +11,10 @@ return(
         <NavLink to="/" className={({isAtive}) => isAtive ? 'active' : ''}><li title='Página inicial'><img id='logoEM' src={logoEM}/></li></NavLink>
             <Link to="/pessoas"><li title='Cadastro de pessoas'>Pessoas</li></Link>
             <Link to="/empreendimentos"><li title='Cadastro de negócios'>Negócios</li></Link>
-            <li title='Cadastro de eventos'>Eventos</li>
-            <li title='Cadastro de cursos'>Cursos</li>
-            <li title='Cadastro de mentorias'>Mentorias</li>
-            <li title='Cadastro de atendimentos'>Atendimentos</li>
+            <Link to='/eventos'> <li>Eventos</li></Link>
+            <li>Cursos</li>
+            <li>Mentorias</li>
+            <li>Atendimentos</li>
             <Link to="/protocolos"><li title='Cadastro de protocolos'>Protocolos</li></Link>
             
         </ul>

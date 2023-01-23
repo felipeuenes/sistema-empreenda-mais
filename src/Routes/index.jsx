@@ -10,7 +10,7 @@ import { Proto } from '../pages/Protocolos/App'
 // import { ProtoImpri } from '../pages/Protocolos/ProtocoloImpressao/App'
 import { Folha } from '../components/ProtocoloFolha'
 
-
+import { Eventos } from '../pages/Eventos/App'
 
 export function AppRoutes() {
     
@@ -27,6 +27,7 @@ export function AppRoutes() {
             <Route path={'/cadaspessoa'} element={<CadasPessoas/>}/>
             <Route path={'/protocolos'} element={<Proto/>}/>
             <Route path={'/imprimir'} element={<Folha/>}/>
+            <Route path={'/eventos'} element={<Eventos/>}/>
 
         </Routes>
         </>
