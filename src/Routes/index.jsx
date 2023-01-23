@@ -11,6 +11,7 @@ import { Proto } from '../pages/Protocolos/App'
 import { Folha } from '../components/ProtocoloFolha'
 
 import { Eventos } from '../pages/Eventos/App'
+import { CadastroEvento } from '../pages/Eventos/Cadastro-eventos'
 
 export function AppRoutes() {
     
@@ -28,6 +29,7 @@ export function AppRoutes() {
             <Route path={'/protocolos'} element={<Proto/>}/>
             <Route path={'/imprimir'} element={<Folha/>}/>
             <Route path={'/eventos'} element={<Eventos/>}/>
+            <Route path={'/cadasEvento'} element={<CadastroEvento/>}/>
 
         </Routes>
         </>

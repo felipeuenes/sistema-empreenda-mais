@@ -1,15 +1,15 @@
-import './style.css'
+import './styleEventos.css'
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
-export function CadastroEmpre(){
+export function CadastroEvento(){
 
 
         
 
     return(
         <>
-            <h1 className='titulo'>CADASTRO EMPREENDIMENTO</h1>
+            <h1 className='titulo'>CADASTRO EVENTO</h1>
         <div className='formulario-empreedimento'>
 
             <form action="">

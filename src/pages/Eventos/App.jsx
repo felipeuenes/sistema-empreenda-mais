@@ -11,7 +11,7 @@ export function Eventos() {
 
       <h1>Eventos</h1>
 
-        <Link to="/cadastro-empreendimentos" ><button id='btEmpre'>NOVO EVENTO</button></Link>
+        <Link to="/cadasEvento" ><button id='btEmpre'>NOVO EVENTO</button></Link>
       </div>
 
 
