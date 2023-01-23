@@ -34,12 +34,13 @@ li {
     text-align: center;
     padding: 5px;
     height: 100%;
+    font-weight: 600;
 }
-/* 
+
 li:not(.logoEM):hover{
-    font-weight: bolder;
-    color: #fdd000;
-} */
+    /* font-weight: bolder; */
+    color: #a5edff;
+}
 
 
 

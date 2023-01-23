@@ -1,14 +1,10 @@
 /*PRINCIPAL > ESTILO*/
-@font-face {
-  font-family: Doris;
-  src: url(../src/fonts/doris-pp.ttf);
-}
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Roboto;
+  font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.5px;
 }
 
