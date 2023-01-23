@@ -8,11 +8,7 @@ import './pessoas.css'
 export function Pessoas() {
 return (
 <div>
-    <div className='abas'>
-          <a href="#" id='listagem'>OPÇÃO 1</a>
-          <p>PESSOAS</p>
-          <a href="#" id='cadastro'>OPÇÃO 2</a>
-    </div>
+    
 </div>
 )
 }
