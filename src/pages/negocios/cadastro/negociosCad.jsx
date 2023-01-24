@@ -9,7 +9,7 @@ export function CadNegocios(){
         
 
     return(
-        <>
+        <div className='container'>
             <h1 className='titulo'>CADASTRO NEGÓCIOS</h1>
         <div className='formulario-empreedimento'>
 
@@ -127,7 +127,7 @@ export function CadNegocios(){
             </form>
         </div>
         
-        </>
+        </div>
   )
     
 }

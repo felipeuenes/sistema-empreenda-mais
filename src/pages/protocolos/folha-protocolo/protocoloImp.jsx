@@ -12,9 +12,9 @@ export function ImpProto() {
  
 
   return (
-    <>
+    <div className='container'>
       <ProtocoloFolha/>
-    </>
+    </div>
   )
 }
 

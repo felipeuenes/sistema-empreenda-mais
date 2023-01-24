@@ -8,7 +8,7 @@ export function CadPessoas() {
 
 
     return(
-    <div>
+    <div className='container'>
         <div className='abas'>
             <p>PESSOAS</p>
             <a href="#" id='cadastro'>LISTAGEM</a>
