@@ -1,9 +1,9 @@
 import { Routes, Route} from 'react-router-dom'
 import { Header } from '../components/Header/index'
 
-import { Home } from '../pages/Home/home.jsx'
+import { Home } from '../pages/home/index.jsx'
 import { Negocios } from '../pages/negocios/negocios'
-import { Pessoas } from '../pages/Pessoas/pessoas'
+import { Pessoas } from '../pages/pessoas/index'
 import { CadNegocios } from '../pages/negocios/cadastro/negociosCad'
 import { CadPessoas } from '../pages/pessoas/cadastro/pessoasCad'
 import { ImpProto } from '../pages/protocolos/folha-protocolo/protocoloImp'

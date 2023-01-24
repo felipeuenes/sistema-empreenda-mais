@@ -23,6 +23,7 @@ export function Home() {
           Participantes do programa: X <br/>
           Participantes do programa: X <br/>
         </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam eos iste accusamus deleniti ipsa dolor! Labore maiores expedita numquam quo, incidunt praesentium nulla, ab non minima provident quos sapiente in.</p>
       </section>
     </div>
   
