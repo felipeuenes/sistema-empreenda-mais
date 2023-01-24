@@ -23,6 +23,7 @@ export function Home() {
           Participantes do programa: X <br/>
           Participantes do programa: X <br/>
         </p>
+        
       </section>
     </div>
   

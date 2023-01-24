@@ -1,17 +1,19 @@
 import { Routes, Route} from 'react-router-dom'
-import { Header } from '../components/Header'
+import { Header } from '../components/Header/index'
 
-import { Home } from '../pages/Home/home.jsx'
+import { Home } from '../pages/home'
 import { Negocios } from '../pages/negocios/negocios'
-import { Pessoas } from '../pages/Pessoas/pessoas'
+import { Pessoas } from '../pages/pessoas/index'
 import { CadNegocios } from '../pages/negocios/cadastro/negociosCad'
 import { CadPessoas } from '../pages/pessoas/cadastro/pessoasCad'
 import { ImpProto } from '../pages/protocolos/folha-protocolo/protocoloImp'
 import { CadProtocolo } from '../pages/protocolos/protocoloCad'
 import { ProtocoloFolha } from '../components/protocolo-folha/protocoloFolha'
+import { Atendimento } from '../pages/atendimentos/index'
 
 import { Eventos } from '../pages/Eventos/App'
 import { CadastroEvento } from '../pages/Eventos/Cadastro-eventos'
+
 
 export function AppRoutes() {
     
@@ -30,6 +32,7 @@ export function AppRoutes() {
             <Route path={'/imprimir'} element={<ImpProto/>}/>
             <Route path={'/eventos'} element={<Eventos/>}/>
             <Route path={'/cadasEvento'} element={<CadastroEvento/>}/>
+            <Route path={'/atendimento'} element={<Atendimento/>}></Route>
 
         </Routes>
         </>

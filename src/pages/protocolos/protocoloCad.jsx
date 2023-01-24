@@ -7,27 +7,48 @@ import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 
 
+
+
+
 export function CadProtocolo(dadosProto) {
 
+
+
+
   
+  async function handleSubmit(event) {
+    event.preventDefault();
+
+    const {nome, data, nomeEmpre } = event.target;
+
+    const ProtoUser = {
+      nome: nome.value,
+      data: data.value,
+      NomedaEmpresa: nomeEmpre.value
+    }
+
+
+    console.log(ProtoUser);
+  }
+
 
   return (
   <div className='container'>
       <h1 id='h1Proto'>GERAR PROTOCOLO</h1>
       <div className='formulario-protocolo'>
-          <form action="" >
+          <form action="" onSubmit={handleSubmit}>
             <div className='block'>
                 <section>
                   <label htmlFor="nome">Nome da pessoa:</label>
-                  <input type="text" name="" id="nome" placeholder='Nome...' />
+                  <input type="text" name="nome" id="nome" placeholder='Nome...' />
                 </section>
                 <section>
                   <label htmlFor="data">Data do atendimento</label>
-                  <input type="date" name="" id="data" />
+                  <input type="date" name="data" id="data" />
                 </section>
                 <section>
                   <label htmlFor="nomeEmpresa">Nome da Empresa:</label>
-                  <input type="text" name="" id="nomeEmpresa" placeholder='Nome da empresa...'/>
+                  <input type="text" name="nomeEmpre" id="nomeEmpresa" placeholder='Nome da empresa...'/>
                 </section>
                 <section>
                   <label htmlFor="atendimento">Tipo de atendimento:</label>
@@ -57,7 +78,8 @@ export function CadProtocolo(dadosProto) {
 
             <div className='block2'>
                   <section>
-                    <Link to="/imprimir"><button className='botaoGerar'>GERAR</button></Link>
+                    <Link to="/imprimir"></Link>
+                    <button className='botaoGerar' type='submit'>GERAR</button>
                   </section>
             </div>
 
