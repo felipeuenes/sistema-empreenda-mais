@@ -8,7 +8,7 @@ export function Atendimento() {
         <div className="container">
 
             <h1>Atendimentos</h1>
-
+                
 
         </div>
     )

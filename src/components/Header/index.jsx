@@ -11,7 +11,7 @@ return(
         <NavLink to="/" className={({isAtive}) => isAtive ? 'active' : ''}><li title='Página inicial'><img id='logoEM' src={logoEM}/></li></NavLink>
             <Link to="/pessoas"><li title='Cadastro de pessoas'>Pessoas</li></Link>
             <Link to="/negocios"><li title='Cadastro de negócios'>Negócios</li></Link>
-            <Link to='/eventos'> <li>Eventos</li></Link>
+            <Link to='/eventos'><li>Eventos</li></Link>
             <li>Cursos</li>
             <li>Mentorias</li>
             <Link to="/atendimento"><li>Atendimentos</li></Link>
