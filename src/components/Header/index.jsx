@@ -14,13 +14,11 @@ return(
             <Link to='/eventos'> <li>Eventos</li></Link>
             <li>Cursos</li>
             <li>Mentorias</li>
-            <li>Atendimentos</li>
+            <Link to="/atendimento"><li>Atendimentos</li></Link>
             <Link to="/protocolos"><li>Protocolos</li></Link>
             
         </ul>
-        <div className='titulos-pagina'>
-            <h1></h1>
-        </div>
+        
     </nav>
     </header>
 )

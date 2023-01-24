@@ -13,6 +13,8 @@ import { ProtocoloFolha } from '../components/protocolo-folha/protocoloFolha'
 import { Eventos } from '../pages/Eventos/App'
 import { CadastroEvento } from '../pages/Eventos/Cadastro-eventos'
 
+import { Atendimento } from '../pages/atendimentos/index'
+
 export function AppRoutes() {
     
 
@@ -30,6 +32,7 @@ export function AppRoutes() {
             <Route path={'/imprimir'} element={<ImpProto/>}/>
             <Route path={'/eventos'} element={<Eventos/>}/>
             <Route path={'/cadasEvento'} element={<CadastroEvento/>}/>
+            <Route path={'/atendimento'} element={<Atendimento/>}></Route>
 
         </Routes>
         </>
