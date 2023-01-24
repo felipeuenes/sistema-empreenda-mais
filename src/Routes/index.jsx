@@ -1,7 +1,7 @@
 import { Routes, Route} from 'react-router-dom'
 import { Header } from '../components/Header/index'
 
-import { Home } from '../pages/home/index.jsx'
+import { Home } from '../pages/home'
 import { Negocios } from '../pages/negocios/negocios'
 import { Pessoas } from '../pages/pessoas/index'
 import { CadNegocios } from '../pages/negocios/cadastro/negociosCad'
