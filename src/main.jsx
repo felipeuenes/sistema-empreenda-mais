@@ -3,14 +3,13 @@
 //Importando elementos
 import React  from 'react' //react.
 import './index.css' //estilo desta página.
-import ReactDOM from 'react-dom/client' //DOM do react.
-import { BrowserRouter } from 'react-router-dom' //rotas do navegador.
-import { AppRoutes } from './routes/index' //rotas.
+import ReactDOM from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom' 
+import { AppRoutes } from './routes/index' 
 
-import { Header } from './components/header' //cabeçalho.
-import { Footer } from './components/footer/footer.jsx' //rodapé.
+import { Header } from './components/header'
+import { Footer } from './components/footer/footer.jsx' 
 
-//Criando esqueleto das páginas:
 ReactDOM.createRoot(document.getElementById('root')).render(  
   <React.StrictMode>
     <BrowserRouter>

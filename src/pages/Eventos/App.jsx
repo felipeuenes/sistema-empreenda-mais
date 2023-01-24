@@ -20,8 +20,8 @@ export function Eventos() {
         <thead>
           <th>Nome do evento</th>
           <th>Data</th>
-          <th></th>
-          <th></th>
+          <th>Alguma coisa</th>
+          <th>teste</th>
         </thead>
         <tbody>
           <tr>
