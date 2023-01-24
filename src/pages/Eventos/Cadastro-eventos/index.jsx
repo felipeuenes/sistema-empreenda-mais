@@ -8,7 +8,7 @@ export function CadastroEvento(){
         
 
     return(
-        <>
+        <div className='container'>
             <h1 className='titulo'>CADASTRO EVENTO</h1>
         <div className='formulario-eventos'>
 
@@ -129,7 +129,7 @@ export function CadastroEvento(){
             </form>
         </div>
         
-        </>
+        </div>
   )
     
 }
