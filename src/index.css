@@ -1,6 +1,6 @@
-/*PRINCIPAL > ESTILO*/
+/*ESTILO DA PÁGINA PRINCIPAL*/
 
-*{
+*{ /*reset de todas as configurações*/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,14 +8,17 @@
   letter-spacing: 0.5px;
 }
 
-a{
+a{ /*todos os links*/
   text-decoration: none;
 }
-body {
-  background-color: #dbdbdb
+.container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin: 20px; padding: 20px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-.abas {
+.abas { /*abas abaixo do menu de topo*/
   display: flex;
   flex-direction: row;
   background-color: #007997;
@@ -24,7 +27,7 @@ body {
   padding: 0px 0px 0px 20px;
 }
 
-.abas a {
+.abas a { /*links das abas*/
   font-size: 12pt;
   padding: 5px;
   margin: 8px;
