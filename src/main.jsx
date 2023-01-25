@@ -1,6 +1,6 @@
 //PÁGINA PRINCIPAL
 
-//Importando elementos
+//Importando elementos 
 import React  from 'react' //react.
 import './index.css' //estilo desta página.
 import ReactDOM from 'react-dom/client'
