@@ -10,14 +10,16 @@ return (
 <div className='container'>
     <div className='secao-titulo'>
         <h1>Pessoas</h1>
-        <Link to="/cadasPessoa"><button id='btn-cadpessoa'><span>&#43; </span>Cadastrar nova</button></Link>
+        <Link to="/cadasPessoa"><button className='btn-cadpessoa'><span>&#43; </span>Cadastrar nova</button></Link>
     </div>
     
     <div className='lista-pessoas'>
-        <section className='pessoa-bloco1'> 
-            <button>Pesquisar</button>
-            <input className='barra-pesquisa' type="text" placeholder='Pesquisar'/>
-            <button className='btn-filtrar'>Filtrar colunas</button>
+        <section className='pessoa-bloco1'>
+
+            <button className='btn-pesquisar'><img src='/src/images/icone-pesquisa.png'/>PESQUISAR</button>
+            <input className='barra-pesquisa' type="text" placeholder='Pesquise um nome, cpf, etc.'/>
+            <button className='btn-filtrar'><img src='/src/images/icone-filtrar.png'/>FILTRAR POR</button>
+
             <section className='opcoes-filtro'>            
                 <div><input name="agente" type="checkbox"/>Agente responsável</div>
                 <div><input name="adesao" type="checkbox"/>Adesão</div>

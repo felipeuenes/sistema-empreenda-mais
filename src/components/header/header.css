@@ -29,7 +29,9 @@ header ul {
     color: #ffffff;
 }
 
-li {   
+li {
+    display: flex; 
+    flex-direction: column;  
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -37,9 +39,11 @@ li {
     height: 100%;
     font-weight: 600;
 }
+li img:not(.logoEM) {
+    height: 30px;
+}
 
 li:not(.logoEM):hover{
-    /* font-weight: bolder; */
     color: #a5edff;
 }
 
