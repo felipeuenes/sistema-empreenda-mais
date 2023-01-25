@@ -2,7 +2,6 @@
 
 // import { useState } from 'react'
 import './home.css'
-import ImageConstru from '../../images/contrucao.jpg'
 
 export function Home() {
   
@@ -10,11 +9,14 @@ export function Home() {
   return (
   
     
-    <div className='container'>
-      <div className='imageConstru'>
-        <img src={ImageConstru} alt="" srcset="" />
-      </div>
+<div>
+  <div className='aba'>
+    <h1>Bem-vindo-a Usuário.</h1>
+  </div>
+
+  <div className='container'>
       <section className='cont-estatisticas'>
+        <h2>Estatísticas</h2>
         <p>
           PLACEHOLDER DAS ESTATÍSTICAS<br/>
           Apresentados ao programa: X <br/>
@@ -25,7 +27,8 @@ export function Home() {
         </p>
         
       </section>
-    </div>
+      </div>
+</div>
   
   )
 }
