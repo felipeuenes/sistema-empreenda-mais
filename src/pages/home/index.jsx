@@ -16,7 +16,7 @@ export function Home() {
       </div>
       <section className='cont-estatisticas'>
         <p>
-          PLACEHOLDER DAS ESTATÍSTICAS <br/>
+          PLACEHOLDER DAS ESTATÍSTICAS<br/>
           Apresentados ao programa: X <br/>
           Participantes do programa: X <br/>
           Mulheres de Negócio: X <br/>
