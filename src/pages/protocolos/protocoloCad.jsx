@@ -1,31 +1,37 @@
 //PROTOCOLO > CADASTRO > PÁGINA
 import { useState } from 'react'
 import './protocoloCad.css'
-import { render } from 'react-dom';
-
 import { Link } from 'react-router-dom';
-import { useContext } from 'react';
+
+import { GlobalVariables } from '../../global';
 
 
 
 
+export function CadProtocolo() {
 
-export function CadProtocolo(dadosProto) {
-
-
+  const [formProto, setFormProto] = useState({})
 
 
   
   async function handleSubmit(event) {
     event.preventDefault();
 
-    const {nome, data, nomeEmpre } = event.target;
+    const {nome, data, nomeEmpre, atendimento, refere, obs } = event.target;
 
     const ProtoUser = {
       nome: nome.value,
       data: data.value,
-      NomedaEmpresa: nomeEmpre.value
+      NomedaEmpresa: nomeEmpre.value,
+      atendimento: atendimento.value,
+      protocolo: data.value + atendimento.value,
+      refere: refere.value,
+      obs: obs.value,
+
     }
+
+    setFormProto(ProtoUser)
+    GlobalVariables.pessoa = ProtoUser;
 
 
     console.log(ProtoUser);
@@ -52,7 +58,7 @@ export function CadProtocolo(dadosProto) {
                 </section>
                 <section>
                   <label htmlFor="atendimento">Tipo de atendimento:</label>
-                  <select name="" id="atendimento">
+                  <select name="atendimento" id="atendimento">
                     <option value="150">Visitas em geral</option>
                     <option value="250">Atendimento para prestação de serviço</option>
                     <option value="350">Assinatura de documento em ambiente interno</option>
@@ -68,18 +74,20 @@ export function CadProtocolo(dadosProto) {
               <div className='block3'>
                     <section>
                       <label htmlFor="refere">Refere-se a:</label>
-                      <textarea name="" id="refere" cols="50" rows="8"></textarea>
+                      <textarea name="refere" id="refere" cols="50" rows="8"></textarea>
                     </section>
                     <section>
                       <label htmlFor="obs">Observações:</label>
-                      <textarea name="" id="" cols="50" rows="8"></textarea>
+                      <textarea name="obs" id="obs" cols="50" rows="8"></textarea>
                     </section>
               </div>
 
             <div className='block2'>
                   <section>
-                    <Link to="/imprimir"></Link>
                     <button className='botaoGerar' type='submit'>GERAR</button>
+                    <Link to="/imprimir">
+                        <button className='botaoGerar'>Imprimir</button>
+                    </Link>
                   </section>
             </div>
 
@@ -87,7 +95,7 @@ export function CadProtocolo(dadosProto) {
 
         
           </form>
-        
+        {console.log(formProto)}
       </div>
       
   </div>
