@@ -1,6 +1,7 @@
 /*CABEÇALHO > ESTILO*/
 header{
     background-color: #0095ba;
+    border-bottom: #006882 3px solid;
     height: 70px;
     width: 100%;
     display: flex;

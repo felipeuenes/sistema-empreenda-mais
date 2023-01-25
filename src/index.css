@@ -13,18 +13,36 @@ a{ /*todos os links*/
 }
 .container {
   background-color: #ffffff;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  margin: 0px 20px 20px 20px; padding: 20px;
+  border-radius: 20px;
+  margin: 20px; padding: 20px;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.secao-titulo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.secao-titulo button {
+  margin: 0px 20px 0px 20px;
+  padding: 10px 20px 10px 20px;
+  background-color: #0095ba;
+  border: #006882 3px solid;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+h1 {
+  color: #0095ba;
 }
 
 .aba { /*abas abaixo do menu de topo*/
   display: flex;
   flex-direction: row;
-  width: 100%;
   background-color: #006882;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   padding: 0px 0px 0px 20px;
 }
@@ -42,8 +60,8 @@ a{ /*todos os links*/
   color: #ffd000;
   background-color: #006882;
   font-weight: lighter;
-  font-size: 15pt;
-  margin: 2px;
+  font-size: 12pt;
+  margin: 2px; padding: 2px;
 }
 .aba a:hover {
   color: #ffd000;
