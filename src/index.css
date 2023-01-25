@@ -22,6 +22,7 @@ a{ /*todos os links*/
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 20px;
 }
 .secao-titulo button {
   margin: 0px 20px 0px 20px;
@@ -32,6 +33,11 @@ a{ /*todos os links*/
   cursor: pointer;
   color: #ffffff;
   font-weight: bolder;
+}
+.secao-titulo button:hover {
+  background-color: #ecd890;
+  border-color: #afa06b;
+  color: #000000;
 }
 
 h1 {
