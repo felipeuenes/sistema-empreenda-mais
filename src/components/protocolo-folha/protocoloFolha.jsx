@@ -1,21 +1,16 @@
-//PROTOCOLO > PÁGINA
 import './protocoloFolha.css'
-//import { CadProtocolo } from './protocoloFolha.jsx'
-
+import { GlobalVariables } from '../../global'
+import { useState } from 'react'
 
 
 export function ProtocoloFolha(){
     
+  const [proto, setProto] = useState(GlobalVariables.pessoa)
 
-  // let nome = name
-  //   console.log(nome);
+      function show(){
+        setProto(GlobalVariables.pessoa)
+      }
 
-  // let data = Proto();
-  //   console.log(data);
-  
- 
-    
-  
   
 
     return(
@@ -27,20 +22,20 @@ export function ProtocoloFolha(){
         <div className='dadosProtocolo'>
             <form action="">
               <section>
-              <label htmlFor="">Nome da pessoa:  </label>
+              <label htmlFor="">Nome da pessoa: <span>{proto.nome}</span> </label>
 
               </section>
               <section>
-                <label htmlFor="">Nome da empresa: </label>
+                <label htmlFor="">Nome da empresa: <span>{proto.NomedaEmpresa}</span> </label>
               </section>
               <section>
-                <label htmlFor="">Data do atendimento: </label>
+                <label htmlFor="">Data do atendimento: <span>{proto.data}</span> </label>
               </section>
               <section>
-                <label htmlFor="">Refere-se a: <span></span></label>
+                <label htmlFor="">Refere-se a: <span>{proto.refere}</span></label>
               </section>
               <section>
-                <label htmlFor="">Observações: <span></span></label>
+                <label htmlFor="">Observações: <span>{proto.obs}</span></label>
               </section>
             </form>
 
@@ -48,10 +43,10 @@ export function ProtocoloFolha(){
         <div className='dadosProtocolo2'>
               <form action="">
                 <section>
-                  <label htmlFor="">Numero do protocolo: <span>1615151515</span></label>
+                  <label htmlFor="">Numero do protocolo: <span>{proto.protocolo}</span></label>
                 </section>
                 <section>
-                  <label htmlFor="">Recebido em: <span>18/01/2023</span></label>
+                  <label htmlFor="">Recebido em: <span>{proto.data}</span></label>
                 </section>
               </form>
         </div>
@@ -85,6 +80,9 @@ export function ProtocoloFolha(){
                 <label htmlFor="">Data___/___/____</label>
               </section>
 
+          </div>
+          <div>
+            
           </div>
          </div>
        
