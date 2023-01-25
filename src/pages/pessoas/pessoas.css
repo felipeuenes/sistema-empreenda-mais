@@ -1,4 +1,25 @@
 /*PESSOAS > LISTAGEM > ESTILO*/
+.opcoes-filtro {
+  position: relative;
+  display: none;
+}
+.btn-filtrar:hover .opcoes-filtro{
+  display: flex; z-index: 1;
+  width: 200px;
+}
+.pessoa-bloco1 {
+  display: flex;
+  flex-direction: row;
+}
+.barra-pesquisa {
+  width: 100%;
+}
+.pessoa-bloco2 {
+  display: flex; flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
 #btPessoas{
   cursor: pointer;
 }

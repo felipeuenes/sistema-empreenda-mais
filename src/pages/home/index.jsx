@@ -9,14 +9,10 @@ export function Home() {
   return (
   
     
-<div>
-  <div className='aba'>
-    <h1>Bem-vindo-a Usuário.</h1>
-  </div>
-
-  <div className='container'>
+<div className='container'>
+  <h1>INÍCIO</h1>
       <section className='cont-estatisticas'>
-        <h2>Estatísticas</h2>
+        
         <p>
           PLACEHOLDER DAS ESTATÍSTICAS<br/>
           Apresentados ao programa: X <br/>
@@ -27,7 +23,6 @@ export function Home() {
         </p>
         
       </section>
-      </div>
 </div>
   
   )
