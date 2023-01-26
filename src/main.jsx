@@ -7,7 +7,7 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom' 
 import { AppRoutes } from './routes/' 
 
-import { Header } from './components/header'
+import { Header } from './components/header/index'
 import { Footer } from './components/footer/footer.jsx' 
 
 ReactDOM.createRoot(document.getElementById('root')).render(  

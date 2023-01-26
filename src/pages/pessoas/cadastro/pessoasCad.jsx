@@ -18,18 +18,24 @@ export function CadPessoas() {
         <section className='secao'>
         <div className='formulario-pessoas'>
             <form action="">
-                <section>
                               <h2>Dados do cadastro</h2>
+                <div className='block1'>
+                    <section>
                               <label htmlFor="date">Data de cadastro</label>
                               <input type='date' name='' id='dataCadastro' placeholder='' />
-      
+
+                    </section>
+                    <section>
+
                               <label htmlFor="date">Agente responsável</label>
                                   <select name="" id="agente" required>
                                       <option value="" disabled selected hidden>selecione</option>
                                       <option value="">Jorge Alysson</option>
                                       <option value="">Luana Ferreira</option>
                                   </select>
-      
+
+                    </section>
+                    <section>
                               <label htmlFor="situacao">Situação quanto ao Empreenda Mais</label>
                                   <select name="" id="situacao">
                                       <option value="" disabled selected hidden>selecione</option>
@@ -37,6 +43,13 @@ export function CadPessoas() {
                                       <option value="">Desistente/Não participa</option>
                                       <option value="">Patrocinador</option>
                                   </select>
+
+                    </section>
+
+                </div>
+                <section>
+      
+      
                           </section>
       
                           <section>

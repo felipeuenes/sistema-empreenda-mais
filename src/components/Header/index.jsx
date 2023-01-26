@@ -2,12 +2,14 @@ import { Link, NavLink } from 'react-router-dom'
 import './header.css'
 import logoEM from '../../images/logo-em.png'
 
+
+
 export function Header() {
     return (
         <header>
             <nav className='menu'>
                 <ul>
-                    <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>
+                    <NavLink to="/" >
                         <li title='Página inicial'><img id='logoEM' src={logoEM} /></li>
                     </NavLink>
                     <Link to="/pessoas">
@@ -23,7 +25,7 @@ export function Header() {
                         <li title='Lista de cursos'><img src="/src/images/icone-cursos.png" alt="" />Cursos</li>
                     </Link>
                     <Link to="/">
-                        <li title='Lista de mentorias'><img src="/src/images/icone-mentorias.png" alt="" />Mentorias</li>
+                        <li title='Lista de mentorias'><img src="/src/images/icone-mentorias1.png" alt="" />Mentorias</li>
                     </Link>
                     <Link to="/atendimentos">
                         <li title='Lista de atendimentos'><img src="/src/images/icone-atendimentos.png" alt="" />Atendimentos</li>

@@ -1,4 +1,4 @@
-/*PESSOAS > CADASTRO > ESTILO*/
+PESSOAS > CADASTRO > ESTILO
 .secao-lista {
     background-color: #ffffff;
 }
@@ -30,4 +30,22 @@
 
 #btPessoas{
     cursor: pointer;
+}
+
+/* Gerais */
+
+input{
+    height: 30px;
+}
+
+.block1{
+    display: flex;
+    gap: 54px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.block1 section{
+    display: flex;
+    flex-direction: column;
 }
