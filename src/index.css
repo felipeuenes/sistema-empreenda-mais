@@ -6,16 +6,19 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 a{ /*todos os links*/
   text-decoration: none;
 }
 .container {
-  background-color: #ffffff;
   border-radius: 20px;
   margin: 20px; padding: 20px;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
   min-height: 600px;
+  background: url(../src/images/logo-em-azul.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  background-color: #ffffff;
 }
 .secao-titulo {
   width: 100%;
@@ -38,6 +41,10 @@ a{ /*todos os links*/
   background-color: #ecd890;
   border-color: #afa06b;
   color: #000000;
+}
+.secao-titulo img {
+  height: 30px;
+  padding: 0px 20px 0px 20px;
 }
 
 h1 {
