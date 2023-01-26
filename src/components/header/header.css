@@ -46,9 +46,9 @@ li img:not(.logoEM) {
 }
 
 li:not(.logoEM):hover{
-    border: rgba(255, 255, 255, 0.5) 2px solid;
-    border-radius: 15px;
-    transform: scale(1.1);
+   
+    color: #8be8ff;
+    transform: scale(1.08);
 }
 
 #logoEM {
@@ -57,5 +57,5 @@ li:not(.logoEM):hover{
 }
 
 #logoEM:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
 }

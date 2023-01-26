@@ -9,10 +9,13 @@
 a{ /*todos os links*/
   text-decoration: none;
 }
+
+
+
 .container {
   border-radius: 20px;
   margin: 20px; padding: 20px;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
   min-height: 600px;
   background: url('../src/images/logo-em-azul.png');
   background-repeat: no-repeat;
@@ -31,16 +34,16 @@ a{ /*todos os links*/
   margin: 0px 20px 0px 20px;
   padding: 10px 20px 10px 20px;
   background-color: #0095ba;
-  border: #006882 3px solid;
+  border: none;
   border-radius: 20px;
   cursor: pointer;
   color: #ffffff;
   font-weight: bolder;
 }
 .secao-titulo button:hover {
-  background-color: #ecd890;
-  border-color: #afa06b;
-  color: #000000;
+  background-color: #076279;
+
+  
 }
 .secao-titulo img {
   height: 30px;
@@ -50,6 +53,7 @@ a{ /*todos os links*/
 h1 {
   color: #0095ba;
 }
+
 
 .aba { /*abas abaixo do menu de topo*/
   display: flex;
