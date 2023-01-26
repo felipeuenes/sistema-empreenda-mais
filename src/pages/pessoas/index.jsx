@@ -9,7 +9,7 @@ export function Pessoas() {
 return (
 <div className='container'>
     <div className='secao-titulo'>
-        <h1>Pessoas</h1>
+        <img src="/src/images/icone-pessoas.png"/><h1>Pessoas</h1>
         <Link to="/cadasPessoa"><button className='btn-cadpessoa'><span>&#43; </span>Cadastrar nova</button></Link>
     </div>
     
