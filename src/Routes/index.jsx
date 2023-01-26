@@ -16,11 +16,7 @@ import { CadastroEvento } from '../pages/Eventos/Cadastro-eventos'
 
 
 export function AppRoutes() {
-    
-
-
     return(
-
         <>
         <Routes>
             <Route path={'/'} element={<Home/>}></Route>
@@ -33,7 +29,6 @@ export function AppRoutes() {
             <Route path={'/eventos'} element={<Eventos/>}/>
             <Route path={'/cadasEvento'} element={<CadastroEvento/>}/>
             <Route path={'/atendimento'} element={<Atendimento/>}></Route>
-
         </Routes>
         </>
     )
