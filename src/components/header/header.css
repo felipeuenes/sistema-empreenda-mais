@@ -1,7 +1,8 @@
 /*CABEÇALHO > ESTILO*/
 header{
     background-color: #0095ba;
-    border-bottom: #006882 3px solid;
+    box-shadow: #5d5d5d 0px 1px 10px 1px;
+    /*border-bottom: #006882 15px solid;*/
     height: 70px;
     width: 100%;
     display: flex;
@@ -37,7 +38,7 @@ li {
     text-align: center;
     padding: 5px;
     height: 100%;
-    font-weight: 600;
+    font-weight: lighter;
 }
 li img:not(.logoEM) {
     height: 30px;
@@ -46,9 +47,6 @@ li img:not(.logoEM) {
 li:not(.logoEM):hover{
     color: #a5edff;
 }
-
-
-
 
 #logoEM {
     height: 40px;

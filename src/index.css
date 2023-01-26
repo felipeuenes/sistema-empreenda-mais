@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 0.5px;
 }
 
 a{ /*todos os links*/
@@ -16,6 +15,7 @@ a{ /*todos os links*/
   border-radius: 20px;
   margin: 20px; padding: 20px;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  min-height: 600px;
 }
 .secao-titulo {
   width: 100%;
