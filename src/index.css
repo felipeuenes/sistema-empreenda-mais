@@ -14,7 +14,7 @@ a{ /*todos os links*/
   margin: 20px; padding: 20px;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
   min-height: 600px;
-  background: url(../src/images/logo-em-azul.png);
+  background: url('../src/images/logo-em-azul.png');
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: center;

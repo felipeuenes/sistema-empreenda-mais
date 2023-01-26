@@ -37,15 +37,41 @@ PESSOAS > CADASTRO > ESTILO
 input{
     height: 30px;
 }
+select{
+    width: 180px;
+}
+
+.containerCadasPessoas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerCadasPessoas h2{
+    color: white;
+    padding: 8px;
+}
 
 .block1{
     display: flex;
     gap: 54px;
     justify-content: center;
     align-items: center;
-    
+    margin: 16px;
 }
 .block1 section{
     display: flex;
     flex-direction: column;
+}
+
+
+
+.buttonCadas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonCadas button{
+    
 }
