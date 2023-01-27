@@ -5,69 +5,67 @@ import { Link, NavLink } from 'react-router-dom'
 import './negocios.css'
 
 export function Negocios() {
-  
+
 
   return (
-  <div className='container'>
-      <div className='cabecalho'>
-
-      <h1>Empreendimentos</h1>
-
-        <Link to="/cadastro-empreendimentos" ><button id='btEmpre'>Cadastrar novo</button></Link>
+    <div className='container'>
+      <div className='secao-titulo'>
+        <img src="/src/images/logo-negocios.png" /><h1>Negócios</h1>
+        <Link to="/cadastro-empreendimentos"><button id='btEmpre'><span>&#43; </span>Cadastrar novo</button></Link>
       </div>
 
 
       <div className='lista-empreendedores'>
-       <table>
-        <thead>
-          <th>Nome fantasia:</th>
-          <th>CNPJ:</th>
-          <th>CPF:</th>
-          <th>SITUAÇÃO:</th>
-        </thead>
-        <tbody>
-          <tr>
+        <table>
+          <thead>
+            <th>Nome fantasia:</th>
+            <th>CNPJ:</th>
+            <th>CPF:</th>
+            <th>SITUAÇÃO:</th>
+          </thead>
+          <tbody>
+            <tr>
               <td>Empreenda Mais</td>
               <td>0000000000</td>
               <td>000.000.000-00</td>
               <td>Formal</td>
-          </tr>
-          <tr>
+            </tr>
+            <tr>
               <td>Empreenda Mais</td>
               <td>Não possui</td>
               <td>111.111.111-11</td>
               <td>Não formal</td>
-          </tr>
-          <tr>
+            </tr>
+            <tr>
               <td>Empreenda Mais</td>
               <td>0000000000</td>
               <td>000.000.000-00</td>
               <td>Formal</td>
-          </tr>
-          <tr>
+            </tr>
+            <tr>
               <td>Empreenda mais</td>
               <td>11111111111</td>
               <td>111.111.111-11</td>
               <td>Formal</td>
-          </tr>
-          <tr>
+            </tr>
+            <tr>
               <td>Empreenda mais</td>
               <td>0000000000</td>
               <td>000.000.000-00</td>
               <td>Formal</td>
-          </tr>
-          <tr>
+            </tr>
+            <tr>
               <td>Empreenda mais</td>
               <td>11111111111</td>
               <td>111.111.111-11</td>
               <td>Formal</td>
-          </tr>
+            </tr>
 
 
-        </tbody>
-       </table>
+          </tbody>
+        </table>
       </div>
-  </div>
+    </div>
   )
 }
 

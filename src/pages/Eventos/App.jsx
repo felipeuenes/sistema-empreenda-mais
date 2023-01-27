@@ -3,69 +3,66 @@ import { Link, NavLink } from 'react-router-dom'
 import './App.css'
 
 export function Eventos() {
-  
+
 
   return (
-  <div className='container'>
-      <div className='cabecalho'>
-
-      <h1>Eventos</h1>
-
-        <Link to="/cadasEvento" ><button id='btEmpre'>NOVO EVENTO</button></Link>
+    <div className='container'>
+      <div className='secao-titulo'>
+        <img src="/src/images/icones/icone-eventos.png" /><h1>Eventos</h1>
+        <Link to="/cadasEvento"><button id=''><span>&#43; </span>Cadastrar novo</button></Link>
       </div>
 
-
       <div className='lista-empreendedores'>
-       <table>
-        <thead>
-          <th>Nome do evento</th>
-          <th>Data</th>
-          <th>Tipo de evento</th>
-          <th>Nº</th>
-        </thead>
-        <tbody>
-          <tr>
+        <table>
+          <thead>
+            <th>Nome do evento</th>
+            <th>Data</th>
+            <th>Tipo de evento</th>
+            <th>Nº</th>
+          </thead>
+          <tbody>
+            <tr>
               <td>Empreenda Mais</td>
               <td>12/12/1234</td>
               <td>Tipo de evento</td>
               <td>texto</td>
-          </tr>
-          <tr>
+            </tr>
+            <tr>
               <td></td>
               <td></td>
               <td></td>
               <td></td>
-          </tr>
-          <tr>
+            </tr>
+            <tr>
               <td></td>
               <td></td>
               <td></td>
               <td></td>
-          </tr>
-          <tr>
+            </tr>
+            <tr>
               <td></td>
               <td></td>
               <td></td>
               <td></td>
-          </tr>
-          <tr>
+            </tr>
+            <tr>
               <td></td>
               <td></td>
               <td></td>
               <td></td>
-          </tr>
-          <tr>
+            </tr>
+            <tr>
               <td></td>
               <td></td>
               <td></td>
               <td></td>
-          </tr>
+            </tr>
 
 
-        </tbody>
-       </table>
+          </tbody>
+        </table>
       </div>
-  </div>
+    </div>
   )
 }
 

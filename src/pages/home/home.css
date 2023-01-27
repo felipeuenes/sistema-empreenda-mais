@@ -12,3 +12,11 @@
   width: 500px;
   left: 0px;
 }
+:root{
+  --container-color: #ffffff;
+  --header-color: #0095ba;
+}
+.switchTheme:root {
+  --container-color: #212529;
+  --header-color: #899095;
+}
