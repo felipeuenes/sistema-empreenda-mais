@@ -11,11 +11,11 @@ export function List(){
                 <section className='pessoa-bloco1'>
 
                     <button className='btn-pesquisar'><img src='/src/images/icones/icone-pesquisa.png' />PESQUISAR</button>
-                    <input className='barra-pesquisa' type="text" placeholder='Pesquise um nome, cpf, etc.' />
+                    <input className='barra-pesquisa' type="text" placeholder='Pesquise um nome...' />
                     <button className='btn-filtrar'><img src='/src/images/icones/icone-filtrar.png' />FILTRAR POR</button>
 
                     <section className='opcoes-filtro'>
-                        <div><input name="agente" type="checkbox" />Agente responsável</div>
+                        {/* <div><input name="agente" type="checkbox" />Agente responsável</div>
                         <div><input name="adesao" type="checkbox" />Adesão</div>
                         <div><input name="codigo" type="checkbox" />Código</div>
                         <div><input name="nome" type="checkbox" />Nome completo</div>
@@ -23,7 +23,7 @@ export function List(){
                         <div><input name="rg" type="checkbox" />RG</div>
                         <div><input name="telefone" type="checkbox" />Telefone</div>
                         <div><input name="email" type="checkbox" />Email</div>
-                        <div><input name="endereco-res" type="checkbox" />Endereço residencial</div>
+                        <div><input name="endereco-res" type="checkbox" />Endereço residencial</div> */}
                     </section>
                 </section>
 
