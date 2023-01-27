@@ -27,7 +27,7 @@ export function AppRoutes() {
             <Route path={'/protocolos'} element={<CadProtocolo/>}/>
             <Route path={'/imprimir'} element={<ImpProto/>}/>
             <Route path={'/eventos'} element={<Eventos/>}/>
-            <Route path={'/cadasEvento'} element={<CadastroEvento/>}/>
+            <Route path={'/cadastro-eventos'} element={<CadastroEvento/>}/>
             <Route path={'/atendimento'} element={<Atendimento/>}></Route>
             <Route path={'/cursos'} element={<Cursos/>}></Route>
             <Route path={'/mentorias'} element={<Mentorias/>}></Route>

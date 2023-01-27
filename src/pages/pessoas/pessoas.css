@@ -31,10 +31,9 @@
   color: #ffffff;
   display: inline-flex;
   align-items: center;
-  font-weight: bolder;
 }
 .btn-pesquisar:hover, .btn-filtrar:hover{
-  background-color: #00ccff;
+  background-color: #006882;
   cursor: pointer;
 }
 .btn-pesquisar img, .btn-filtrar img {

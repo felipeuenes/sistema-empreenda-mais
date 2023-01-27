@@ -8,7 +8,11 @@ export function CadPessoas() {
 
 
     return (
-        <div className='containerCadasPessoas'>
+        <div className='container'>
+            <div className='secao-titulo'>
+                <img src="/src/images/logo-pessoas.png" id='icone-titulo'/><h1>Cadastrar pessoa</h1>
+                <Link to="/pessoas"><button><img src="/src/images/icones/mais.png" id='icone-botao-cad' alt="" />LISTAGEM</button></Link>
+            </div>
             {/* <div className='abas'>
             <p>PESSOAS</p>
             <a href="#" id='cadastro'>LISTAGEM</a>
