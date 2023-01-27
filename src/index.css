@@ -41,6 +41,7 @@ a {
 }
 
 .secao-titulo button {
+  display: flex;
   margin: 0px 20px 0px 20px;
   padding: 10px 20px 10px 20px;
   background-color: var(--header-color);
@@ -49,16 +50,13 @@ a {
   cursor: pointer;
   color: #ffffff;
   font-weight: bolder;
+  align-items: center;
 }
 
-.secao-titulo button:hover {
-  background-color: #006882;
-}
+.secao-titulo button:hover {background-color: #006882;}
 
-.secao-titulo img {
-  height: 30px;
-  padding: 0px 20px 0px 20px;
-}
+.secao-titulo img#icone-titulo {height: 30px; padding: 0px 20px 0px 20px;}
+.secao-titulo img#icone-botao-cad {height: 20px; padding-right: 20px;}
 
 h1 {
   color: #0095ba;
