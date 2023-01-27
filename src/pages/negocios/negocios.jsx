@@ -12,7 +12,7 @@ export function Negocios() {
     <div className='container'>
       <div className='secao-titulo'>
         <img src="/src/images/logo-negocios.png" id='icone-titulo' /><h1>Negócios</h1>
-        <Link to="/cadastro-negocios"><button><img src="/src/images/icones/mais.png" id='icone-botao-cad' alt="" />Cadastrar novo</button></Link>
+        <Link to="/cadastro-negocios"><button><img src="/src/images/icones/mais.png" id='icone-botao-cad' alt="" />CADASTRAR NOVO</button></Link>
       </div>
 
 
