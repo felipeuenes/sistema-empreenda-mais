@@ -9,8 +9,8 @@ export function Pessoas() {
     return (
         <div className='container'>
             <div className='secao-titulo'>
-                <img src="/src/images/logo-pessoas.png" /><h1>Pessoas</h1>
-                <Link to="/cadasPessoa"><button className='btn-cadpessoa'><span>&#43; </span>Cadastrar nova</button></Link>
+                <img src="/src/images/logo-pessoas.png" id='icone-titulo'/><h1>Pessoas</h1>
+                <Link to="/cadastro-pessoas"><button><img src="/src/images/icones/mais.png" id='icone-botao-cad' alt="" />Cadastrar nova</button></Link>
             </div>
 
             <div className='lista-pessoas'>
@@ -59,6 +59,7 @@ export function Pessoas() {
                 </section>
 
             </div>
+            
         </div>
     )
 }

@@ -21,8 +21,8 @@ export function AppRoutes() {
             <Route path={'/'} element={<Home/>}></Route>
             <Route path={'/negocios'} element={<Negocios/>}></Route>
             <Route path={'/pessoas'} element={<Pessoas/>}></Route>
-            <Route path={'/cadastro-empreendimentos'} element={<CadNegocios/>}></Route>
-            <Route path={'/cadaspessoa'} element={<CadPessoas/>}/>
+            <Route path={'/cadastro-negocios'} element={<CadNegocios/>}></Route>
+            <Route path={'/cadastro-pessoas'} element={<CadPessoas/>}/>
             <Route path={'/protocolos'} element={<CadProtocolo/>}/>
             <Route path={'/imprimir'} element={<ImpProto/>}/>
             <Route path={'/eventos'} element={<Eventos/>}/>

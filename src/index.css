@@ -27,11 +27,11 @@ a {
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
   min-height: 500px;
   background-color: var(--container-color);
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: center;
 }
-
+.container::before{
+  background-image: url(../src/images/logo-em-azul.png);
+  opacity: 0.2;
+}
 .secao-titulo {
   width: 100%;
   display: flex;
@@ -41,6 +41,7 @@ a {
 }
 
 .secao-titulo button {
+  display: flex;
   margin: 0px 20px 0px 20px;
   padding: 10px 20px 10px 20px;
   background-color: var(--header-color);
@@ -49,17 +50,13 @@ a {
   cursor: pointer;
   color: #ffffff;
   font-weight: bolder;
+  align-items: center;
 }
 
-.secao-titulo button:hover {
-  background-color: #006882;
-}
+.secao-titulo button:hover {background-color: #006882;}
 
-.secao-titulo img {
-  height: 30px;
-  padding: 0px 20px 0px 20px;
-}
-
+.secao-titulo img#icone-titulo {height: 30px; padding: 0px 20px 0px 20px;}
+.secao-titulo img#icone-botao-cad {height: 20px; padding-right: 20px;}
 h1 {
   color: #0095ba;
 }

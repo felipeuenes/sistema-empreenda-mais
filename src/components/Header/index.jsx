@@ -33,11 +33,7 @@ export function Header() {
                     <Link to="/protocolos">
                         <li title='Lista de protocolos'><img src="/src/images/icones/icone-protocolos.png" alt="" />Protocolos</li>
                     </Link>
-                    <Link to="/" className='switchTheme'>
-                        <li title='Modo claro/escuro' id='switchTheme'><img src="/src/images/icones/icone-lua.png" alt="" />...</li>
-                    </Link>
                 </ul>
-                <script src='/switch-theme.js'></script>
             </nav>
         </header>
     )

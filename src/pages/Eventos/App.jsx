@@ -8,9 +8,9 @@ export function Eventos() {
   return (
     <div className='container'>
       <div className='secao-titulo'>
-        <img src="/src/images/icones/icone-eventos.png" /><h1>Eventos</h1>
-        <Link to="/cadasEvento"><button id=''><span>&#43; </span>Cadastrar novo</button></Link>
-      </div>
+                <img src="/src/images/logo-eventos.png" id='icone-titulo'/><h1>Eventos</h1>
+                <Link to="/cadastro-eventos"><button><img src="/src/images/icones/mais.png" id='icone-botao-cad' alt="" />Cadastrar novo</button></Link>
+            </div>
 
       <div className='lista-empreendedores'>
         <table>
