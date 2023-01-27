@@ -8,7 +8,7 @@ export function Eventos() {
   return (
     <div className='container'>
       <div className='secao-titulo'>
-        <img src="/src/images/icones/icone-eventos.png" /><h1>Eventos</h1>
+        <img src="/src/images/logo-eventos.png" /><h1>Eventos</h1>
         <Link to="/cadasEvento"><button id=''><span>&#43; </span>Cadastrar novo</button></Link>
       </div>
 
