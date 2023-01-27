@@ -21,13 +21,13 @@ export function Header() {
                     <Link to="/eventos">
                         <li title='Lista de eventos'><img src="/src/images/icones/icone-eventos.png" alt="" />Eventos</li>
                     </Link>
-                    <Link to="/">
+                    <Link to="/cursos">
                         <li title='Lista de cursos'><img src="/src/images/icones/icone-cursos.png" alt="" />Cursos</li>
                     </Link>
-                    <Link to="/">
+                    <Link to="/mentorias">
                         <li title='Lista de mentorias'><img src="/src/images/icones/icone-mentorias.png" alt="" />Mentorias</li>
                     </Link>
-                    <Link to="/atendimentos">
+                    <Link to="/atendimento">
                         <li title='Lista de atendimentos'><img src="/src/images/icones/icone-atendimentos.png" alt="" />Atendimentos</li>
                     </Link>
                     <Link to="/protocolos">

@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { List } from '../../components/listas'
 import './App.css'
 
 export function Eventos() {
@@ -12,56 +13,7 @@ export function Eventos() {
                 <Link to="/cadastro-eventos"><button><img src="/src/images/icones/mais.png" id='icone-botao-cad' alt="" />Cadastrar novo</button></Link>
             </div>
 
-      <div className='lista-empreendedores'>
-        <table>
-          <thead>
-            <th>Nome do evento</th>
-            <th>Data</th>
-            <th>Tipo de evento</th>
-            <th>Nº</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Empreenda Mais</td>
-              <td>12/12/1234</td>
-              <td>Tipo de evento</td>
-              <td>texto</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-
-
-          </tbody>
-        </table>
-      </div>
+      <List/>
     </div>
   )
 }

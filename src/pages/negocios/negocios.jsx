@@ -2,6 +2,7 @@
 
 // import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { List } from '../../components/listas'
 import './negocios.css'
 
 export function Negocios() {
@@ -15,7 +16,7 @@ export function Negocios() {
       </div>
 
 
-      <div className='lista-empreendedores'>
+      {/* <div className='lista-empreendedores'>
         <table>
           <thead>
             <th>Nome fantasia:</th>
@@ -64,7 +65,10 @@ export function Negocios() {
 
           </tbody>
         </table>
-      </div>
+      </div> */}
+
+
+      <List/>
     </div>
   )
 }

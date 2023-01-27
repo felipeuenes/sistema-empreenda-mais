@@ -1,20 +1,13 @@
-/*PESSOAS > LISTAGEM > PÁGINA*/
+import './styleList.css'
 
-// import { useState } from 'react'
-// import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
-import './pessoas.css'
-import { List } from '../../components/listas'
 
-export function Pessoas() {
-    return (
-        <div className='container'>
-            <div className='secao-titulo'>
-                <img src="/src/images/logo-pessoas.png" id='icone-titulo'/><h1>Pessoas</h1>
-                <Link to="/cadastro-pessoas"><button><img src="/src/images/icones/mais.png" id='icone-botao-cad' alt="" />Cadastrar nova</button></Link>
-            </div>
+export function List(){
 
-            {/* <div className='lista-pessoas'>
+
+
+    return(
+        <>
+         <div className='lista-pessoas'>
                 <section className='pessoa-bloco1'>
 
                     <button className='btn-pesquisar'><img src='/src/images/icones/icone-pesquisa.png' />PESQUISAR</button>
@@ -60,9 +53,8 @@ export function Pessoas() {
                 </section>
 
             </div>
-             */}
-
-             <List/>
-        </div>
+        
+        
+        </>
     )
 }

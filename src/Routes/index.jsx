@@ -12,7 +12,8 @@ import { ProtocoloFolha } from '../components/protocolo-folha/protocoloFolha'
 import { Atendimento } from '../pages/atendimentos/index'
 import { Eventos } from '../pages/Eventos/App'
 import { CadastroEvento } from '../pages/Eventos/Cadastro-eventos'
-
+import { Cursos } from '../pages/cursos'
+import { Mentorias } from '../pages/mentorias/index,'
 
 export function AppRoutes() {
     return(
@@ -28,6 +29,8 @@ export function AppRoutes() {
             <Route path={'/eventos'} element={<Eventos/>}/>
             <Route path={'/cadasEvento'} element={<CadastroEvento/>}/>
             <Route path={'/atendimento'} element={<Atendimento/>}></Route>
+            <Route path={'/cursos'} element={<Cursos/>}></Route>
+            <Route path={'/mentorias'} element={<Mentorias/>}></Route>
         </Routes>
         </>
     )
