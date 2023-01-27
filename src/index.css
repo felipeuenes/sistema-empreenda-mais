@@ -1,50 +1,60 @@
 /*ESTILO DA PÁGINA PRINCIPAL*/
-
-*{ /*reset de todas as configurações*/
+* {
+  /*reset de todas as configurações*/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-a{ /*todos os links*/
+:root{
+  --container-color: #ffffff;
+  --header-color: #0095ba;
+}
+.switchTheme:root {
+  --container-color: #212529;
+  --header-color: #899095;
+}
+
+a {
+  /*todos os links*/
   text-decoration: none;
 }
 
-
-
 .container {
   border-radius: 20px;
-  margin: 20px; padding: 20px;
+  margin: 20px;
+  padding: 20px;
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
   min-height: 500px;
-  background: url('../src/images/logo-em-azul.png');
+  background-color: var(--container-color);
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: center;
-  background-color: #ffffff;
 }
+
 .secao-titulo {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   margin-bottom: 20px;
 }
+
 .secao-titulo button {
   margin: 0px 20px 0px 20px;
   padding: 10px 20px 10px 20px;
-  background-color: #0095ba;
+  background-color: var(--header-color);
   border: none;
   border-radius: 20px;
   cursor: pointer;
   color: #ffffff;
   font-weight: bolder;
 }
-.secao-titulo button:hover {
-  background-color: #076279;
 
-  
+.secao-titulo button:hover {
+  background-color: #006882;
 }
+
 .secao-titulo img {
   height: 30px;
   padding: 0px 20px 0px 20px;
@@ -55,7 +65,8 @@ h1 {
 }
 
 
-.aba { /*abas abaixo do menu de topo*/
+.aba {
+  /*abas abaixo do menu de topo*/
   display: flex;
   flex-direction: row;
   background-color: #006882;
@@ -64,7 +75,8 @@ h1 {
   padding: 0px 0px 0px 20px;
 }
 
-.aba a { /*links das abas*/
+.aba a {
+  /*links das abas*/
   font-size: 12pt;
   padding: 5px;
   margin: 8px;
@@ -73,13 +85,16 @@ h1 {
   border-radius: 5px;
   z-index: 1;
 }
+
 .aba h1 {
   color: #ffd000;
   background-color: #006882;
   font-weight: lighter;
   font-size: 12pt;
-  margin: 2px; padding: 2px;
+  margin: 2px;
+  padding: 2px;
 }
+
 .aba a:hover {
   color: #ffd000;
 }
@@ -101,22 +116,28 @@ h1 {
   width: 100%;
   height: 500px;
 }
+
 .secao h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   background-color: #0095ba;
 }
+
 .secao div {
   width: 100%;
 }
-.secao td, th {
+
+.secao td,
+th {
   border: #000000 solid 1px;
   margin: 0;
 }
+
 .secao#secao-lista {
   float: left;
 }
+
 .secao#secao-cadastro {
   float: right;
 }

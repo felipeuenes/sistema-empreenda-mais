@@ -2,7 +2,6 @@
 
 // import { useState } from 'react'
 import './home.css'
-
 export function Home() {
   
 
