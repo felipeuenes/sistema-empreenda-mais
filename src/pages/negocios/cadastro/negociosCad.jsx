@@ -10,7 +10,10 @@ export function CadNegocios(){
 
     return(
         <div className='container'>
-            <h1 className='titulo'>CADASTRO NEGÓCIOS</h1>
+             <div className='secao-titulo'>
+                <img src="/src/images/logo-negocios.png" id='icone-titulo'/><h1>Cadastrar negócio</h1>
+                <Link to="/negocios"><button><img src="/src/images/icones/mais.png" id='icone-botao-cad'/>LISTAGEM</button></Link>
+            </div>
         <div className='formulario-empreedimento'>
 
             <form action="">
