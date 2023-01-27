@@ -12,7 +12,6 @@ export function Mentorias() {
                 <img src="/src/images/logo-mentorias.png" id='icone-titulo' /><h1>Mentorias</h1>
                 <Link to="/cadastro-negocios"><button><img src="/src/images/icones/mais.png" id='icone-botao-cad' />CADASTRAR NOVA</button></Link>
             </div>
-            
             <List />
         </div>
     )
