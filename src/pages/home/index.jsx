@@ -45,7 +45,7 @@ export function Home() {
           Mulheres de Negócio: X <br/>
           Participantes do programa: X <br/>
           Participantes do programa: X <br/>
-        </p> */}
+  </p>*/}
 
     </div>
 
