@@ -32,14 +32,14 @@ export function Home() {
 
             
         
-        {/* <p>
+        <p>
           PLACEHOLDER DAS ESTATÍSTICAS<br/>
           Apresentados ao programa: X <br/>
           Participantes do programa: X <br/>
           Mulheres de Negócio: X <br/>
           Participantes do programa: X <br/>
           Participantes do programa: X <br/>
-        </p> */}
+        </p>
         
       </section>
 </div>
