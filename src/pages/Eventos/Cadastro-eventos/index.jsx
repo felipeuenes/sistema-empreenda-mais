@@ -5,9 +5,9 @@ import { useState, useEffect } from 'react'
 export function CadastroEvento(){
     return(
         <div className='container'>
-            <div className='secao-titulo'>
-                <img src="/src/images/logo-eventos.png" id='icone-titulo'/><h1>Cadastrar evento</h1>
-                <Link to="/eventos"><button><img src="/src/images/icones/mais.png" id='icone-botao-cad'/>LISTAGEM</button></Link>
+            <div className='titulo'>
+                <img src="/src/images/logo-eventos.png" id='icone-pagina'/><h1>CADASTRAR EVENTO</h1>
+                <Link to="/eventos"><button><img src="/src/images/icones/icone-lista.png" id='icone-lista'/>LISTAGEM</button></Link>
             </div>
         <div className='formulario-eventos'>
 

@@ -33,6 +33,9 @@ export function Header() {
                     <Link to="/protocolos">
                         <li title='Lista de protocolos'><img src="/src/images/icones/icone-protocolos.png" alt="" />Protocolos</li>
                     </Link>
+                    <Link to="/indicadores">
+                        <li title='Lista de indicadores'><img src="/src/images/icones/icone-indicadores.png" alt="" />Indicadores</li>
+                    </Link>
                 </ul>
             </nav>
         </header>
