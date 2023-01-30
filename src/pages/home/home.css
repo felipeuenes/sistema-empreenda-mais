@@ -25,8 +25,52 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 32px;
+  
 }
 
 .cont-estatisticas section{
   flex-direction: column;
+}
+#sectionEstatisticas{
+  border: 2px solid #0095ba;
+  padding: 10px;
+  border-radius: 16px;
+  min-width: 150px;
+  text-align: center;
+  
+}
+
+
+
+
+/* Table home */
+
+.cont-estatisticas th, td{
+  border: 1px solid black;
+  padding: 6px;
+}
+
+.cont-estatisticas table{
+  border-collapse: collapse;
+  
+}
+
+.cont-estatisticas{
+  
+}
+
+#situacaoEmpre{
+  width: 400px;
+  text-align: left;
+}
+
+
+
+
+#variavelNumbers{
+  font-size: 50px;
+  font-weight: bold;
+  color: #0095ba;
+  text-align: center;
 }
