@@ -1,5 +1,5 @@
 //PESSOAS > CADASTRO > PÁGINA
-import './pessoasCad.css'
+import '/src/components/formularios/formularios.css'
 
 import { Link, NavLink } from 'react-router-dom'
 
@@ -10,8 +10,8 @@ export function CadPessoas() {
     return (
         <div className='container'>
             <div className='titulo'>
-                <img src="/src/images/logo-pessoas.png" id='icone-pagina'/><h1>CADASTRAR PESSOA</h1>
-                <Link to="/pessoas"><button><img src="/src/images/icones/icone-lista.png" id='icone-lista'/>LISTAGEM</button></Link>
+                <img src="/src/images/logo-pessoas.png" id='icone-pagina' /><h1>CADASTRAR PESSOA</h1>
+                <Link to="/pessoas"><button><img src="/src/images/icones/icone-lista.png" id='icone-lista' />LISTAGEM</button></Link>
             </div>
 
             <form className='form' action="">
@@ -45,31 +45,46 @@ export function CadPessoas() {
                 <h2>DADOS DA PESSOA</h2>
                 <div className='form-bloco'>
                     <section>
-                        <label htmlFor="name">Nome completo:</label>
-                        <input type="text" name="" id="name" placeholder='Nome completo...' required />
+                        <label htmlFor="nomeCompleto">Nome completo:</label>
+                        <input type="text" name="" id="nomeCompleto" placeholder='Nome completo...' required />
+                    </section>
+
+                    <section>
+                        <label htmlFor="nomeSocial">Nome social:</label>
+                        <input type="text" name="" id="nomeSocial" placeholder='Caso haja...' />
+                    </section>
+
+                    <section>
+                        <label htmlFor="cpf">Número do CPF:</label>
+                        <input type="number" id="cpf" maxLength={14} placeholder="xxx.xxx.xxx-xx" required />
 
                     </section>
                     <section>
-
-                        <label htmlFor="cpf">Cadastro Pessoa Física:</label>
-                        <input type="number" maxLength={14} placeholder="CPF" />
-
-                    </section>
-                    <section>
-                        <label htmlFor="rg">Registro Geral:</label>
-                        <input type="number" id='rg' placeholder='RG' required />
+                        <label htmlFor="rg">Número do RG:</label>
+                        <input type="number" id="rg" placeholder='XXX.XXXX.XXX-X' required />
 
                     </section>
                     <section>
-
-                        <label htmlFor="email">E-mail:</label>
+                        <label htmlFor="email">Email:</label>
                         <input type="email" name="" id="email" placeholder='exemplo@exemplo.com' />
 
                     </section>
                     <section>
                         <label htmlFor="telefone">Telefone pessoal:</label>
                         <input type="number" placeholder='(xx)x xxxx-xxxx' id='telefone' />
+                    </section>
 
+                    <section>
+                        <label htmlFor="situacao">Situação:</label>
+                        <select name="" id="situacao">
+                            <option value="" disabled hidden selected>selecione</option>
+                            <option value="">Empreendedor/a formal</option>
+                            <option value="">Empreendedor/a não formal</option>
+                            <option value="">Empregado/a</option>
+                            <option value="">Desempregado/a</option>
+                            <option value="">Aposentado/a</option>
+                            <option value="">Agricultor/a</option>
+                        </select>
                     </section>
 
                 </div>
@@ -94,7 +109,6 @@ export function CadPessoas() {
                             <option value="">Masculino</option>
                         </select>
                     </section>
-
                     <section>
                         <label htmlFor="estadoCivil">Estado civil:</label>
                         <select name="" id="estadoCivil">
@@ -130,23 +144,57 @@ export function CadPessoas() {
                             <option value="">Mais de R$5000</option>
                         </select>
                     </section>
+
+                    <section>
+                        <label htmlFor="deficiencia">Deficiência:</label>
+                        <select name="" id="deficiencia">
+                            <option value="" selected>selecione</option>
+                            <option value="">Nenhuma</option>
+                            <option value="">Mental</option>
+                            <option value="">Auditiva</option>
+                            <option value="">Visual</option>
+                            <option value="">Motora</option>
+                            <option value="">Múltiplas</option>
+                            <option value="">Não declarada</option>
+                        </select>
+                    </section>
+
+                    <section>
+                        <label htmlFor="recomendacao">Recomenda o programa?</label>
+                        <select name="" id="recomendacao">
+                            <option value="" disabled hidden selected>selecione</option>
+                            <option value="">Sim, recomendo</option>
+                            <option value="">Talvez recomende</option>
+                            <option value="">Não recomendo</option>
+                        </select>
+                    </section>
                 </div>
 
                 <h2>LOGRADOURO PESSOAL</h2>
                 <div className='form-bloco'>
                     <section>
-                        <label htmlFor="endRua">Rua/Avenida:</label>
-                        <input type="text" name="" id="endRua" />
+                        <label htmlFor="cep">CEP:</label>
+                        <input type="text" name="" id="cep" placeholder="XX.XXX-XXX" />
                     </section>
 
                     <section>
-                        <label htmlFor="endNum">Número:</label>
-                        <input type="text" name="" id="endNum" />
+                        <label htmlFor="rua">Rua/Avenida:</label>
+                        <input type="text" name="" id="rua" />
                     </section>
 
                     <section>
-                        <label htmlFor="endBairro">Bairro/Distrito:</label>
-                        <select name="" id="endBairro">
+                        <label htmlFor="complemento">Complemento:</label>
+                        <input type="text" name="" id="complemento" />
+                    </section>
+
+                    <section>
+                        <label htmlFor="numero">Número:</label>
+                        <input type="text" name="" id="numero" />
+                    </section>
+
+                    <section>
+                        <label htmlFor="bairro">Bairro/Distrito:</label>
+                        <select name="" id="bairro">
                             <option value="" disabled hidden selected>selecione</option>
                             <option value="">Canafístula</option>
                             <option value="">Mel</option>
@@ -167,16 +215,16 @@ export function CadPessoas() {
                     </section>
 
                     <section>
-                        <label htmlFor="endCidade">Cidade:</label>
-                        <input type="text" name='' id='endCidade' />
+                        <label htmlFor="cidade">Cidade:</label>
+                        <input type="text" name='' id="cidade" />
                     </section>
 
                     <section>
-                        <label htmlFor="endEstado">Estado:</label>
-                        <input type="text" name='' id='endCidade' />
+                        <label htmlFor="estado">Estado:</label>
+                        <input type="text" name='' id="estado" />
                     </section>
                 </div>
-                <div className='btn-cadastrar'><button><img src="/src/images/icones/icone-cadastrar.png"/>SALVAR CADASTRO</button></div>
+                <div className='btn-cadastrar'><button><img src="/src/images/icones/icone-cadastrar.png" />SALVAR CADASTRO</button></div>
             </form>
 
         </div>

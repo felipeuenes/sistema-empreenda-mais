@@ -1,0 +1,63 @@
+/*FORMULÁRIOS*/
+.form h2 {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	font-size: 12pt;
+	padding: 2px 0px 2px 0px;
+	border-radius: 20px;
+	background-color: #afefff;
+	color: #0095ba;
+}
+
+.form-bloco {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.form-bloco section {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 20px;
+}
+
+.form-bloco label {
+	font-weight: normal;
+	padding-bottom: 2px;
+	text-align: center;
+}
+
+.form input {
+	width: 150px;
+	height: 25px;
+	padding: 0px 10px 0px 10px;
+}
+.form input:required {background-color: #ffffef}
+
+.form select {
+	width: 150px;
+	height: 25px;
+}
+
+.form input, .form select {
+	cursor: pointer;
+	background-color: #e2f9ff;
+	border: #0095ba solid 2px;
+	border-radius: 20px;
+	padding: 2px;
+}
+
+.form-bloco input#endNum {
+	width: 60px;
+}
+
+.form select, .form select:focus {
+	appearance: none;
+	background-position-x: 98%;
+	background-position-y: 50%;
+	background-size: 15px;
+	background-repeat: no-repeat;
+}
+.form select {background-image: url(/src/images/icones/icone-select-down.png);}
+.form select:focus {background-image: url(/src/images/icones/icone-select-up.png);}
