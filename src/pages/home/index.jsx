@@ -18,7 +18,7 @@ export function Home() {
           <Space>
             <section>
               <h1>Visitas em Janeiro</h1>
-              <Progress type="dashboard" percent={30} />
+              <Progress type="dashboard" percent={50} />
             </section>
             <section>
               <h1>Metas 2023</h1>

@@ -178,6 +178,7 @@ export function CadPessoas() {
                 </div>
                 <div className='btn-cadastrar'><button><img src="/src/images/icones/icone-cadastrar.png"/>SALVAR CADASTRO</button></div>
             </form>
+
         </div>
     )
 }

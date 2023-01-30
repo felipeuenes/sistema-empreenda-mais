@@ -31,12 +31,13 @@ a {
   margin: 20px;
   padding: 20px;
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
-  min-height: 500px;
+  /* min-height: 500px; */
   background-color: var(--container-color);
   background-image: url(../src/images/logo-em-fundo.png);
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
+  height: 600px;
 }
 
 /*SEÇÃO DO TÍTULO*/

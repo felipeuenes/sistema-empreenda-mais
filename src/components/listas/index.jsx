@@ -30,20 +30,20 @@ export function List(){
                 <section className='pessoa-bloco2'>
                     <table>
                         <thead>
-                            <th>Nº</th>
+                            <th>ADESÃO</th>
                             <th>NOME COMPLETO</th>
                             <th>CÓDIGO</th>
                             <th>CPF</th>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>01</td>
+                                <td>SIM</td>
                                 <td>JORGE ALYSSON</td>
                                 <td>0001</td>
                                 <td>000.000.000-00</td>
                             </tr>
                             <tr>
-                                <td>02</td>
+                                <td>NÃO</td>
                                 <td>LUANA FERREIRA</td>
                                 <td>0002</td>
                                 <td>000.000.000-01</td>
