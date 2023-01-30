@@ -7,7 +7,7 @@ export function Footer(){
     return(
 
         <footer>
-            Sistema desenvolvido por Felipe Uenes e Jorge Alysson.
+            &copy; 2023 - Felipe Uenes e Jorge Alysson. Sistema de gerenciamento de dados do Empreenda Mais Jucás.
         </footer>
     )
 }

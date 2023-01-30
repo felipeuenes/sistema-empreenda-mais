@@ -9,9 +9,9 @@ import { List } from '../../components/listas'
 export function Pessoas() {
     return (
         <div className='container'>
-            <div className='secao-titulo'>
-                <img src="/src/images/logo-pessoas.png" id='icone-titulo'/><h1>Pessoas</h1>
-                <Link to="/cadastro-pessoas"><button><img src="/src/images/icones/mais.png" id='icone-botao-cad' alt="" />CADASTRAR NOVA</button></Link>
+            <div className='titulo'>
+                <img src="/src/images/logo-pessoas.png" id='icone-pagina' /><h1>PESSOAS</h1>
+                <Link to="/cadastro-pessoas"><button><img src="/src/images/icones/icone-mais.png" id='icone-lista' />CADASTRAR</button></Link>
             </div>
 
             {/* <div className='lista-pessoas'>
@@ -62,7 +62,7 @@ export function Pessoas() {
             </div>
              */}
 
-             <List/>
+            <List />
         </div>
     )
 }

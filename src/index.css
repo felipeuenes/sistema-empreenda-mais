@@ -6,10 +6,12 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-:root{
+
+:root {
   --container-color: #ffffff;
   --header-color: #0095ba;
 }
+
 .switchTheme:root {
   --container-color: #212529;
   --header-color: #899095;
@@ -19,7 +21,12 @@ a {
   /*todos os links*/
   text-decoration: none;
 }
+
+/*CORPO*/
 .container {
+  top: 80px;
+  z-index: 1;
+  position: relative;
   border-radius: 20px;
   margin: 20px;
   padding: 20px;
@@ -31,15 +38,18 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
-.secao-titulo {
+
+/*SEÇÃO DO TÍTULO*/
+.titulo {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
-.secao-titulo button {
+.titulo button,
+.btn-cadastrar button {
   display: flex;
   margin: 0px 20px 0px 20px;
   padding: 10px 20px 10px 20px;
@@ -51,88 +61,69 @@ a {
   align-items: center;
 }
 
-.secao-titulo button:hover {background-color: #006882;}
+.titulo button:hover,
+.btn-cadastrar button:hover {
+  background-color: #006882;
+}
 
-.secao-titulo img#icone-titulo {height: 30px; padding: 0px 20px 0px 20px;}
-.secao-titulo img#icone-botao-cad {height: 20px; padding-right: 20px;}
+.titulo img#icone-pagina{
+  height: 30px;
+  padding: 0px 20px 0px 20px;
+}
+
+.titulo img#icone-lista,
+.btn-cadastrar img {
+  height: 20px;
+  padding-right: 20px;
+}
+
+.btn-cadastrar {
+  display: flex;
+  justify-content: center;
+}
+
 h1 {
   color: #0095ba;
 }
 
-
-.aba {
-  /*abas abaixo do menu de topo*/
+/*FORMULÁRIOS*/
+.form h2 {
   display: flex;
-  flex-direction: row;
-  background-color: #006882;
   justify-content: center;
-  align-items: center;
-  padding: 0px 0px 0px 20px;
-}
-
-.aba a {
-  /*links das abas*/
+  width: 100%;
   font-size: 12pt;
-  padding: 5px;
-  margin: 8px;
-  font-size: 10pt;
-  border: #ffffff solid 1px;
-  border-radius: 5px;
-  z-index: 1;
+  padding: 2px 0px 2px 0px;
+  border-radius: 20px;
+  background-color: #afefff;
+  color: #0095ba;
 }
 
-.aba h1 {
-  color: #ffd000;
-  background-color: #006882;
-  font-weight: lighter;
-  font-size: 12pt;
-  margin: 2px;
-  padding: 2px;
+.form-bloco {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.aba a:hover {
-  color: #ffd000;
-}
-
-.sub-menu {
-  position: absolute;
+.form-bloco section {
   display: flex;
   flex-direction: column;
-  display: none;
+  padding-bottom: 20px;
 }
 
-.secao {
-  display: flex;
-  overflow: hidden;
-  background-color: #ffffff;
-  margin: 20px;
-  border-radius: 10px;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
-  width: 100%;
-  height: 500px;
+.form-bloco label {
+  font-weight: normal;
+  padding-bottom: 2px;
 }
 
-.secao h2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #0095ba;
+.form input,
+.form select {
+  width: 150px;
+  height: 25px;
+  padding: 0px 10px 0px 10px;
+  border-color: #0095ba;
+  cursor: pointer;
 }
 
-.secao div {
-  width: 100%;
-}
-
-.secao td,
-th {
-  border: #000000 solid 1px;
-  margin: 0;
-}
-
-.secao#secao-lista {
-  float: left;
-}
-
-.secao#secao-cadastro {
-  float: right;
+.form-bloco input#endNum {
+  width: 60px;
 }

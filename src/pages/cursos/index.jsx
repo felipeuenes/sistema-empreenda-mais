@@ -8,9 +8,9 @@ export function Cursos() {
 
     return (
         <div className='container'>
-            <div className='secao-titulo'>
-                <img src="/src/images/logo-cursos.png" id='icone-titulo' /><h1>Cursos</h1>
-                <Link to="/cadastro-negocios"><button><img src="/src/images/icones/mais.png" id='icone-botao-cad' alt="" />CADASTRAR NOVO</button></Link>
+            <div className='titulo'>
+                <img src="/src/images/logo-cursos.png" id='icone-pagina'/><h1>CURSOS</h1>
+                <Link to="/cadastro-negocios"><button><img src="/src/images/icones/icone-mais.png" id='icone-lista'/>CADASTRAR</button></Link>
             </div>
             <List />
         </div>

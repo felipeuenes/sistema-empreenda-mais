@@ -10,9 +10,9 @@ export function Negocios() {
 
   return (
     <div className='container'>
-      <div className='secao-titulo'>
-        <img src="/src/images/logo-negocios.png" id='icone-titulo' /><h1>Negócios</h1>
-        <Link to="/cadastro-negocios"><button><img src="/src/images/icones/mais.png" id='icone-botao-cad' alt="" />CADASTRAR NOVO</button></Link>
+      <div className='titulo'>
+        <img src="/src/images/logo-negocios.png" id='icone-pagina'/><h1>NEGÓCIOS</h1>
+        <Link to="/cadastro-negocios"><button><img src="/src/images/icones/icone-mais.png" id='icone-lista' alt="" />CADASTRAR</button></Link>
       </div>
 
 

@@ -1,4 +1,4 @@
-PESSOAS > CADASTRO > ESTILO
+/*
 .secao-lista {
     background-color: #ffffff;
 }
@@ -31,15 +31,10 @@ PESSOAS > CADASTRO > ESTILO
 #btPessoas{
     cursor: pointer;
 }
+*/
 
-/* Gerais */
 
-input{
-    height: 30px;
-}
-select{
-    width: 180px;
-}
+
 
 .containerCadasPessoas{
     display: flex;
@@ -49,30 +44,13 @@ select{
 
 .containerCadasPessoas h2{
     color: white;
-    padding: 8px;
-}
-
-.block1{
-    display: flex;
-    gap: 54px;
-    justify-content: center;
-    align-items: center;
-    margin: 16px;
-}
-.block1 section{
-    display: flex;
-    flex-direction: column;
+    padding: 110px;
 }
 
 
 
-.buttonCadas{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.formulario-pessoas h2{
-    color: white;
-    padding: 3px;
-}
+
+
+
+
