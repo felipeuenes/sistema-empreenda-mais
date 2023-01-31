@@ -170,11 +170,11 @@ export function CadPessoas() {
                     </section>
                 </div>
 
-                <h2>LOGRADOURO PESSOAL</h2>
+                <h2>DADOS DO LOGRADOURO PESSOAL</h2>
                 <div className='form-bloco'>
                     <section>
                         <label htmlFor="cep">CEP:</label>
-                        <input type="text" name="" id="cep" placeholder="XX.XXX-XXX" />
+                        <input type="text" name="" id="cep" placeholder="xxxxx-xxx" />
                     </section>
 
                     <section>
