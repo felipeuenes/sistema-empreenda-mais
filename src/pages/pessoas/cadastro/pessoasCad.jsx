@@ -2,10 +2,38 @@
 import '/src/components/formularios/formularios.css'
 
 import { Link, NavLink } from 'react-router-dom'
-
+import { useState } from 'react'
 
 export function CadPessoas() {
 
+    const [formPessoas, setFormPessoas] = useState({
+        name: '',
+
+    })
+
+    const handleFormEdit = (event, name) =>{
+        setFormPessoas({
+            ...formPessoas,
+            [name]: event.target.value
+        })
+    }
+
+    const handleForm = async (event) => {
+        try{
+            event.preventDefault()
+            const response = await fetch(`http://localhost:8080/`, {
+                method: 'POST',
+                body: JSON.stringify(formPessoas)
+            })
+            const json = await response.json()
+            console.log(response.status);
+            console.log(json);
+
+        }catch(err){
+            console.log('erro no sistema');
+        }
+        
+    }
 
     return (
         <div className='container'>
@@ -14,7 +42,7 @@ export function CadPessoas() {
                 <Link to="/pessoas"><button><img src="/src/images/icones/icone-lista.png" id='icone-lista' />LISTAGEM</button></Link>
             </div>
 
-            <form className='form' action="">
+            <form className='form' action="" method='POST'>
                 <h2>DADOS DE CADASTRO</h2>
                 <div className='form-bloco'>
                     <section>
@@ -46,7 +74,7 @@ export function CadPessoas() {
                 <div className='form-bloco'>
                     <section>
                         <label htmlFor="nomeCompleto">Nome completo:</label>
-                        <input type="text" name="" id="nomeCompleto" placeholder='Nome completo...' required />
+                        <input type="text" name="" id="nomeCompleto" placeholder='Nome completo...' required value={formPessoas.name} onChange={() => {handleFormEdit(e, name)}}/>
                     </section>
 
                     <section>
@@ -224,7 +252,7 @@ export function CadPessoas() {
                         <input type="text" name='' id="estado" />
                     </section>
                 </div>
-                <div className='btn-cadastrar'><button><img src="/src/images/icones/icone-cadastrar.png" />SALVAR CADASTRO</button></div>
+                <div className='btn-cadastrar'><button onClick={handleForm}><img src="/src/images/icones/icone-cadastrar.png" />SALVAR CADASTRO</button></div>
             </form>
 
         </div>
