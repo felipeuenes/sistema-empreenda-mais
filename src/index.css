@@ -7,16 +7,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-:root {
-  --container-color: #ffffff;
-  --header-color: #0095ba;
-}
-
-.switchTheme:root {
-  --container-color: #212529;
-  --header-color: #899095;
-}
-
 a {
   /*todos os links*/
   text-decoration: none;
@@ -32,7 +22,7 @@ a {
   padding: 20px;
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
   /* min-height: 500px; */
-  background-color: var(--container-color);
+  background-color: #ffffff;
   background-image: url(../src/images/logo-em-fundo.png);
   background-size: 50%;
   background-position: center;
