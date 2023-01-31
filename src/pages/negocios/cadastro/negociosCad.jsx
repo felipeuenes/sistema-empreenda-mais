@@ -15,24 +15,24 @@ export function CadNegocios() {
 
 				<h2>DADOS DE RECONHECIMENTO</h2>
 				<div className='form-bloco'>
-				<section>
+					<section>
 						<label htmlFor="razaoSocial">Razão social:</label>
-						<input type="text" name="" id="razaoSocial" required placeholder='Ex: Maria da Silva'/>
+						<input type="text" name="" id="razaoSocial" required placeholder='Ex: Maria da Silva' />
 					</section>
 
 					<section >
 						<label htmlFor="nomeFantasia">Nome fantasia:</label>
-						<input type="text" id='nomeFantasia' placeholder='Ex: Ateliê da Maria'/>
+						<input type="text" id='nomeFantasia' placeholder='Ex: Ateliê da Maria' />
 					</section>
 
 					<section >
 						<label htmlFor="responsavel">Responsável:</label>
-						<input type="text" id='responsavel' required/>
+						<input type="text" id='responsavel' required />
 					</section>
 
 					<section >
 						<label htmlFor="segmento">Segmento:</label>
-						<input type="text" id='segmento' required placeholder='Ex: Artesanato'/>
+						<input type="text" id='segmento' required placeholder='Ex: Artesanato' />
 					</section>
 
 					<section>
@@ -42,7 +42,7 @@ export function CadNegocios() {
 
 					<section>
 						<label htmlFor="atvSecundaria">Atividade secundária:</label>
-						<input type="text" name="" id="atvSecundaria" placeholder='Caso haja...'/>
+						<input type="text" name="" id="atvSecundaria" placeholder='Caso haja...' />
 					</section>
 				</div>
 
@@ -50,12 +50,12 @@ export function CadNegocios() {
 				<div className='form-bloco'>
 					<section>
 						<label htmlFor="cnpj">CNPJ:</label>
-						<input type="number" name="" id="cnpj" placeholder='xx.xxx.xxx/xxxx-xx'/>
+						<input type="number" name="" id="cnpj" placeholder='xx.xxx.xxx/xxxx-xx' />
 					</section>
 
 					<section>
 						<label htmlFor="datacnpj">Inscrição no CNPJ:</label>
-						<input type="date" name="" id="datacpnj"/>
+						<input type="date" name="" id="datacpnj" />
 					</section>
 
 					<section>
@@ -79,53 +79,66 @@ export function CadNegocios() {
 					</section>
 				</div>
 
-				<h2>DADOS DE LOGRADOURO COMERCIAL</h2>
+				<h2>DADOS DO LOGRADOURO COMERCIAL</h2>
 				<div className='form-bloco'>
 					<section>
-						<label htmlFor="endereco">Rua/Avenida:</label>
-						<input type="text" name="" id="endereco" placeholder='' required />
+						<label htmlFor="cep">CEP:</label>
+						<input type="text" name="" id="cep" placeholder="xxxxx-xxx" />
 					</section>
-					<section>
 
+					<section>
+						<label htmlFor="rua">Rua/Avenida:</label>
+						<input type="text" name="" id="rua" />
+					</section>
+
+					<section>
+						<label htmlFor="complemento">Complemento:</label>
+						<input type="text" name="" id="complemento" />
+					</section>
+
+					<section>
+						<label htmlFor="numero">Número:</label>
+						<input type="text" name="" id="numero" />
+					</section>
+
+					<section>
 						<label htmlFor="bairro">Bairro/Distrito:</label>
-						<input type="text" name="" id="bairro" />
-					</section>
-					
-				</div>
-				<div className='form-bloco'>
-
-					<section>
-						<label htmlFor="categoria">Categoria de negócio:</label>
-						<select name="" id="categoria">
-							<option value="">Vestuário</option>
-							<option value="">Gastronomia</option>
-							<option value="">Mercantil</option>
-							<option value="">Agronegócio</option>
-							<option value="">Artesanato</option>
-							<option value="">Casa agropecuária</option>
-							<option value="">Decorações / festas</option>
-							<option value="">Depositos e distribuidoras</option>
+						<select name="" id="bairro">
+							<option value="" disabled hidden selected>selecione</option>
+							<option value="">Canafístula</option>
+							<option value="">Mel</option>
+							<option value="">Montenegro</option>
+							<option value="">Poço Grande</option>
+							<option value="">São Pedro do Norte</option>
+							<option value="">Sede: Alto da Paz</option>
+							<option value="">Sede: Alto do Tó</option>
+							<option value="">Sede: Centro</option>
+							<option value="">Sede: Coco Verde</option>
+							<option value="">Sede: Nossa Senhora de Fátima</option>
+							<option value="">Sede: Padre Manoel Lemos Braga</option>
+							<option value="">Sede: Planalto</option>
+							<option value="">Sede: Sagrada Família</option>
+							<option value="">Sede: São José</option>
+							<option value="">Sede: São Mateus</option>
 						</select>
 					</section>
+
 					<section>
-
-						<label htmlFor="situacao">Situação atual:</label>
-						<select name="" id="situacao">
-							<option value="true">Formal</option>
-							<option value="false">Não formal</option>
-							<option value="false">Em processo de formalização</option>
-						</select>
-
+						<label htmlFor="cidade">Cidade:</label>
+						<input type="text" name='' id="cidade" />
 					</section>
+
 					<section>
-						<label htmlFor="nameEmpresario">Nome do empresário:</label>
-						<input type="text" name="" id="nameEmpresario" />
+						<label htmlFor="estado">Estado:</label>
+						<input type="text" name='' id="estado" />
 					</section>
 				</div>
-				<section className='btn-cadastrar'>
-					<button><img src="/src/images/icones/icone-cadastrar.png" />SALVAR CADASTRO</button>
-				</section>
 
+				<h2>DIAGNÓSTICO MARCO ZERO</h2>
+				<div className='form-bloco'></div>
+
+				<h2>DIAGNÓSTICO MARCO UM</h2>
+				<div className='form-bloco'></div>
 			</form>
 			</div>
 
