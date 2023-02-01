@@ -16,6 +16,7 @@ export function CadNegocios() {
 				<h2>DADOS DE RECONHECIMENTO</h2>
 				<div className='form-bloco'>
 					<section>
+
 						<label htmlFor="razaoSocial">Razão social:</label>
 						<input type="text" name="" id="razaoSocial" required placeholder='Ex: Maria da Silva' />
 					</section>
@@ -104,7 +105,7 @@ export function CadNegocios() {
 					<section>
 						<label htmlFor="bairro">Bairro/Distrito:</label>
 						<select name="" id="bairro">
-							<option value="" disabled hidden selected>selecione</option>
+							<option value="" selected>selecione</option>
 							<option value="">Canafístula</option>
 							<option value="">Mel</option>
 							<option value="">Montenegro</option>
@@ -127,21 +128,10 @@ export function CadNegocios() {
 						<label htmlFor="cidade">Cidade:</label>
 						<input type="text" name='' id="cidade" />
 					</section>
-
-					<section>
-						<label htmlFor="estado">Estado:</label>
-						<input type="text" name='' id="estado" />
-					</section>
 				</div>
-
-				<h2>DIAGNÓSTICO MARCO ZERO</h2>
-				<div className='form-bloco'></div>
-
-				<h2>DIAGNÓSTICO MARCO UM</h2>
-				<div className='form-bloco'></div>
+				<div className='btn-cadastrar'><button><img src="/src/images/icones/icone-cadastrar.png" />SALVAR CADASTRO</button></div>
 			</form>
 			</div>
-
 		</div>
 	)
 
