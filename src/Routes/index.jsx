@@ -8,7 +8,7 @@ import { CadNegocios } from '../pages/negocios/cadastro/negociosCad'
 import { CadPessoas } from '../pages/pessoas/cadastro/pessoasCad'
 import { ImpProto } from '../pages/protocolos/folha-protocolo/protocoloImp'
 import { CadProtocolo } from '../pages/protocolos/protocoloCad'
-import { ProtocoloFolha } from '../components/protocolo-folha/protocoloFolha'
+
 import { Atendimento } from '../pages/atendimentos/index'
 import { Eventos } from '../pages/Eventos/App'
 import { CadastroEvento } from '../pages/Eventos/Cadastro-eventos'
