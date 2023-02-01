@@ -20,7 +20,15 @@
   justify-content: center;
   align-items: center;
   gap: 32px;
-  
+
+}
+.cont-estatisticas2{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
 }
 
 .cont-estatisticas section{
@@ -34,6 +42,16 @@
   text-align: center;
   
 }
+
+#sectionEstatisticas2{
+  border: 2px solid #0095ba;
+  padding: 10px;
+  border-radius: 16px;
+  min-width: 130px;
+  text-align: center;
+  
+}
+
 
 
 
