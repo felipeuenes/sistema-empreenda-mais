@@ -1,25 +1,19 @@
 /*INÍCIO > ESTILO*/
 .imageConstru{
-  width: 100%;
+  width: 100%;   
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+
 .imageConstru img{
   position: relative;
   width: 500px;
   left: 0px;
 }
-:root{
-  --container-color: #ffffff;
-  --header-color: #0095ba;
-}
-.switchTheme:root {
-  --container-color: #212529;
-  --header-color: #899095;
-}
+
 .cont-estatisticas{
   margin-top: 24px;
   display: flex;
