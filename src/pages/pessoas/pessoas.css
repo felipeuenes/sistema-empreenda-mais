@@ -17,12 +17,12 @@
   justify-content: center;
 }
 .btn-pesquisar {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-.btn-filtrar {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+.btn-filtrar {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 .btn-pesquisar, .btn-filtrar {
   background-color: #0095ba;
