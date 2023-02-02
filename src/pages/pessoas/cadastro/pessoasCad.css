@@ -1,56 +1,108 @@
-/*
-.secao-lista {
-    background-color: #ffffff;
+/* dados de cadastro */
+#tituloCadastro{
+    padding: 6px;
+    margin-top: 16px;
+    color: white;
+    background-color: #007596;
+}
+.dadosdoCadastro{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.dadosdoCadastro section{
+    display: flex;
+    flex-direction: column;
 }
 
-#email{
-    width: 200px;
+input{
+    height: 30px;
 }
 
-#cpf{
-    width: 150px;
-    margin-left: 20px;
+#status{
+    width: 250px;
 }
 
-#rg{
-    width: 150px;
+
+/* dados pessoas */
+
+
+.DadosPessoa{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
 }
 
-#escolaridade{
-    width: 200px;
+.DadosPessoa section{
+    display: flex;
+    flex-direction: column;
 }
 
-#renda{
-    width: 200px;
+#nome{
+    width: 500px;
+}
+#nomesocial{
+    width: 350px;
 }
 
-#telefone{
-    width: 150px;
+/* Logradouro */
+
+
+
+.dadosLogradouro{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
 }
 
-#btPessoas{
-    cursor: pointer;
+.dadosLogradouro section{
+    display: flex;
+    flex-direction: column;
 }
-*/
+
+#rua{
+    width: 300px;
+}
+#complemento{
+    width: 250px;
+}
+#n{
+    width: 100px;
+}
+#cep{
+    width: 100px;
+}
 
 
+/* Botão de cadastrar */
 
 
-.containerCadasPessoas{
+.botaoSalvar{
+    margin-top: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.containerCadasPessoas h2{
+.botaoSalvar button{
+    background-color: #0095bf;
+    border: none;
     color: white;
-    padding: 110px;
+
+
+    padding: 16px;
+    border-radius: 10px;
+    width: 300px;
+    font-size: 24px;
 }
-
-
-
-
-
-
-
+.botaoSalvar button:hover{
+    background-color: #007596;
+    cursor: pointer;
+}
 

@@ -1,6 +1,6 @@
 /*RODAPÉ > ESTILO*/
 footer{
-    position: fixed;
+    position: relative;
     width: 100%; height: 30px;
     bottom: 0px;
     text-align: center;

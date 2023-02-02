@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <main>
       <AppRoutes/>
     </main>
-    <Footer/>
+    {/* <Footer/> */}
     </BrowserRouter>
   </React.StrictMode>,
 )
