@@ -6,7 +6,7 @@ import { useState } from 'react'
 import { Input } from 'antd'
 import './pessoasCad.css'
 import { Select, Space } from 'antd'
-import { Button } from 'antd/es/radio'
+
 
 
 
@@ -20,101 +20,86 @@ export function CadPessoas() {
 
     return (
         <div className='container'>
-            <form action="">
-            <h1 id='tituloCadastro'>DADOS DO CADASTRO</h1>
-           <div className='dadosdoCadastro'>
-                <section>
-                    <label htmlFor="data">Data de cadastro:</label>
-                    <Input type="date" name="" id="data" />
-                </section>
-                <section>
-                    <label htmlFor="ag">Agente responsável:</label>
-                    <Select defaultValue="Nome do agente"
-                    style={{width: 250}}
-                    options={[
-                        { value: 'Jorge', label: "Jorge Alysson"},
-                        { value: 'Luana', label: "Luana Ferreira"},
-                    ]}/>
-                </section>
-               
-                    
-           </div>
-           <h1 id='tituloCadastro'>DADOS PESSOAIS</h1>
-           <div className='DadosPessoa'>
-                <section>
-                    <label htmlFor="nome">Nome completo: *</label>
-                    <Input placeholder='Nome' id='nome' required/>
-                </section>
-                <section>
-                    <label htmlFor="nomesocial">Nome social:</label>
-                    <Input type="" name="" id="nomesocial" />
-                </section>
-                <section>
-                    <label htmlFor="cpf">CPF *</label>
-                    <Input type="text" name="" id="cpf" required/>
-                </section>
-                <section>
-                    <label htmlFor="rg">Registro Geral:</label>
-                    <Input type="text" name="" id="rg" placeholder='RG'/>
-                </section>
-           </div>
-           <div className='DadosPessoa'>
-                <section>
-                    <label htmlFor="email">E-mail:</label>
-                    <Input type='email' placeholder='1234@exemplo.com'/>
-                </section>
-                <section>
-                    <label htmlFor="tel">Telefone pessoal:</label>
-                    <Input placeholder='(00) 9 0000-0000'/>
-                </section>
-                <section>
-                    <label htmlFor="situacao">Situação:</label>
-                    <Select defaultValue="Situação"
-                    style={{width: 150}}
-                    options={[
-                        { value: 'participante', label: "Participante"},
-                        { value: 'não-participa', label: "Não participante"},
-                        { value: 'patrocinador', label: "Patrocinador"},
-                        { value: 'desistente', label: "Desistente"},
-                        
-                    ]}/>
-                </section>
-                <section>
-                    <label htmlFor="cor">Cor/Raça:</label>
-                    <Select defaultValue="Selecione"
-                    style={{width: 150}}
-                    options={[
-                        { value: 'branco', label: "Branco"},
-                        { value: 'pardo', label: "Pardo"},
-                        { value: 'negro', label: "Negro"},
-                        
-                    ]}/>
-                </section>
-                <section>
-                    <label htmlFor="sexo">Sexo:</label>
-                <Select defaultValue="Selecione"
-                    style={{width: 150}}
-                    options={[
-                        { value: 'masculino', label: "Masculino"},
-                        { value: 'feminino', label: "Feminino"},
-                        
-                    ]}/>
-                </section>
-                <section>
-                    <label htmlFor="estado-civil">Estado cívil:</label>
-                    <Select defaultValue="Selecione"
-                style={{width: 150}}
-                options={[
-                    { value: 'solteiro', label: "Solteiro(a)"},
-                    { value: 'casado', label: "Casado(a)"},
-                    { value: 'divorciado', label: "Divorciado(a)"},
-                    { value: 'viuvo', label: "Viúvo(a)"},
-                    
-                ]}/>
-                </section>
+            <div className='titulo'>
+                <img src="/src/images/logo-pessoas.png" id='icone-pagina' /><h1>CADASTRAR PESSOA</h1>
+                <Link to="/pessoas"><button><img src="/src/images/icones/icone-lista.png" id='icone-lista' />LISTAGEM</button></Link>
+            </div>
+
+            <form className='form' action="" method='POST'>
+                <h2>DADOS DE CADASTRO</h2>
+                <div className='form-bloco'>
+                    <section>
+                        <label htmlFor="date">Data de cadastro:</label>
+                        <input type='date' name='' id='dataCadastro' />
+                    </section>
+
+                    <section>
+                        <label htmlFor="date">Agente responsável:</label>
+                        <select name="" id="agente" required>
+                            <option value="" disabled selected hidden>selecione</option>
+                            <option value="">Jorge Alysson</option>
+                            <option value="">Luana Ferreira</option>
+                        </select>
+                    </section>
+
+                    <section>
+                        <label htmlFor="situacao">Status:</label>
+                        <select name="" id="situacao">
+                            <option value="" disabled selected hidden>selecione</option>
+                            <option value="">Cliente/Participante</option>
+                            <option value="">Desistente/Não participa</option>
+                            <option value="">Patrocinador</option>
+                        </select>
+                    </section>
+                </div>
+
+                <h2>DADOS DA PESSOA</h2>
+                <div className='form-bloco'>
+                    <section>
+                        <label htmlFor="nomeCompleto">Nome completo:</label>
+                        <input type="text" name="" id="nomeCompleto" placeholder='Nome completo...' required />
+                    </section>
+
+                    <section>
+                        <label htmlFor="nomeSocial">Nome social:</label>
+                        <input type="text" name="" id="nomeSocial" placeholder='Caso haja...' />
+                    </section>
+
+                    <section>
+                        <label htmlFor="cpf">Número do CPF:</label>
+                        <input type="number" id="cpf" maxLength={14} placeholder="xxx.xxx.xxx-xx" required />
+
+                    </section>
+                    <section>
+                        <label htmlFor="rg">Número do RG:</label>
+                        <input type="number" id="rg" placeholder='xxx.xxxx.xxx-x' required />
+
+                    </section>
+                    <section>
+                        <label htmlFor="email">Email:</label>
+                        <input type="email" name="" id="email" placeholder='exemplo@exemplo.com' />
+
+                    </section>
+                    <section>
+                        <label htmlFor="telefone">Telefone pessoal:</label>
+                        <input type="number" placeholder='(xx) x xxxx-xxxx' id='telefone' />
+                    </section>
+
+                    <section>
+                        <label htmlFor="situacao">Situação:</label>
+                        <select name="" id="situacao">
+                            <option value="" disabled hidden selected>selecione</option>
+                            <option value="">Empreendedor/a formal</option>
+                            <option value="">Empreendedor/a não formal</option>
+                            <option value="">Empregado/a</option>
+                            <option value="">Desempregado/a</option>
+                            <option value="">Aposentado/a</option>
+                            <option value="">Agricultor/a</option>
+                        </select>
+                    </section>
 
            </div>
-           <div className='DadosPessoa'>
+           <div className='form-bloco'>
                 <section>
                     <label htmlFor="escola">Escolaridade</label>
                     <Select defaultValue="Selecione"
