@@ -20,6 +20,7 @@ export function CadPessoas() {
 
     return (
         <div className='container'>
+            <form action="">
             <h1 id='tituloCadastro'>DADOS DO CADASTRO</h1>
            <div className='dadosdoCadastro'>
                 <section>
@@ -35,17 +36,7 @@ export function CadPessoas() {
                         { value: 'Luana', label: "Luana Ferreira"},
                     ]}/>
                 </section>
-                <section>
-                    <label htmlFor="status">Status:</label>
-                    <Select defaultValue="Status"
-                    style={{width: 250}}
-                    options={[
-                        { value: 'participante', label: "Participante do programa"},
-                        { value: 'não-participa', label: "Não participa"},
-                        { value: 'patrocinador', label: "Patrocinador"},
-                        { value: 'desistente', label: "Desistente"},
-                    ]}/>
-                </section>
+               
                     
            </div>
            <h1 id='tituloCadastro'>DADOS PESSOAIS</h1>
@@ -81,9 +72,10 @@ export function CadPessoas() {
                     <Select defaultValue="Situação"
                     style={{width: 150}}
                     options={[
-                        { value: 'participante', label: "texto aqui"},
-                        { value: 'não-participa', label: "texto aqui"},
-                        { value: 'patrocinador', label: "texto aqui"},
+                        { value: 'participante', label: "Participante"},
+                        { value: 'não-participa', label: "Não participante"},
+                        { value: 'patrocinador', label: "Patrocinador"},
+                        { value: 'desistente', label: "Desistente"},
                         
                     ]}/>
                 </section>
@@ -216,7 +208,7 @@ export function CadPessoas() {
            <div className='botaoSalvar'>
                     <button>Cadastrar</button>
            </div>
-
+           </form>
         </div>
     )
 }

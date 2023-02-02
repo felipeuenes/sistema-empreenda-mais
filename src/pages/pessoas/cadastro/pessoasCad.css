@@ -1,9 +1,13 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+
 /* dados de cadastro */
 #tituloCadastro{
-    padding: 6px;
+    /* padding: 2px; */
     margin-top: 16px;
     color: white;
     background-color: #007596;
+    font-size: 24px;
 }
 .dadosdoCadastro{
     display: flex;
@@ -25,6 +29,10 @@ input{
     width: 250px;
 }
 
+label{
+    font-family: 'Montserrat', sans-serif;
+   
+}
 
 /* dados pessoas */
 
