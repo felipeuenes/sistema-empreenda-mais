@@ -27,11 +27,11 @@ export function Header() {
                     <Link to="/mentorias">
                         <li title='Lista de mentorias'><img src="/src/images/icones/icone-mentorias.png" alt="" />Mentorias</li>
                     </Link>
-                    <Link to="/atendimento">
-                        <li title='Lista de atendimentos'><img src="/src/images/icones/icone-atendimentos.png" alt="" />Atendimentos</li>
-                    </Link>
                     <Link to="/protocolos">
                         <li title='Lista de protocolos'><img src="/src/images/icones/icone-protocolos.png" alt="" />Protocolos</li>
+                    </Link>
+                    <Link to="/atendimento">
+                        <li title='Serviços e tutoriais sobre contabilidade'><img src="/src/images/icones/icone-contabilidade.png" alt="" />Contabilidade</li>
                     </Link>
                     <Link to="/indicadores">
                         <li title='Lista de indicadores'><img src="/src/images/icones/icone-indicadores.png" alt="" />Indicadores</li>
