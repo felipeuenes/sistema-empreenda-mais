@@ -25,12 +25,12 @@ export function Header() {
                         <li title='Lista de cursos'><img src="/src/images/icones/icone-cursos.png" alt="" />Cursos</li>
                     </Link>
                     <Link to="/mentorias">
-                        <li title='Lista de mentorias'><img src="/src/images/icones/icone-mentorias.png" alt="" />Mentorias</li>
+                        <li title=''><img src="/src/images/icones/icone-mentorias.png" alt="" />Mentorias</li>
                     </Link>
-                    <Link to="/protocolos">
-                        <li title='Lista de protocolos'><img src="/src/images/icones/icone-protocolos.png" alt="" />Protocolos</li>
+                    <Link to="/registros">
+                        <li title='Protocolos com registros de atendimento'><img src="/src/images/icones/icone-protocolos.png" alt="" />Protocolos</li>
                     </Link>
-                    <Link to="/atendimento">
+                    <Link to="/contabilidade">
                         <li title='Serviços e tutoriais sobre contabilidade'><img src="/src/images/icones/icone-contabilidade.png" alt="" />Contabilidade</li>
                     </Link>
                     <Link to="/indicadores">

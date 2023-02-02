@@ -38,8 +38,8 @@ export function CadPessoas() {
     return (
         <div className='container'>
             <div className='titulo'>
-                <img src="/src/images/logo-pessoas.png" id='icone-pagina' /><h1>CADASTRAR PESSOA</h1>
-                <Link to="/pessoas"><button><img src="/src/images/icones/icone-lista.png" id='icone-lista' />LISTAGEM</button></Link>
+                <img src="/src/images/logo-pessoas.png" id='icone-pagina'/><h1>CADASTRAR PESSOA</h1>
+                <Link to="/pessoas"><button><img src="/src/images/icones/icone-lista.png" id='icone-lista'/>LISTAGEM</button></Link>
             </div>
 
             <form className='form' action="" method='POST'>
