@@ -6,7 +6,7 @@ import { useState } from 'react'
 import { Input } from 'antd'
 import './pessoasCad.css'
 import { Select, Space } from 'antd'
-import { Button } from 'antd/es/radio'
+
 
 
 
@@ -57,7 +57,7 @@ export function CadPessoas() {
                 <div className='form-bloco'>
                     <section>
                         <label htmlFor="nomeCompleto">Nome completo:</label>
-                        <input type="text" name="" id="nomeCompleto" placeholder='Nome completo...' required value={formPessoas.name} onChange={() => {handleFormEdit(e, name)}}/>
+                        <input type="text" name="" id="nomeCompleto" placeholder='Nome completo...' required />
                     </section>
 
                     <section>
