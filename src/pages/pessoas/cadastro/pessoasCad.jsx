@@ -99,7 +99,7 @@ export function CadPessoas() {
                     </section>
 
            </div>
-           <div className='DadosPessoa'>
+           <div className='form-bloco'>
                 <section>
                     <label htmlFor="escola">Escolaridade</label>
                     <Select defaultValue="Selecione"
