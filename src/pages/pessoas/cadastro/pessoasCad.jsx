@@ -1,5 +1,4 @@
 //PESSOAS > CADASTRO > PÁGINA
-// import '/src/components/formularios/formularios.css'
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
