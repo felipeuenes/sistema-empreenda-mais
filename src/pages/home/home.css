@@ -1,84 +1,14 @@
-/*INÍCIO > ESTILO*/
-.imageConstru{
-  width: 100%;   
-  height: 100%;
+/*.subContainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.imageConstru img{
-  position: relative;
-  width: 500px;
-  left: 0px;
-}
-
-.cont-estatisticas{
-  margin-top: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-
-}
-.cont-estatisticas2{
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px; 
-
-}
-
-.cont-estatisticas section{
   flex-direction: column;
+  border: #0095ba solid 2px;
+  border-radius: 10px;
+  width: 30%;
 }
-#sectionEstatisticas{
-  border: 2px solid #0095ba;
-  padding: 10px;
-  border-radius: 16px;
-  min-width: 150px;
-  text-align: center;
-  
-}
-
-#sectionEstatisticas2{
-  border: 2px solid #0095ba;
-  padding: 10px;
-  border-radius: 16px;
-  min-width: 130px;
-  text-align: center;
-  
-}
-
-
-
-
-
-/* Table home */
-
-.cont-estatisticas th, td{
-  border: 1px solid black;
-  padding: 6px;
-}
-
-.cont-estatisticas table{
-  border-collapse: collapse;
-  
-}
-
-#situacaoEmpre{
-  width: 400px;
-  text-align: left;
-}
-
-
-
-
-#variavelNumbers{
-  font-size: 50px;
-  font-weight: bold;
-  color: #0095ba;
-  text-align: center;
+.subContainer section {
+  display: flex;
+  flex-direction: column;
+}*/
+.subContainer img {
+  height: 30px;
 }
