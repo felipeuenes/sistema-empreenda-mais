@@ -89,7 +89,7 @@ export function CadPessoas() {
                     </section>
                     <section>
                         <label htmlFor="rg">Número do RG:</label>
-                        <input type="number" id="rg" placeholder='XXX.XXXX.XXX-X' required />
+                        <input type="number" id="rg" placeholder='xxx.xxxx.xxx-x' required />
 
                     </section>
                     <section>
@@ -99,7 +99,7 @@ export function CadPessoas() {
                     </section>
                     <section>
                         <label htmlFor="telefone">Telefone pessoal:</label>
-                        <input type="number" placeholder='(xx)x xxxx-xxxx' id='telefone' />
+                        <input type="number" placeholder='(xx) x xxxx-xxxx' id='telefone' />
                     </section>
 
                     <section>
