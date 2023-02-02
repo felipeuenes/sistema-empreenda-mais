@@ -1,45 +1,28 @@
 //PESSOAS > CADASTRO > PÁGINA
-import '/src/components/formularios/formularios.css'
-
+// import '/src/components/formularios/formularios.css'
+import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
+import { Input } from 'antd'
+import './pessoasCad.css'
+import { Select, Space } from 'antd'
+import { Button } from 'antd/es/radio'
+
+
+
 
 export function CadPessoas() {
 
-    const [formPessoas, setFormPessoas] = useState({
-        name: '',
-
-    })
-
-    const handleFormEdit = (event, name) =>{
-        setFormPessoas({
-            ...formPessoas,
-            [name]: event.target.value
-        })
-    }
-
-    const handleForm = async (event) => {
-        try{
-            event.preventDefault()
-            const response = await fetch(`http://localhost:8080/`, {
-                method: 'POST',
-                body: JSON.stringify(formPessoas)
-            })
-            const json = await response.json()
-            console.log(response.status);
-            console.log(json);
-
-        }catch(err){
-            console.log('erro no sistema');
-        }
-        
-    }
+   
+    // const handleChange = (value: string) => {
+    //     console.log(`selected ${value}`);
+    //   };
 
     return (
         <div className='container'>
             <div className='titulo'>
-                <img src="/src/images/logo-pessoas.png" id='icone-pagina'/><h1>CADASTRAR PESSOA</h1>
-                <Link to="/pessoas"><button><img src="/src/images/icones/icone-lista.png" id='icone-lista'/>LISTAGEM</button></Link>
+                <img src="/src/images/logo-pessoas.png" id='icone-pagina' /><h1>CADASTRAR PESSOA</h1>
+                <Link to="/pessoas"><button><img src="/src/images/icones/icone-lista.png" id='icone-lista' />LISTAGEM</button></Link>
             </div>
 
             <form className='form' action="" method='POST'>
@@ -115,146 +98,102 @@ export function CadPessoas() {
                         </select>
                     </section>
 
-                </div>
-                <div className='form-bloco'>
-                    <section>
-                        <label htmlFor="raca">Cor/Raça:</label>
-                        <select name="" id="raca">
-                            <option value="" disabled hidden selected>selecione</option>
-                            <option value="">Amarela</option>
-                            <option value="">Branca</option>
-                            <option value="">Indígena</option>
-                            <option value="">Negra</option>
-                            <option value="">Parda</option>
-                        </select>
-                    </section>
-
-                    <section>
-                        <label htmlFor="sexo">Sexo:</label>
-                        <select name="" id="sexo">
-                            <option value="" >selecione</option>
-                            <option value="">Feminino</option>
-                            <option value="">Masculino</option>
-                        </select>
-                    </section>
-                    <section>
-                        <label htmlFor="estadoCivil">Estado civil:</label>
-                        <select name="" id="estadoCivil">
-                            <option value="">selecione</option>
-                            <option value="">Casado/a</option>
-                            <option value="">Divorciado/a</option>
-                            <option value="">Solteiro/a</option>
-                            <option value="">União estável</option>
-                            <option value="">Viúvo/a</option>
-                        </select>
-                    </section>
-
-                    <section>
-                        <label htmlFor="escolaridade">Escolaridade:</label>
-                        <select name="" id="escolaridade">
-                            <option value="" disabled hidden selected>selecione</option>
-                            <option value="">Fundamental incompleto</option>
-                            <option value="">Fundamental completo</option>
-                            <option value="">Médio incompleto</option>
-                            <option value="">Médio completo</option>
-                            <option value="">Superior incompleto</option>
-                            <option value="">Superior completo</option>
-                        </select>
-                    </section>
-
-                    <section>
-                        <label htmlFor="renda">Renda familiar:</label>
-                        <select name="" id="renda">
-                            <option value="" disabled hidden selected>selecione</option>
-                            <option value="">Menos que R$1000</option>
-                            <option value="">De R$1000 a R$2000</option>
-                            <option value="">De R$2001 a R$5000</option>
-                            <option value="">Mais de R$5000</option>
-                        </select>
-                    </section>
-
-                    <section>
-                        <label htmlFor="deficiencia">Deficiência:</label>
-                        <select name="" id="deficiencia">
-                            <option value="" selected>selecione</option>
-                            <option value="">Nenhuma</option>
-                            <option value="">Mental</option>
-                            <option value="">Auditiva</option>
-                            <option value="">Visual</option>
-                            <option value="">Motora</option>
-                            <option value="">Múltiplas</option>
-                            <option value="">Não declarada</option>
-                        </select>
-                    </section>
-
-                    <section>
-                        <label htmlFor="recomendacao">Recomenda o programa?</label>
-                        <select name="" id="recomendacao">
-                            <option value="" disabled hidden selected>selecione</option>
-                            <option value="">Sim, recomendo</option>
-                            <option value="">Talvez recomende</option>
-                            <option value="">Não recomendo</option>
-                        </select>
-                    </section>
-                </div>
-
-                <h2>DADOS DO LOGRADOURO PESSOAL</h2>
-                <div className='form-bloco'>
+           </div>
+           <div className='DadosPessoa'>
+                <section>
+                    <label htmlFor="escola">Escolaridade</label>
+                    <Select defaultValue="Selecione"
+                    style={{width: 270}}
+                    options={[
+                        { value: 'fundamental-incompleto', label: "Fundamental incompleto"},
+                        { value: 'fundamental-completo', label: "Fundamental completo"},
+                        { value: 'medio-imcompleto', label: "Médio imcompleto"},
+                        { value: 'medio-completo', label: "Médio completo"},
+                        { value: 'superior-incompleto', label: "Superior incompleto"},
+                        { value: 'superior-completo', label: "Superior completo"},
+                        
+                    ]}/>
+                </section>
+                <section>
+                    <label htmlFor="renda">Renda familiar</label>
+                    <Select defaultValue="Selecione a renda"
+                    style={{width: 250}}
+                    options={[
+                        { value: '', label: "Menos que R$ 1.000,00"},
+                        { value: '', label: "Entre R$1.001,00 - R$2.500,00"},
+                        { value: '', label: "Entre R$2.501,00 - R$5.000,00"},
+                        { value: '', label: "Mais que R$5.000,00"},
+                        
+                    ]}/>
+                </section>
+                <section>
+                    <label htmlFor="">Deficiência:</label>
+                <Select defaultValue="Selecione"
+                    style={{width: 250}}
+                    options={[
+                        { value: '', label: "texto aqui"},
+                        { value: '', label: "texto aqui"},
+                        { value: '', label: "texto aqui"},
+                        
+                    ]}/>
+                </section>
+                <section>
+                    <label htmlFor="">Recomenda o programa?</label>
+                    <Select defaultValue="Selecione"
+                    style={{width: 250}}
+                    options={[
+                        { value: '', label: "Sim"},
+                        { value: '', label: "Não"},
+                        { value: '', label: "Talvez"},
+                        
+                    ]}/>
+                </section>
+           </div>
+           <h1 id='tituloCadastro'>DADOS DO LOGRADOURO PESSOAL</h1>
+           <div className='dadosLogradouro'>
                     <section>
                         <label htmlFor="cep">CEP:</label>
-                        <input type="text" name="" id="cep" placeholder="xxxxx-xxx" />
+                        <Input placeholder='00000-000'id='cep'/>
                     </section>
-
                     <section>
                         <label htmlFor="rua">Rua/Avenida:</label>
-                        <input type="text" name="" id="rua" />
+                        <Input id='rua'/>
                     </section>
-
                     <section>
-                        <label htmlFor="complemento">Complemento:</label>
-                        <input type="text" name="" id="complemento" />
+                        <label htmlFor="complemento">Complemento</label>
+                        <Input id='complemento' placeholder='Apartamento, prédio, casa...'/>
                     </section>
-
                     <section>
-                        <label htmlFor="numero">Número:</label>
-                        <input type="text" name="" id="numero" />
+                        <label htmlFor="n">Número:</label>
+                        <Input type='number' id='n'/>
                     </section>
-
                     <section>
-                        <label htmlFor="bairro">Bairro/Distrito:</label>
-                        <select name="" id="bairro">
-                            <option value="" disabled hidden selected>selecione</option>
-                            <option value="">Canafístula</option>
-                            <option value="">Mel</option>
-                            <option value="">Montenegro</option>
-                            <option value="">Poço Grande</option>
-                            <option value="">São Pedro do Norte</option>
-                            <option value="">Sede: Alto da Paz</option>
-                            <option value="">Sede: Alto do Tó</option>
-                            <option value="">Sede: Centro</option>
-                            <option value="">Sede: Coco Verde</option>
-                            <option value="">Sede: Nossa Senhora de Fátima</option>
-                            <option value="">Sede: Padre Manoel Lemos Braga</option>
-                            <option value="">Sede: Planalto</option>
-                            <option value="">Sede: Sagrada Família</option>
-                            <option value="">Sede: São José</option>
-                            <option value="">Sede: São Mateus</option>
-                        </select>
+                        <label htmlFor="">Bairro/Distrito:</label>
+                    <Select defaultValue="Selecione"
+                    style={{width: 250}}
+                    options={[
+                        { value: '', label: "texto aqui"},
+                        { value: '', label: "texto aqui"},
+                        { value: '', label: "texto aqui"},
+                        
+                    ]}/>
                     </section>
-
+                    
+           </div>
+           <div className='dadosLogradouro'>
                     <section>
                         <label htmlFor="cidade">Cidade:</label>
-                        <input type="text" name='' id="cidade" />
+                        <Input id='cidade'/>
                     </section>
-
                     <section>
                         <label htmlFor="estado">Estado:</label>
-                        <input type="text" name='' id="estado" />
+                        <Input id='estado'/>
                     </section>
-                </div>
-                <div className='btn-cadastrar'><button onClick={handleForm}><img src="/src/images/icones/icone-cadastrar.png" />SALVAR CADASTRO</button></div>
-            </form>
-
+           </div>
+           <div className='botaoSalvar'>
+                    <button>Cadastrar</button>
+           </div>
+           </form>
         </div>
     )
 }

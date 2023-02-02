@@ -27,7 +27,8 @@ a {
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
-  height: 600px;
+  /* height: 800px; */
+  
 }
 
 /*SEÇÃO DO TÍTULO*/
@@ -77,3 +78,12 @@ h1 {
   color: #0095ba;
 }
 
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+  
+}
+input[type=number] { 
+ -moz-appearance: textfield;
+ appearance: textfield;
+
+}
