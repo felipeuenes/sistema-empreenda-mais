@@ -34,11 +34,11 @@ export function CadPessoas() {
 
                     <section>
                         <label htmlFor="date">Agente responsável:</label>
-                        <select name="" id="agente" required>
+                        <Select name="" id="agente" required>
                             <option value="" disabled selected hidden>selecione</option>
                             <option value="">Jorge Alysson</option>
                             <option value="">Luana Ferreira</option>
-                        </select>
+                        </Select>
                     </section>
 
                     <section>
