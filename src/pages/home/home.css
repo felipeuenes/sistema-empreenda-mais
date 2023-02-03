@@ -1,14 +1,20 @@
-/*.subContainer {
+.subContainer {
   display: flex;
   flex-direction: column;
-  border: #0095ba solid 2px;
+  border: #bef2ff solid 1px;
   border-radius: 10px;
   width: 30%;
+  margin: 20px; padding: 10px;
+  overflow: hidden;
+}
+.subContainer h2 {
+  color: #0095ba; background-color: #bef2ff;
+  text-align: center; border-radius: 10px; font-size: 15pt;
 }
 .subContainer section {
   display: flex;
   flex-direction: column;
-}*/
+}
 .subContainer img {
   height: 30px;
 }

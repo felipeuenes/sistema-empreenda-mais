@@ -1,4 +1,4 @@
-import './styleList.css'
+import './listas.css'
 
 
 export function List(){

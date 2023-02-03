@@ -4,17 +4,17 @@
 // import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './pessoas.css'
-import { List } from '../../components/listas'
+import { List } from '../../components/listas/listas'
 
 export function Pessoas() {
-    return (
-        <div className='container'>
-            <div className='titulo'>
-                <img src="/src/images/logo-pessoas.png" id='icone-pagina' /><h1>PESSOAS</h1>
-                <Link to="/cadastro-pessoas"><button><img src="/src/images/icones/icone-mais.png" id='icone-lista' />CADASTRAR</button></Link>
-            </div>
+	return (
+		<div className='container'>
+			<div className='titulo'>
+				<img src="/src/images/logo-pessoas.png" id='icone-pagina' /><h1>PESSOAS</h1>
+				<Link to="/cadastro-pessoas"><button><img src="/src/images/icones/icone-mais.png" id='icone-lista' />CADASTRAR</button></Link>
+			</div>
 
-            {/* <div className='lista-pessoas'>
+			{/* <div className='lista-pessoas'>
                 <section className='pessoa-bloco1'>
 
                     <button className='btn-pesquisar'><img src='/src/images/icones/icone-pesquisa.png' />PESQUISAR</button>
@@ -62,7 +62,7 @@ export function Pessoas() {
             </div>
              */}
 
-            <List />
-        </div>
-    )
+			<List />
+		</div>
+	)
 }

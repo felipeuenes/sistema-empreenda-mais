@@ -1,6 +1,6 @@
 // import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { List } from '../../components/listas'
+import { List } from '../../components/listas/listas';
 import './App.css'
 
 export function Eventos() {

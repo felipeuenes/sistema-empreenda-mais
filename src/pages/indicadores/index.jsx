@@ -1,4 +1,4 @@
-import { List } from '../../components/listas';
+import { List } from '../../components/listas/listas';
 import './styleIndicadores.css';
 import { Link } from 'react-router-dom';
 

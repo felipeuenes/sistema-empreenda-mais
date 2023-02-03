@@ -1,6 +1,6 @@
 import './atendimento.css'
 import { Link } from 'react-router-dom'
-import { List } from '../../components/listas'
+import { List } from '../../components/listas/listas'
 
 export function Atendimento() {
 

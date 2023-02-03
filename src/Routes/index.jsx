@@ -10,8 +10,8 @@ import { ImpProto } from '../pages/protocolos/folha-protocolo/protocoloImp'
 import { CadProtocolo } from '../pages/protocolos/protocoloCad'
 
 import { Atendimento } from '../pages/atendimentos/index'
-import { Eventos } from '../pages/Eventos/App'
-import { CadastroEvento } from '../pages/Eventos/Cadastro-eventos'
+import { Eventos } from '../pages/eventos/App'
+import { CadastroEvento } from '../pages/eventos/cadastro-eventos'
 import { Cursos } from '../pages/cursos'
 import { Mentorias } from '../pages/mentorias/index,'
 import { Indicadores } from '../pages/indicadores'
@@ -28,7 +28,7 @@ export function AppRoutes() {
             <Route path={'/pessoas'} element={<Pessoas/>}></Route>
             <Route path={'/cadastro-negocios'} element={<CadNegocios/>}></Route>
             <Route path={'/cadastro-pessoas'} element={<CadPessoas/>}/>
-            <Route path={'/protocolos'} element={<CadProtocolo/>}/>
+            <Route path={'/registros'} element={<CadProtocolo/>}/>
             <Route path={'/imprimir'} element={<ImpProto/>}/>
             <Route path={'/eventos'} element={<Eventos/>}/>
             <Route path={'/cadastro-eventos'} element={<CadastroEvento/>}/>

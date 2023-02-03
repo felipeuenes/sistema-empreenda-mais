@@ -1,10 +1,15 @@
 /*ESTILO DA PÁGINA PRINCIPAL*/
+@font-face {
+  font-family: Roboto;
+  src: url(https://fonts.google.com/specimen/Roboto);
+}
 * {
   /*reset de todas as configurações*/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  font-family: Roboto;
 }
 
 a {
@@ -14,21 +19,21 @@ a {
 
 /*CORPO*/
 .container {
-  top: 80px;
-  z-index: 1;
-  position: relative;
+  position: relative ;
+  bottom: 0;
   border-radius: 20px;
-  margin: 20px;
-  padding: 20px;
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+  margin: 20px; padding: 20px;
   /* min-height: 500px; */
   background-color: #ffffff;
   background-image: url(../src/images/logo-fundo-1.png);
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
-  /* height: 800px; */
-  
+  /* height: 800px; */ 
+}
+.container #containerHandle {
+  display: flex; flex-direction: row;
 }
 
 /*SEÇÃO DO TÍTULO*/
