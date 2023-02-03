@@ -1,6 +1,7 @@
 //NEGÓCIOS > CADASTRO > PÁGINA
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import { Input, Select } from 'antd'
 
 import '/src/components/formularios/formularios.css'
 
@@ -13,115 +14,118 @@ export function CadNegocios() {
 			</div>
 			<div className='form'><form action="">
 
-				<h2>DADOS DE RECONHECIMENTO</h2>
-				<div className='form-bloco'>
+				<h2 id='tituloCadastro'>DADOS DE RECONHECIMENTO</h2>
+				<div className='bloco1'>
 					<section>
 
 						<label htmlFor="razaoSocial">Razão social:</label>
-						<input type="text" name="" id="razaoSocial" required placeholder='Ex: Maria da Silva' />
+						<Input type="text" name="" id="razaoSocial" required placeholder='Ex: Maria da Silva' />
 					</section>
 
 					<section >
 						<label htmlFor="nomeFantasia">Nome fantasia:</label>
-						<input type="text" id='nomeFantasia' placeholder='Ex: Ateliê da Maria' />
+						<Input type="text" id='nomeFantasia' placeholder='Ex: Ateliê da Maria' />
 					</section>
 
 					<section >
 						<label htmlFor="responsavel">Responsável:</label>
-						<input type="text" id='responsavel' required />
+						<Input type="text" id='responsavel' required />
 					</section>
 
 					<section >
 						<label htmlFor="segmento">Segmento:</label>
-						<input type="text" id='segmento' required placeholder='Ex: Artesanato' />
+						<Input type="text" id='segmento' required placeholder='Ex: Artesanato' />
 					</section>
 
 					<section>
 						<label htmlFor="atvPrincipal">Atividade principal:</label>
-						<input type="text" name="" id="atvPrincipal" required />
+						<Input type="text" name="" id="atvPrincipal" required />
 					</section>
 
 					<section>
 						<label htmlFor="atvSecundaria">Atividade secundária:</label>
-						<input type="text" name="" id="atvSecundaria" placeholder='Caso haja...' />
+						<Input type="text" name="" id="atvSecundaria" placeholder='Caso haja...' />
 					</section>
 				</div>
 
-				<h2>DADOS NUMÉRICOS</h2>
-				<div className='form-bloco'>
+				<h2 id='tituloCadastro'>DADOS NUMÉRICOS</h2>
+				<div className='bloco2'>
 					<section>
 						<label htmlFor="cnpj">CNPJ:</label>
-						<input type="number" name="" id="cnpj" placeholder='xx.xxx.xxx/xxxx-xx' />
+						<Input type="number" name="" id="cnpj" placeholder='xx.xxx.xxx/xxxx-xx' />
 					</section>
 
 					<section>
 						<label htmlFor="datacnpj">Inscrição no CNPJ:</label>
-						<input type="date" name="" id="datacpnj" />
+						<Input type="date" name="" id="datacpnj" />
 					</section>
 
 					<section>
 						<label htmlFor="inscriEstadual">Inscrição Estadual:</label>
-						<input type="number" name="" id="inscriEstadual" />
+						<Input type="number" name="" id="inscriEstadual" />
 					</section>
 
 					<section>
 						<label htmlFor="inscriMunicipal">Inscrição Municipal:</label>
-						<input type="number" name="" id="inscriMunicipal" />
+						<Input type="number" name="" id="inscriMunicipal" />
 					</section>
 
 					<section>
 						<label htmlFor="telefoneCom">Telefone comercial:</label>
-						<input type="text" id='telefoneCom' placeholder='(xx) 9 xxxx-xxxx' required />
+						<Input type="text" id='telefoneCom' placeholder='(xx) 9 xxxx-xxxx' required />
 					</section>
 
 					<section>
 						<label htmlFor="telefoneWhats">Telefone (Whatsapp):</label>
-						<input type="text" name="" id="telefoneWhats" placeholder='(xx) 9 xxxx-xxxx' />
+						<Input type="text" name="" id="telefoneWhats" placeholder='(xx) 9 xxxx-xxxx' />
 					</section>
 				</div>
 
-				<h2>DADOS DO LOGRADOURO COMERCIAL</h2>
-				<div className='form-bloco'>
+				<h2 id='tituloCadastro'>DADOS DO LOGRADOURO COMERCIAL</h2>
+				<div className='bloco3'>
 					<section>
 						<label htmlFor="cep">CEP:</label>
-						<input type="text" name="" id="cep" placeholder="xxxxx-xxx" />
+						<Input type="text" name="" id="cep" placeholder="xxxxx-xxx" />
 					</section>
 
 					<section>
 						<label htmlFor="rua">Rua/Avenida:</label>
-						<input type="text" name="" id="rua" />
+						<Input type="text" name="" id="rua" />
 					</section>
 
 					<section>
 						<label htmlFor="complemento">Complemento:</label>
-						<input type="text" name="" id="complemento" />
+						<Input type="text" name="" id="complemento" />
 					</section>
 
 					<section>
-						<label htmlFor="numero">Número:</label>
-						<input type="text" name="" id="numero" />
+						<label htmlFor="n">Número:</label>
+						<Input type="text" name="" id="n" />
 					</section>
 
 					<section>
 						<label htmlFor="bairro">Bairro/Distrito:</label>
-						<select name="" id="bairro">
-							<option value="" selected>selecione</option>
-							<option value="">Canafístula</option>
-							<option value="">Mel</option>
-							<option value="">Montenegro</option>
-							<option value="">Poço Grande</option>
-							<option value="">São Pedro do Norte</option>
-							<option value="">Sede: Alto da Paz</option>
-							<option value="">Sede: Alto do Tó</option>
-							<option value="">Sede: Centro</option>
-							<option value="">Sede: Coco Verde</option>
-							<option value="">Sede: Nossa Senhora de Fátima</option>
-							<option value="">Sede: Padre Manoel Lemos Braga</option>
-							<option value="">Sede: Planalto</option>
-							<option value="">Sede: Sagrada Família</option>
-							<option value="">Sede: São José</option>
-							<option value="">Sede: São Mateus</option>
-						</select>
+						
+						<Select defaultValue="Selecione"
+                    style={{width: 200}}
+                    options={[
+                        { value: 'canafistula', label: "Canafístula"},
+                        { value: 'mel', label: "Mel"},
+                        { value: 'montenegro', label: "Montenegro"},
+                        { value: 'pocogrande', label: "Poço Grande"},
+                        { value: 'sao pedro', label: "São Pedro do Norte"},
+                        { value: 'alto da paz', label: "Sede: Alto da Paz"},
+                        { value: 'alto do tó', label: "Sede: Alto do Tó"},
+                        { value: 'centro', label: "Sede: Centro"},
+                        { value: 'coco verde', label: "Sede: Coco Verde"},
+                        { value: 'nossa senhora de fatima', label: "Sede: Nossa Senhora de Fátima"},
+                        { value: 'padre manoel gomes', label: "Sede: Padre Manoel Lemos Braga"},
+                        { value: 'planalto', label: "Sede: Planalto"},
+                        { value: 'sagrada familia', label: "Sede: Sagrada Família"},
+                        { value: 'sao jose', label: "Sede: São José"},
+                        { value: 'sao mateus', label: "Sede: São Mateus"},
+                       
+                    ]}/>
 					</section>
 
 					<section>

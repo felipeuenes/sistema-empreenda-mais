@@ -26,7 +26,7 @@ export function CadPessoas() {
 
             <form className='form' action="" method='POST'>
                 <h1 id='tituloCadastro'>DADOS DE CADASTRO</h1>
-                <div className='dadosdoCadastro'>
+                <div className='bloco1'>
                     <section>
                         <label htmlFor="date">Data de cadastro:</label>
                         <Input type='date' name='date' id='date' />
@@ -47,7 +47,7 @@ export function CadPessoas() {
                 </div>
 
                 <h1 id='tituloCadastro'>DADOS DA PESSOA</h1>
-                <div className='DadosPessoa'>
+                <div className='bloco2'>
                     <section>
                         <label htmlFor="nome">Nome completo: *</label>
                         <Input type="text" name="" id="nome" placeholder='Nome completo...' required />
@@ -81,7 +81,7 @@ export function CadPessoas() {
                   
 
            </div>
-           <div className='DadosPessoa'>
+           <div className='bloco2'>
            <section>
                         <label htmlFor="situacao">Situação:</label>
                       
@@ -117,10 +117,10 @@ export function CadPessoas() {
                     <Select defaultValue="Selecione a renda"
                     style={{width: 250}}
                     options={[
-                        { value: '', label: "Menos que R$ 1.000,00"},
-                        { value: '', label: "Entre R$1.001,00 - R$2.500,00"},
-                        { value: '', label: "Entre R$2.501,00 - R$5.000,00"},
-                        { value: '', label: "Mais que R$5.000,00"},
+                        { value: 'Menos que R$ 1.000,00', label: "Menos que R$ 1.000,00"},
+                        { value: 'Entre R$1.001,00 - R$2.500,00', label: "Entre R$1.001,00 - R$2.500,00"},
+                        { value: 'Entre R$2.501,00 - R$5.000,00', label: "Entre R$2.501,00 - R$5.000,00"},
+                        { value: 'Mais que R$5.000,00', label: "Mais que R$5.000,00"},
                         
                     ]}/>
                 </section>
@@ -140,15 +140,15 @@ export function CadPessoas() {
                     <Select defaultValue="Selecione"
                     style={{width: 250}}
                     options={[
-                        { value: '', label: "Sim"},
-                        { value: '', label: "Não"},
-                        { value: '', label: "Talvez"},
+                        { value: 'sim', label: "Sim"},
+                        { value: 'nao', label: "Não"},
+                        { value: 'talvez', label: "Talvez"},
                         
                     ]}/>
                 </section>
            </div>
            <h1 id='tituloCadastro'>DADOS DO LOGRADOURO PESSOAL</h1>
-           <div className='dadosLogradouro'>
+           <div className='bloco3'>
                     <section>
                         <label htmlFor="cep">CEP:</label>
                         <Input placeholder='00000-000'id='cep'/>
@@ -178,7 +178,7 @@ export function CadPessoas() {
                     </section>
                     
            </div>
-           <div className='dadosLogradouro'>
+           <div className='bloco3'>
                     <section>
                         <label htmlFor="cidade">Cidade:</label>
                         <Input id='cidade'/>
