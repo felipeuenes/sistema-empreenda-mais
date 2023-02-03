@@ -188,9 +188,7 @@ export function CadPessoas() {
                         <Input id='estado'/>
                     </section>
            </div>
-           <div className='botaoSalvar'>
-                    <button>Cadastrar</button>
-           </div>
+           <div className='btn-cadastrar'><button><img src="/src/images/icones/icone-cadastrar.png" />SALVAR CADASTRO</button></div>
            </form>
         </div>
     )
