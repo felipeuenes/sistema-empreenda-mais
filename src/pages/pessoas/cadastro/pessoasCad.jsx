@@ -25,63 +25,57 @@ export function CadPessoas() {
             </div>
 
             <form className='form' action="" method='POST'>
-                <h2>DADOS DE CADASTRO</h2>
-                <div className='form-bloco'>
+                <h1 id='tituloCadastro'>DADOS DE CADASTRO</h1>
+                <div className='dadosdoCadastro'>
                     <section>
                         <label htmlFor="date">Data de cadastro:</label>
-                        <input type='date' name='' id='dataCadastro' />
+                        <Input type='date' name='' id='date' />
                     </section>
 
                     <section>
                         <label htmlFor="date">Agente responsável:</label>
-                        <Select name="" id="agente" required>
-                            <option value="" disabled selected hidden>selecione</option>
-                            <option value="">Jorge Alysson</option>
-                            <option value="">Luana Ferreira</option>
-                        </Select>
+                        <Select defaultValue="Selecione"
+                    style={{width: 270}}
+                    options={[
+                        { value: 'fundamental-incompleto', label: "Luana Ferreira"},
+                        { value: 'fundamental-completo', label: "Jorge Alysson"},
+                       
+                    ]}/>
                     </section>
 
-                    <section>
-                        <label htmlFor="situacao">Status:</label>
-                        <select name="" id="situacao">
-                            <option value="" disabled selected hidden>selecione</option>
-                            <option value="">Cliente/Participante</option>
-                            <option value="">Desistente/Não participa</option>
-                            <option value="">Patrocinador</option>
-                        </select>
-                    </section>
+                    
                 </div>
 
-                <h2>DADOS DA PESSOA</h2>
-                <div className='form-bloco'>
+                <h1 id='tituloCadastro'>DADOS DA PESSOA</h1>
+                <div className='DadosPessoa'>
                     <section>
                         <label htmlFor="nomeCompleto">Nome completo:</label>
-                        <input type="text" name="" id="nomeCompleto" placeholder='Nome completo...' required />
+                        <Input type="text" name="" id="nomeCompleto" placeholder='Nome completo...' required />
                     </section>
 
                     <section>
                         <label htmlFor="nomeSocial">Nome social:</label>
-                        <input type="text" name="" id="nomeSocial" placeholder='Caso haja...' />
+                        <Input type="text" name="" id="nomeSocial"  />
                     </section>
 
                     <section>
                         <label htmlFor="cpf">Número do CPF:</label>
-                        <input type="number" id="cpf" maxLength={14} placeholder="xxx.xxx.xxx-xx" required />
+                        <Input type="number" id="cpf" maxLength={14} placeholder="xxx.xxx.xxx-xx" required />
 
                     </section>
                     <section>
                         <label htmlFor="rg">Número do RG:</label>
-                        <input type="number" id="rg" placeholder='xxx.xxxx.xxx-x' required />
+                        <Input type="number" id="rg" placeholder='xxx.xxxx.xxx-x' required />
 
                     </section>
                     <section>
                         <label htmlFor="email">Email:</label>
-                        <input type="email" name="" id="email" placeholder='exemplo@exemplo.com' />
+                        <Input type="email" name="" id="email" placeholder='exemplo@exemplo.com' />
 
                     </section>
                     <section>
                         <label htmlFor="telefone">Telefone pessoal:</label>
-                        <input type="number" placeholder='(xx) x xxxx-xxxx' id='telefone' />
+                        <Input type="number" placeholder='(xx) x xxxx-xxxx' id='telefone' />
                     </section>
 
                     <section>
