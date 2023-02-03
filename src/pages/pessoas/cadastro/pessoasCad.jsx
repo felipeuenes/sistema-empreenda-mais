@@ -29,7 +29,7 @@ export function CadPessoas() {
                 <div className='dadosdoCadastro'>
                     <section>
                         <label htmlFor="date">Data de cadastro:</label>
-                        <Input type='date' name='' id='date' />
+                        <Input type='date' name='date' id='date' />
                     </section>
 
                     <section>
@@ -49,23 +49,23 @@ export function CadPessoas() {
                 <h1 id='tituloCadastro'>DADOS DA PESSOA</h1>
                 <div className='DadosPessoa'>
                     <section>
-                        <label htmlFor="nomeCompleto">Nome completo:</label>
-                        <Input type="text" name="" id="nomeCompleto" placeholder='Nome completo...' required />
+                        <label htmlFor="nome">Nome completo: *</label>
+                        <Input type="text" name="" id="nome" placeholder='Nome completo...' required />
                     </section>
 
                     <section>
                         <label htmlFor="nomeSocial">Nome social:</label>
-                        <Input type="text" name="" id="nomeSocial"  />
+                        <Input type="text" name="" id="nomeSocial" placeholder='Se houver...' />
                     </section>
 
                     <section>
-                        <label htmlFor="cpf">Número do CPF:</label>
-                        <Input type="number" id="cpf" maxLength={14} placeholder="xxx.xxx.xxx-xx" required />
+                        <label htmlFor="cpf">CPF: *</label>
+                        <Input type="text" id="cpf" maxLength={14} placeholder="xxx.xxx.xxx-xx" required />
 
                     </section>
                     <section>
-                        <label htmlFor="rg">Número do RG:</label>
-                        <Input type="number" id="rg" placeholder='xxx.xxxx.xxx-x' required />
+                        <label htmlFor="rg">RG:</label>
+                        <Input type="number" id="rg" placeholder='Registro Geral' required />
 
                     </section>
                     <section>
@@ -78,25 +78,30 @@ export function CadPessoas() {
                         <Input type="number" placeholder='(xx) x xxxx-xxxx' id='telefone' />
                     </section>
 
-                    <section>
-                        <label htmlFor="situacao">Situação:</label>
-                        <select name="" id="situacao">
-                            <option value="" disabled hidden selected>selecione</option>
-                            <option value="">Empreendedor/a formal</option>
-                            <option value="">Empreendedor/a não formal</option>
-                            <option value="">Empregado/a</option>
-                            <option value="">Desempregado/a</option>
-                            <option value="">Aposentado/a</option>
-                            <option value="">Agricultor/a</option>
-                        </select>
-                    </section>
+                  
 
            </div>
-           <div className='form-bloco'>
+           <div className='DadosPessoa'>
+           <section>
+                        <label htmlFor="situacao">Situação:</label>
+                      
+                        <Select defaultValue="Selecione"
+                    style={{width: 200}}
+                    options={[
+                        { value: 'formal', label: "Empreendedor(a) formal"},
+                        { value: 'informal', label: "Empreendedor(a) informal"},
+                        { value: 'empregado', label: "Empregado(a)"},
+                        { value: 'desempregado', label: "Desempregado(a)"},
+                        { value: 'aposentado', label: "Aposentado(a)"},
+                        { value: 'agricultor', label: "agricultor(a)"},
+                        
+                       
+                    ]}/>
+                    </section>
                 <section>
                     <label htmlFor="escola">Escolaridade</label>
                     <Select defaultValue="Selecione"
-                    style={{width: 270}}
+                    style={{width: 200}}
                     options={[
                         { value: 'fundamental-incompleto', label: "Fundamental incompleto"},
                         { value: 'fundamental-completo', label: "Fundamental completo"},
@@ -165,9 +170,9 @@ export function CadPessoas() {
                     <Select defaultValue="Selecione"
                     style={{width: 250}}
                     options={[
-                        { value: '', label: "texto aqui"},
-                        { value: '', label: "texto aqui"},
-                        { value: '', label: "texto aqui"},
+                        { value: 'jucas', label: "Jucás - Sede"},
+                        { value: 'sao pedro', label: "São Pedro do Norte"},
+                        { value: 'vila mel', label: "Vila Mel"},
                         
                     ]}/>
                     </section>

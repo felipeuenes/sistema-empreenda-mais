@@ -1,4 +1,4 @@
-/*FORMULÁRIOS*/
+/* FORMULÁRIOS
 .form h2 {
 	display: flex;
 	justify-content: center;
@@ -60,4 +60,4 @@
 	background-repeat: no-repeat;
 }
 .form select {background-image: url(/src/images/icones/icone-select-down.png);}
-.form select:focus {background-image: url(/src/images/icones/icone-select-up.png);}
+.form select:focus {background-image: url(/src/images/icones/icone-select-up.png);} */
