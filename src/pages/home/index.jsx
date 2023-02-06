@@ -11,6 +11,7 @@ export function Home() {
 				<TabPane className='abas' tab='LISTAGEM' key={1}>
 					<List />
 				</TabPane>
+				
 
 				<TabPane className='abas' tab='ESTATÍSTICAS' key={2}>
 				<div className="abasConteudo" id="Estatisticas" >
