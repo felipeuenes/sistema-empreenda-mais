@@ -9,7 +9,7 @@ export function Header() {
         <header>
             <nav className='menu'>
                 <ul>
-                    <NavLink to="/" >
+                    <NavLink to="/">
                         <li title='Página inicial'><img id='logoEM' src={logoEM} /></li>
                     </NavLink>
                     <Link to="/pessoas">
@@ -28,7 +28,7 @@ export function Header() {
                         <li title=''><img src="/src/images/icones/icone-mentorias.png" alt="" />Mentorias</li>
                     </Link>
                     <Link to="/registros">
-                        <li title='Protocolos com registros de atendimento'><img src="/src/images/icones/icone-protocolos.png" alt="" />Protocolos</li>
+                        <li title='Protocolos com registros de atendimento'><img src="/src/images/icones/icone-protocolos.png" alt="" />Registros</li>
                     </Link>
                     <Link to="/contabilidade">
                         <li title='Serviços e tutoriais sobre contabilidade'><img src="/src/images/icones/icone-contabilidade.png" alt="" />Contabilidade</li>

@@ -1,13 +1,9 @@
-.pessoa-bloco2 th{
-    padding: 8px;
-    background-color: white;
-   
+table {
+    display: block;
+    text-align: center;
+    padding: 20px;
 }
 
-
-.pessoa-bloco2 table{
-    margin-top: 16px;
-}
-.pessoa-bloco2 table{
-    border-collapse: collapse;
+td, th {
+    padding: 5px 10px 5px 10px; border: 1px solid rgba(0, 0, 0, 0.2);
 }
