@@ -7,8 +7,8 @@ import './home.css'
 export function Home() {
 	return (
 		<div className='container'>
-			<Tabs defaultActiveKey='1'>
-				<TabPane className='abas' tab='LISTAGEM' key={1}>
+			<Tabs defaultActiveKey='1' >
+				<TabPane className='abas' tab='LISTAGEM' key={1} > 
 					<List />
 				</TabPane>
 
