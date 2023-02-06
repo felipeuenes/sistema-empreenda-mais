@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { Input, Select } from 'antd'
 
+import { Tabs } from 'antd';
+import TabPane from 'rc-tabs/lib/TabPanelList/TabPane';
+
 import '/src/components/formularios/formularios.css'
 
 export function CadNegocios() {
@@ -13,8 +16,12 @@ export function CadNegocios() {
 				<Link to="/negocios"><button><img src="/src/images/icones/icone-lista.png" id='icone-lista' />LISTAGEM</button></Link>
 			</div>
 			<div className='form'><form action="">
+				<Tabs defaultActiveKey='1' id='tabs'>
 
-				<h2 id='tituloCadastro'>DADOS DE RECONHECIMENTO</h2>
+				<TabPane className='abas' tab='DADOS DE RECONHECIMENTO' key={1}>
+
+
+				{/* <h2 id='tituloCadastro'>DADOS DE RECONHECIMENTO</h2> */}
 				<div className='bloco1'>
 					<section>
 
@@ -47,8 +54,10 @@ export function CadNegocios() {
 						<Input type="text" name="" id="atvSecundaria" placeholder='Caso haja...' />
 					</section>
 				</div>
+				</TabPane>
+				<TabPane className='abas' tab='DADOS NUMÉRICOS' key={2}>
 
-				<h2 id='tituloCadastro'>DADOS NUMÉRICOS</h2>
+				{/* <h2 id='tituloCadastro'>DADOS NUMÉRICOS</h2> */}
 				<div className='bloco2'>
 					<section>
 						<label htmlFor="cnpj">CNPJ:</label>
@@ -80,8 +89,11 @@ export function CadNegocios() {
 						<Input type="text" name="" id="telefoneWhats" placeholder='(xx) 9 xxxx-xxxx' />
 					</section>
 				</div>
+				</TabPane>
+				<TabPane className='abas' tab='LOGRADOURO COMERCIAL' key={3}>
 
-				<h2 id='tituloCadastro'>DADOS DO LOGRADOURO COMERCIAL</h2>
+
+				{/* <h2 id='tituloCadastro'>DADOS DO LOGRADOURO COMERCIAL</h2> */}
 				<div className='bloco3'>
 					<section>
 						<label htmlFor="cep">CEP:</label>
@@ -90,7 +102,7 @@ export function CadNegocios() {
 
 					<section>
 						<label htmlFor="rua">Rua/Avenida:</label>
-						<Input type="text" name="" id="rua" />
+						<Input type="text" name="" id="rua" required/>
 					</section>
 
 					<section>
@@ -109,7 +121,7 @@ export function CadNegocios() {
 						<Select defaultValue="Selecione"
                     style={{width: 200}}
                     options={[
-                        { value: 'canafistula', label: "Canafístula"},
+						{ value: 'canafistula', label: "Canafístula"},
                         { value: 'mel', label: "Mel"},
                         { value: 'montenegro', label: "Montenegro"},
                         { value: 'pocogrande', label: "Poço Grande"},
@@ -124,7 +136,7 @@ export function CadNegocios() {
                         { value: 'sagrada familia', label: "Sede: Sagrada Família"},
                         { value: 'sao jose', label: "Sede: São José"},
                         { value: 'sao mateus', label: "Sede: São Mateus"},
-                       
+						
                     ]}/>
 					</section>
 
@@ -133,6 +145,8 @@ export function CadNegocios() {
 						<input type="text" name='' id="cidade" />
 					</section>
 				</div>
+					</TabPane>
+					</Tabs>
 				<div className='btn-cadastrar'><button><img src="/src/images/icones/icone-cadastrar.png" />SALVAR CADASTRO</button></div>
 			</form>
 			</div>
