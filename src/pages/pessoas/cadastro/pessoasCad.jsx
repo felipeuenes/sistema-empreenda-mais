@@ -4,7 +4,12 @@ import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
 import { Divider, Input } from 'antd'
 import './pessoasCad.css'
-import { Select, Space } from 'antd'
+import { Select, Space,} from 'antd'
+import { Tabs } from 'antd';
+import TabPane from 'rc-tabs/lib/TabPanelList/TabPane';
+
+
+
 
 export function CadPessoas() {
     // const handleChange = (value: string) => {
@@ -18,7 +23,10 @@ export function CadPessoas() {
             </div>
 
             <form className='form' action="" method='POST'>
-            <Divider style={{'backgroundColor':'rgb(120,120,120)'}}></Divider>
+            <Tabs defaultActiveKey='1' id='tabs'>
+                <TabPane className='abas' tab='DADOS DO CADASTRO' key={1}>
+
+                
                 <div className='bloco1'>
                     <section>
                         <label htmlFor="date">Data de cadastro:</label>
@@ -27,7 +35,7 @@ export function CadPessoas() {
 
                     <section>
                         <label htmlFor="date">Agente responsável:</label>
-                        <Select defaultValue="Selecione"
+                        <Select defaultValue="Selecione" required
                     style={{width: 270}}
                     options={[
                         { value: 'fundamental-incompleto', label: "Luana Ferreira"},
@@ -38,8 +46,9 @@ export function CadPessoas() {
 
                     
                 </div>
-
-                <Divider style={{'backgroundColor':'rgb(120,120,120)'}}></Divider>
+                <div className='btn-cadastrar'><button><img src="/src/images/icones/icone-cadastrar.png" />SALVAR</button></div>
+            </TabPane>
+            <TabPane className='abas' tab='DADOS DA PESSOA' key={2}>
 
                 <div className='bloco2'>
                     <section>
@@ -75,6 +84,8 @@ export function CadPessoas() {
                   
 
            </div>
+           
+            
            <div className='bloco2'>
            <section>
                         <label htmlFor="situacao">Situação:</label>
@@ -141,7 +152,9 @@ export function CadPessoas() {
                     ]}/>
                 </section>
            </div>
-           <Divider style={{'backgroundColor':'rgb(120,120,120)'}}></Divider>
+           <div className='btn-cadastrar'><button><img src="/src/images/icones/icone-cadastrar.png" />SALVAR</button></div>
+           </TabPane>
+           <TabPane className='abas' tab='LOGRADOURO DA PESSOA' key={3}>
            <div className='bloco3'>
                     <section>
                         <label htmlFor="cep">CEP:</label>
@@ -149,7 +162,7 @@ export function CadPessoas() {
                     </section>
                     <section>
                         <label htmlFor="rua">Rua/Avenida:</label>
-                        <Input id='rua'/>
+                        <Input id='rua' required/>
                     </section>
                     <section>
                         <label htmlFor="complemento">Complemento</label>
@@ -157,11 +170,11 @@ export function CadPessoas() {
                     </section>
                     <section>
                         <label htmlFor="n">Número:</label>
-                        <Input type='number' id='n'/>
+                        <Input type='number' id='n' required/>
                     </section>
                     <section>
                         <label htmlFor="">Bairro/Distrito:</label>
-                    <Select defaultValue="Selecione"
+                    <Select defaultValue="Selecione" required
                     style={{width: 250}}
                     options={[
                         { value: 'jucas', label: "Jucás - Sede"},
@@ -183,6 +196,8 @@ export function CadPessoas() {
                     </section>
            </div>
            <div className='btn-cadastrar'><button><img src="/src/images/icones/icone-cadastrar.png" />SALVAR CADASTRO</button></div>
+           </TabPane>
+           </Tabs>
            </form>
         </div>
     )
