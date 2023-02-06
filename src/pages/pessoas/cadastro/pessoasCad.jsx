@@ -6,17 +6,10 @@ import { Input } from 'antd'
 import './pessoasCad.css'
 import { Select, Space } from 'antd'
 
-
-
-
-
 export function CadPessoas() {
-
-   
     // const handleChange = (value: string) => {
     //     console.log(`selected ${value}`);
     //   };
-
     return (
         <div className='container'>
             <div className='titulo'>
