@@ -7,27 +7,15 @@ import './home.css'
 export function Home() {
 	return (
 		<div className='container'>
+			<h1>Sistema E+</h1>
 			<Tabs defaultActiveKey='1'>
-				<TabPane className='abas' tab='LISTAGEM' key={1}>
+				
+				<TabPane className='abas' tab='PESQUISAR' key={1}>
 					<List />
 				</TabPane>
 
 				<TabPane className='abas' tab='ESTATÍSTICAS' key={2}>
 				<div className="abasConteudo" id="Estatisticas">
-					<div className='subContainer'>
-						<h2 id='icon'>ACESSO RÁPIDO</h2>
-						<section id='acessoRelatorio'>
-							<h3>RELATÓRIOS</h3>
-							<button>GERAL</button>
-							<button>PESSOAS</button>
-							<button>NEGÓCIOS</button>
-							<button>EVENTOS</button>
-							<button>CURSOS</button>
-							<button>MENTORIAS</button>
-							<button>REGISTROS</button>
-						</section>
-					</div>
-
 					<div className='subContainer'>
 						<h2>ESTATÍSTICAS</h2>
 						<section>
@@ -52,6 +40,22 @@ export function Home() {
 						</section>
 					</div>
 				</div>
+				</TabPane>
+
+				<TabPane className='abas' tab='IMPRIMIR' key={3}>
+					<div className='subContainer'>
+						<h2 id='icon'>ACESSO RÁPIDO</h2>
+						<section id='acessoRelatorio'>
+							<h3>RELATÓRIOS</h3>
+							<button>GERAL</button>
+							<button>PESSOAS</button>
+							<button>NEGÓCIOS</button>
+							<button>EVENTOS</button>
+							<button>CURSOS</button>
+							<button>MENTORIAS</button>
+							<button>REGISTROS</button>
+						</section>
+					</div>
 				</TabPane>
 			</Tabs>
 		</div>

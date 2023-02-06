@@ -2,7 +2,7 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
-import { Input } from 'antd'
+import { Divider, Input } from 'antd'
 import './pessoasCad.css'
 import { Select, Space } from 'antd'
 
@@ -18,7 +18,7 @@ export function CadPessoas() {
             </div>
 
             <form className='form' action="" method='POST'>
-                <h1 id='tituloCadastro'>DADOS DE CADASTRO</h1>
+            <Divider style={{'backgroundColor':'rgb(120,120,120)'}}></Divider>
                 <div className='bloco1'>
                     <section>
                         <label htmlFor="date">Data de cadastro:</label>
@@ -39,7 +39,8 @@ export function CadPessoas() {
                     
                 </div>
 
-                <h1 id='tituloCadastro'>DADOS DA PESSOA</h1>
+                <Divider style={{'backgroundColor':'rgb(120,120,120)'}}></Divider>
+
                 <div className='bloco2'>
                     <section>
                         <label htmlFor="nome">Nome completo: *</label>
@@ -140,7 +141,7 @@ export function CadPessoas() {
                     ]}/>
                 </section>
            </div>
-           <h1 id='tituloCadastro'>DADOS DO LOGRADOURO PESSOAL</h1>
+           <Divider style={{'backgroundColor':'rgb(120,120,120)'}}></Divider>
            <div className='bloco3'>
                     <section>
                         <label htmlFor="cep">CEP:</label>

@@ -10,7 +10,7 @@ export function Pessoas() {
 	return (
 		<div className='container'>
 			<div className='titulo'>
-				<img src="/src/images/logo-pessoas.png" id='icone-pagina' /><h1>PESSOAS</h1>
+				<img src="/src/images/logo-pessoas.png" id='icone-pagina' /><h1>Pessoas</h1>
 				<Link to="/cadastro-pessoas"><button><img src="/src/images/icones/icone-mais.png" id='icone-lista' />CADASTRAR</button></Link>
 			</div>
 
