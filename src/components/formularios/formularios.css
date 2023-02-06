@@ -1,6 +1,6 @@
 /* dados de cadastro */
 #tituloCadastro{
-    /* padding: 2px; */
+    padding: 4px;
     margin-top: 16px;
     color: white;
     background-color: #007596;
@@ -8,6 +8,7 @@
 	text-align: center;
 }
 .bloco1{
+    margin-top: 16px;
     display: flex;
     flex-direction: row;
     gap: 24px;
@@ -36,6 +37,7 @@ label{
 
 
 .bloco2{
+    margin-top: 16px;
     display: flex;
     flex-direction: row;
     gap: 24px;
@@ -60,6 +62,7 @@ label{
 
 
 .bloco3{
+    margin-top: 16px;
     display: flex;
     flex-direction: row;
     gap: 24px;
