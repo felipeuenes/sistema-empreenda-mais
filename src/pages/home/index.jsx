@@ -13,7 +13,7 @@ export function Home() {
 				</TabPane>
 
 				<TabPane className='abas' tab='ESTATÍSTICAS' key={2}>
-				<div className="abasConteudo" id="Estatisticas">
+				<div className="abasConteudo" id="Estatisticas" >
 					<div className='subContainer'>
 						<h2 id='icon'>ACESSO RÁPIDO</h2>
 						<section id='acessoRelatorio'>
