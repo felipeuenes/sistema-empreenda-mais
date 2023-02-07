@@ -18,7 +18,7 @@ export function CadNegocios() {
 			<div className='form'><form action="">
 				<Tabs defaultActiveKey='1' id='tabs'>
 
-				<TabPane className='abas' tab='DADOS DE RECONHECIMENTO' key={1}>
+				<TabPane className='abas' tab='Dados de Reconhecimento' key={1}>
 
 
 				{/* <h2 id='tituloCadastro'>DADOS DE RECONHECIMENTO</h2> */}
@@ -55,7 +55,7 @@ export function CadNegocios() {
 					</section>
 				</div>
 				</TabPane>
-				<TabPane className='abas' tab='DADOS NUMÉRICOS' key={2}>
+				<TabPane className='abas' tab='Dados Numéricos' key={2}>
 
 				{/* <h2 id='tituloCadastro'>DADOS NUMÉRICOS</h2> */}
 				<div className='bloco2'>
@@ -90,7 +90,7 @@ export function CadNegocios() {
 					</section>
 				</div>
 				</TabPane>
-				<TabPane className='abas' tab='LOGRADOURO COMERCIAL' key={3}>
+				<TabPane className='abas' tab='Logradouro Comercial' key={3}>
 
 
 				{/* <h2 id='tituloCadastro'>DADOS DO LOGRADOURO COMERCIAL</h2> */}
