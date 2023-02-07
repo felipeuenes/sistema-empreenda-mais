@@ -8,6 +8,7 @@ export function Home() {
 		<div className='container'>
 			<Tabs defaultActiveKey='1' centered type='card'>
 				
+				
 				<TabPane className='abas' tab='Pesquisar'  key={1}>
 					<List/>
 				</TabPane>
