@@ -2,10 +2,12 @@
 import { useState } from 'react'
 import './protocoloCad.css'
 import { Link } from 'react-router-dom';
-import { Tabs } from 'antd';
+import { DatePicker, Tabs } from 'antd';
 import { TabPane } from 'rc-tabs/lib/TabPanelList/TabPane';
 import { GlobalVariables } from '../../global';
-import { Input, Select } from 'antd'
+import { Input, Select, Button } from 'antd';
+import { Form } from 'antd'
+import TextArea from 'antd/es/input/TextArea';
 
 
 export function CadProtocolo() {
@@ -43,13 +45,12 @@ export function CadProtocolo() {
 			<h1>Registros</h1>
 			<Tabs defaultActiveKey='1' id='tabs' type='card'>
 				<TabPane key={1} tab='Protocolos' className='abas'>
-					<form action="" onSubmit={handleSubmit}>
+					<Form action='' onSubmit={handleSubmit}>
 						<div className='block'>
-
 							<section>
 								<label htmlFor="interacao">Tipo de interação:</label>
-								<Select defaultValue="Selecione" required listItemHeight={10} listHeight={250}
-									style={{ width: 300, }}
+								<Select defaultValue="Selecione" required listItemHeight={5} listHeight={500}
+									style={{ width: 300 }}
 									options={[
 										{
 											label: 'Visitas (cód. 150)',
@@ -72,80 +73,72 @@ export function CadProtocolo() {
 												{ value: '250', label: "DAS: Parcelamento/parcelas" },
 												{ value: '250', label: "DASN: Declaração Anual do MEI" },		
 												{ value: '250', label: "Desburocratização" },
-												{ value: '250', label: "Orientação ao crédito" },
-												{ value: '250', label: "Envio/recebimento de currículos" },	
-												
+												{ value: '250', label: "Orientação ao crédito"},
 											],
 										},
 										{
 											label: 'Documentos (cód. 350)',
 											options: [
-												{ value: '350', label: "Adesão (ambiente interno)" },
-												{ value: '350', label: "Assinaturas diversas" },
-											]
+												{ value: '350', label: "Adesão em ambiente interno" },
+											],
+										},
+										{
+											label: 'Gerência (cód. 450)',
+											options: [
+												{ value: '450', label: "Consultorias e mentorias" },
+											],
+										},
+										{
+											label: 'Parcerias (cód. 550)',
+											options: [
+												{ value: '550', label: "Acompanhamento de especialistas" },
+											],
+										},
+										{
+											label: 'Eventos (cód. 650)',
+											options: [
+												{ value: '650', label: "Oficinas" },
+												{ value: '650', label: "Palestras" },
+												{ value: '650', label: "Outros eventos" },
+											],
 										},
 									]}
 								/>
 							</section>
 
-
 							<section>
-								<label htmlFor="tipo">Tipo de protocolo:</label>
-								<input type="text" name="nome" id="nome" placeholder='Nome...' />
-							</section>
-							<section>
-								<label htmlFor="nome">Nome da pessoa:</label>
-								<input type="text" name="nome" id="nome" placeholder='Nome...' />
-							</section>
-							<section>
-								<label htmlFor="data">Data do atendimento</label>
-								<input type="date" name="data" id="data" />
-							</section>
-							<section>
-								<label htmlFor="nomeEmpresa">Nome da Empresa:</label>
-								<input type="text" name="nomeEmpre" id="nomeEmpresa" placeholder='Nome da empresa...' />
+								<label htmlFor="nome">Pessoa:</label>
+								<Input type='text' name='nome' id='nome' placeholder='Nome completo'/>
 							</section>
 
+							<section>
+								<label htmlFor="nomeEmpresa">Empresa:</label>
+								<Input type='text' name='nomeEmpre' id='nomeEmpre' placeholder='Nome fantasia'/>
+							</section>
 
-
-
+							<section>
+								<label htmlFor="data">Data/hora do atendimento:</label>
+								<DatePicker type='datetime' name='data' id='data' placeholder='Selecione'/>
+				
+							</section>
+							
 						</div>
 						<div className='block3'>
-
-							<section>
-								<label htmlFor="atendimento">Tipo de atendimento:</label>
-								<select name="atendimento" id="atendimento">
-									<option value="150">Visitas em geral</option>
-									<option value="250">Atendimento para prestação de serviço</option>
-									<option value="350">Assinatura de documento em ambiente interno</option>
-									<option value="450">Consultorias, mentorias, visitas da gerente do Empreenda Mais</option>
-									<option value="550">Acompanhamento de especialistas ou parceiros - mentorias ou consultorias</option>
-									<option value="650">Palestras, oficinas, outros...</option>
-								</select>
-							</section>
 							<section>
 								<label htmlFor="refere">Refere-se a:</label>
-								<textarea name="refere" id="refere" cols="50" rows="8"></textarea>
+								<TextArea name="refere" id="refere" cols="50" rows="10" required/>
 							</section>
 							<section>
 								<label htmlFor="obs">Observações:</label>
-								<textarea name="obs" id="obs" cols="50" rows="8"></textarea>
+								<TextArea name="obs" id="obs" cols="50" rows="10"></TextArea>
 							</section>
 						</div>
-
-						<div className='block2'>
-							<section>
-								<button className='botaoGerar' type='submit'>GERAR</button>
-								<Link to="/imprimir">
-									<button className='botaoGerar'>Imprimir</button>
-								</Link>
-							</section>
+						<div className='block4'>
+						<section>
+						<Button shape='round' id='btn-cadastrar'>Cadastrar</Button>
+						</section>
 						</div>
-
-
-
-
-					</form>
+					</Form>
 					{console.log(formProto)}
 				</TabPane>
 			</Tabs>
