@@ -1,6 +1,8 @@
 import '/src/components/formularios/formularios.css'
 import { Link } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { Input, Select } from 'antd'
+import { Tabs } from 'antd';
+import TabPane from 'rc-tabs/lib/TabPanelList/TabPane';
 
 export function CadastroEvento() {
 	return (
@@ -12,92 +14,116 @@ export function CadastroEvento() {
 
 			<div className='form'>
 				<form action="">
-					<h2>DADOS BÁSICOS</h2>
-					<div className='form-bloco'>
+					<Tabs>
+
+					<TabPane className='abas' tab='DADOS BÁSICOS' key={1}>
+
+					{/* <h2>DADOS BÁSICOS</h2> */}
+					<div className='bloco1'>
 						<section>
 							<label htmlFor="name">Nome do evento:</label>
-							<input type="text" id='name' required />
+							<Input type="text" id='name' required />
 						</section>
 
 						<section>
 							<label htmlFor="tipo">Público-alvo:</label>
-							<select name="" id="tipo">
-								<option value="">Qualquer pessoa</option>
-								<option value="">Participantes do programa</option>
-							</select>
+							<Select defaultValue="Selecione"
+                    style={{width: 200}}
+                    options={[
+						{ value: 'Público geral', label: "Público geral"},
+                        { value: 'Participantes do E+', label: "Participantes do E+"},
+					
+                    ]}/>
 						</section>
 
 						<section>
 							<label htmlFor="eveEntidade">Entidade:</label>
-							<select id="entidades">
-								<option selected>selecione</option>
-								<option>Prefeitura de Jucás</option>
-								<option>SEBRAE</option>
-								<option>SENAC</option>
-							</select>
+							
+							<Select defaultValue="Selecione"
+                    style={{width: 250}}
+                    options={[
+						{ value: 'Prefeitura de Jucás', label: "Prefeitura de Jucás"},
+                        { value: 'SEBRAE', label: "SEBRAE"},
+                        { value: 'SENAC', label: "SENAC"},
+					
+                    ]}/>
 						</section>
 
 						<section>
 							<label htmlFor="eveFacilitador">Facilitador/Instrutor:</label>
-							<input type="text" placeholder='Nome completo' />
+							<Input type="text" placeholder='Nome completo' />
 						</section>
 
 						<section>
 							<label htmlFor="eveModalidade">Modalidade:</label>
-							<select id="modalidades">
-								<option selected>selecione</option>
-								<option>Presencial</option>
-								<option>Online (À distância)</option>
-							</select>
+						
+							<Select defaultValue="Selecione"
+                    style={{width: 250}}
+                    options={[
+						{ value: 'Presencial', label: "Presencial"},
+                        { value: 'Online', label: "Online"},
+					
+                    ]}/>
 						</section>
 
 					</div>
+					</TabPane>
+					<TabPane className='abas' tab='DADOS TEMPORAIS' key={2}>
 
-					<h2>DADOS TEMPORAIS</h2>
-					<div className='form-bloco'>
+					
+
+					<div className='bloco1'>
 						<section>
 							<label htmlFor="eveInicio">Data de início:</label>
-							<input type="date" />
+							<Input type="date" />
 						</section>
 
 						<section>
 							<label htmlFor="eveTermino">Data de término:</label>
-							<input type="date" />
+							<Input type="date" />
 						</section>
 
 						<section>
 							<label htmlFor="eveCarga">Carga horária:</label>
-							<input type="text" />
+							<Input type="text" />
 						</section>
 
 						<section>
 							<label htmlFor="eveTurnos">Turno(s):</label>
-							<select id="turnos">
-								<option selected>selecione</option>
-								<option>Manhã</option>
-								<option>Tarde</option>
-								<option>Noite</option>
-								<option>Manhã e Tarde</option>
-								<option>Manhã e Noite</option>
-								<option>Tarde e Noite</option>
-							</select>
+							
+							<Select defaultValue="Selecione"
+                    style={{width: 200}}
+                    options={[
+						{ value: 'Manhã', label: "Manhã"},
+                        { value: 'Tarde', label: "Tarde"},
+                        { value: 'Noite', label: "Noite"},
+                        { value: 'Manhã e tarde', label: "Manhã e tarde"},
+                        { value: 'Manhã e noite', label: "Manhã e noite"},
+                        { value: 'Tarde e noite', label: "Tarde e noite"},
+					
+                    ]}/>
 						</section>
 					</div>
+					</TabPane>
+					<TabPane className='abas' tab='DADOS ADICIONAIS' key={3}>
 
-					<h2>DADOS ADICIONAIS</h2>
-					<div className='form-bloco'>
+
+				
+					<div className='bloco1'>
 						<section>
 							<label htmlFor="eveCategoria">Categoria do evento:</label>
-							<select name="" id="categoria">
-								<option value="">selecione</option>
-								<option value="">Empreendedorismo</option>
-								<option value="">Finanças</option>
-								<option value="">Gestão de Custos</option>
-								<option value="">Gestão Financeira</option>
-								<option value="">Plano de Negócios</option>
-								<option value="">Precificação</option>
-								<option value="">Qualificação Profissional</option>
-							</select>
+							<Select defaultValue="Selecione"
+                    style={{width: 250}}
+                    options={[
+						{ value: 'Empreendedorismo', label: "Empreendedorismo"},
+                        { value: 'Finanças', label: "Finanças"},
+                        { value: 'Gestão de Custos', label: "Gestão de Custos"},
+                        { value: 'Gestão Financeira', label: "Gestão Financeira"},
+                        { value: 'Plano de Negócios', label: "Plano de Negócios"},
+                        { value: 'Precificação', label: "Precificação"},
+                        { value: 'Qualidade Profissional', label: "Qualidade Profissional"},
+					
+                    ]}/>
 						</section>
 
 						<section>
@@ -105,10 +131,12 @@ export function CadastroEvento() {
 							<input type="text" placeholder='R$' />
 						</section>
 					</div>
+					</TabPane>
 
 					<section className='btn-cadastrar'>
 						<button><img src="/src/images/icones/icone-cadastrar.png"/> SALVAR CADASTRO</button>
 					</section>
+					</Tabs>
 				</form>
 			</div>
 
