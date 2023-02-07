@@ -27,7 +27,7 @@ export function Header() {
                     <Link to="/mentorias">
                         <li title=''><img src="/src/images/icones/icone-mentorias.png" alt="" />Mentorias</li>
                     </Link>
-                    <Link to="/registros">
+                    <Link to="/protocolos">
                         <li title='Protocolos com registros de atendimento'><img src="/src/images/icones/icone-protocolos.png" alt="" />Registros</li>
                     </Link>
                     <Link to="/contabilidade">
