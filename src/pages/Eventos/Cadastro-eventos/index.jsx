@@ -8,7 +8,7 @@ export function CadastroEvento() {
 	return (
 		<div className='container'>
 			<div className='titulo'>
-				<img src="/src/images/logo-eventos.png" id='icone-pagina' /><h1>CADASTRAR EVENTO</h1>
+				<img src="/src/images/logo-eventos.png" id='icone-pagina' /><h1>CADASTRO DE EVENTO OU CURSO</h1>
 				<Link to="/eventos"><button><img src="/src/images/icones/icone-lista.png" id='icone-lista' />LISTAGEM</button></Link>
 			</div>
 
@@ -21,8 +21,18 @@ export function CadastroEvento() {
 					{/* <h2>DADOS BÁSICOS</h2> */}
 					<div className='bloco1'>
 						<section>
-							<label htmlFor="name">Nome do evento:</label>
-							<Input type="text" id='name' required />
+							<label htmlFor="tipo">Tipo:</label>
+							<Select defaultValue="Selecione"
+                    style={{width: 150}}
+                    options={[
+						{ value: 'Curso', label: "Curso"},
+                        { value: 'Evento', label: "Evento"},
+					
+                    ]}/>
+						</section>
+						<section>
+							<label htmlFor="name">Nome do evento ou curso:</label>
+							<Input type="text" id='name' required style={{width: 250}}/>
 						</section>
 
 						<section>
@@ -40,7 +50,7 @@ export function CadastroEvento() {
 							<label htmlFor="eveEntidade">Entidade:</label>
 							
 							<Select defaultValue="Selecione"
-                    style={{width: 250}}
+                    style={{width: 200}}
                     options={[
 						{ value: 'Prefeitura de Jucás', label: "Prefeitura de Jucás"},
                         { value: 'SEBRAE', label: "SEBRAE"},
@@ -58,7 +68,7 @@ export function CadastroEvento() {
 							<label htmlFor="eveModalidade">Modalidade:</label>
 						
 							<Select defaultValue="Selecione"
-                    style={{width: 250}}
+                    style={{width: 150}}
                     options={[
 						{ value: 'Presencial', label: "Presencial"},
                         { value: 'Online', label: "Online"},

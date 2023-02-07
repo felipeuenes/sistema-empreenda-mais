@@ -19,11 +19,11 @@ export function Header() {
                         <li title='Lista de negócios (empreendimentos)'><img src="/src/images/icones/icone-negocios.png" alt="" />Negócios</li>
                     </Link>
                     <Link to="/eventos">
-                        <li title='Lista de eventos'><img src="/src/images/icones/icone-eventos.png" alt="" />Eventos</li>
+                        <li title='Lista de eventos'><img src="/src/images/icones/icone-eventos.png" alt="" />Eventos/Cursos</li>
                     </Link>
-                    <Link to="/cursos">
+                    {/* <Link to="/cursos">
                         <li title='Lista de cursos'><img src="/src/images/icones/icone-cursos.png" alt="" />Cursos</li>
-                    </Link>
+                    </Link> */}
                     <Link to="/mentorias">
                         <li title=''><img src="/src/images/icones/icone-mentorias.png" alt="" />Mentorias</li>
                     </Link>
