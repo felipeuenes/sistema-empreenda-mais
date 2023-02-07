@@ -4,9 +4,9 @@ import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
 import { Divider, Input } from 'antd'
 import './pessoasCad.css'
-import { Select, Space, } from 'antd'
+import { Select, Button} from 'antd'
 import { Tabs } from 'antd';
-import TabPane from 'rc-tabs/lib/TabPanelList/TabPane';
+import { TabPane } from 'rc-tabs/lib/TabPanelList/TabPane';
 
 
 
@@ -18,13 +18,12 @@ export function CadPessoas() {
 	return (
 		<div className='container'>
 			<div className='titulo'>
-				<img src="/src/images/logo-pessoas.png" id='icone-pagina' /><h1>CADASTRAR PESSOA</h1>
-				<Link to="/pessoas"><button><img src="/src/images/icones/icone-lista.png" id='icone-lista' />LISTAGEM</button></Link>
-			</div>
+				<img src="/src/images/logo-pessoas.png" id='icone-pagina'/><h1>Cadastrar Pessoa</h1>
+				<Link to="/pessoas"><Button shape='round'>Listagem</Button></Link></div>
 
 			<form className='form' action="" method='POST'>
-				<Tabs defaultActiveKey='1' id='tabs'>
-					<TabPane className='abas' tab='CADASTRO' key={1}>
+				<Tabs defaultActiveKey='1' id='tabs' type='card'>
+					<TabPane className='abas' tab='Dados de cadastro' key={1}>
 						<div className='bloco1'>
 							<section>
 								<label htmlFor="date">Data de cadastro:</label>
@@ -43,9 +42,11 @@ export function CadPessoas() {
 
 
 						</div>
-						<div className='btn-cadastrar'><button><img src="/src/images/icones/icone-cadastrar.png" />SALVAR CA</button></div>
+						<div className='btn-cadastrar'>
+							<Button shape='round'>Salvar cadastro</Button>
+						</div>
 					</TabPane>
-					<TabPane className='abas' tab='DADOS PESSOAIS' key={2}>
+					<TabPane className='abas' tab='Dados pessoais' key={2}>
 
 						<div className='bloco2'>
 							<section>
@@ -153,9 +154,11 @@ export function CadPessoas() {
 									]} />
 							</section>
 						</div>
-						<div className='btn-cadastrar'><button><img src="/src/images/icones/icone-cadastrar.png" />SALVAR</button></div>
+						<div className='btn-cadastrar'>
+						<Button shape='round'>Salvar cadastro</Button>
+						</div>
 					</TabPane>
-					<TabPane className='abas' tab='LOGRADOURO RESIDENCIAL' key={3}>
+					<TabPane className='abas' tab='Logradouro residencial' key={3}>
 						<div className='bloco3'>
 							<section>
 								<label htmlFor="cep">CEP:</label>
@@ -204,7 +207,9 @@ export function CadPessoas() {
 								<Input id='estado' />
 							</section>
 						</div>
-						<div className='btn-cadastrar'><button><img src="/src/images/icones/icone-cadastrar.png" />SALVAR CADASTRO</button></div>
+						<div className='btn-cadastrar'>
+						<Button shape='round'>Salvar cadastro</Button>
+							</div>
 					</TabPane>
 				</Tabs>
 			</form>
