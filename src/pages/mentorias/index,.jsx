@@ -10,7 +10,7 @@ export function Mentorias() {
         <div className='container'>
             <div className='titulo'>
                 <img src="/src/images/logo-mentorias.png" id='icone-pagina' /><h1>MENTORIAS</h1>
-                <Link to="/cadastro-negocios"><button><img src="/src/images/icones/icone-mais.png" id='icone-lista' />CADASTRAR</button></Link>
+                <Link to="#"><button><img src="/src/images/icones/icone-mais.png" id='icone-lista' />CADASTRAR</button></Link>
             </div>
             
             <List />
