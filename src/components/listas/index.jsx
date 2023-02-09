@@ -1,6 +1,6 @@
 import './styleList.css'
 
-export function List() {
+export function List({adesao, nome, telefone, cpf, situacao, local}) {
 	return (
 		<>
 			<section className='pessoa-bloco1'>
@@ -27,15 +27,19 @@ export function List() {
 					<thead>
 						<th>ADESÃO</th>
 						<th>NOME COMPLETO</th>
-						<th>CÓDIGO</th>
+						<th>TELEFONE</th>
 						<th>CPF</th>
+						<th>SITUAÇÃO</th>
+						<th>BAIRRO/DISTRITO</th>
 					</thead>
 					<tbody>
 						<tr>
-							<td>SIM</td>
-							<td>JORGE ALYSSON</td>
-							<td>0001</td>
-							<td>000.000.000-00</td>
+							<td>{adesao}</td>
+							<td>{nome}</td>
+							<td>{telefone}</td>
+							<td>{cpf}</td>
+							<td>{situacao}</td>
+							<td>{local}</td>
 						</tr>
 						<tr>
 							<td>NÃO</td>

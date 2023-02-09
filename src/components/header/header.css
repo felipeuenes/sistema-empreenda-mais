@@ -18,10 +18,7 @@ a {
     color: #ffffff;
 }
 
-.active{
-    font-weight: bolder;
-    color: #000000;
-}
+
 
 header ul {
     display: flex;
@@ -51,7 +48,7 @@ li img:not(.logoEM) {
 li:not(.logoEM):hover{
    
     color: #8be8ff;
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
 #logoEM {
@@ -60,5 +57,5 @@ li:not(.logoEM):hover{
 }
 
 #logoEM:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
 }

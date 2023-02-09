@@ -39,6 +39,16 @@ export function CadPessoas() {
 										{ value: 'fundamental-completo', label: "Jorge Alysson" },
 									]} />
 							</section>
+							<section>
+								<label htmlFor="date">Essa pessoa faz parte do Empreenda Mais?</label>
+								<Select defaultValue="Selecione" required
+									style={{ width: 270 }}
+									options={[
+										{ value: 'Sim', label: "Sim" },
+										{ value: 'Não', label: "Não" },
+									
+									]} />
+							</section>
 
 
 						</div>
