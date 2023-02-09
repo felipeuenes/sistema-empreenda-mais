@@ -1,6 +1,6 @@
 import './styleList.css'
 
-export function List({adesao, nome, telefone, cpf, situacao, local}) {
+export function List({adesao, nome, telefone, cpf, porte, local}) {
 	return (
 		<>
 			<section className='pessoa-bloco1'>
@@ -26,10 +26,10 @@ export function List({adesao, nome, telefone, cpf, situacao, local}) {
 				<table>
 					<thead>
 						<th>ADESÃO</th>
-						<th>NOME COMPLETO</th>
+						<th>NOME</th>
 						<th>TELEFONE</th>
 						<th>CPF</th>
-						<th>SITUAÇÃO</th>
+						<th>PORTE</th>
 						<th>BAIRRO/DISTRITO</th>
 					</thead>
 					<tbody>
@@ -38,14 +38,8 @@ export function List({adesao, nome, telefone, cpf, situacao, local}) {
 							<td>{nome}</td>
 							<td>{telefone}</td>
 							<td>{cpf}</td>
-							<td>{situacao}</td>
+							<td>{porte}</td>
 							<td>{local}</td>
-						</tr>
-						<tr>
-							<td>NÃO</td>
-							<td>LUANA FERREIRA</td>
-							<td>0002</td>
-							<td>000.000.000-01</td>
 						</tr>
 					</tbody>
 				</table>
