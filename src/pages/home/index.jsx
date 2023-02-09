@@ -12,7 +12,6 @@ export function Home() {
 					<List/>
 				</TabPane>
 				
-
 				<TabPane className='abas' tab='Estatísticas' key={2}>
 				<div className="abasConteudo" id="Estatisticas" >
 					

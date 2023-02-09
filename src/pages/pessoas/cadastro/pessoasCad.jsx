@@ -22,7 +22,7 @@ export function CadPessoas() {
 				<Link to="/pessoas"><Button shape='round'>Listagem</Button></Link></div>
 
 			<form className='form' action="" method='POST'>
-				<Tabs defaultActiveKey='1' id='tabs' type='card'>
+				<Tabs defaultActiveKey='1' id='tabs' type='line'>
 					<TabPane className='abas' tab='Dados de cadastro' key={1}>
 						<div className='bloco1'>
 							<section>
