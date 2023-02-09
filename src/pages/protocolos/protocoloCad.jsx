@@ -2,12 +2,13 @@
 import { useState } from 'react'
 import './protocoloCad.css'
 import { Link } from 'react-router-dom';
-import { DatePicker, Tabs } from 'antd';
+import { DatePicker, Tabs, TimePicker } from 'antd';
 import { TabPane } from 'rc-tabs/lib/TabPanelList/TabPane';
 import { GlobalVariables } from '../../global';
 import { Input, Select, Button } from 'antd';
 import { Form } from 'antd'
 import TextArea from 'antd/es/input/TextArea';
+import { ColumnWidthOutlined } from '@ant-design/icons';
 
 
 export function CadProtocolo() {
@@ -43,13 +44,13 @@ export function CadProtocolo() {
 	return (
 		<div className='container'>
 			<h1>Registros</h1>
-			<Tabs defaultActiveKey='1' id='tabs' type='card'>
+			<Tabs defaultActiveKey='1' id='tabs' type='line'>
 				<TabPane key={1} tab='Protocolos' className='abas'>
 					<Form action='' onSubmit={handleSubmit}>
 						<div className='block'>
 							<section>
 								<label htmlFor="interacao">Tipo de interação:</label>
-								<Select defaultValue="Selecione" required listItemHeight={5} listHeight={500}
+								<Select defaultValue="Selecione" required listItemHeight={1} listHeight={300}
 									style={{ width: 300 }}
 									options={[
 										{
@@ -97,9 +98,7 @@ export function CadProtocolo() {
 										{
 											label: 'Eventos (cód. 650)',
 											options: [
-												{ value: '650', label: "Oficinas" },
-												{ value: '650', label: "Palestras" },
-												{ value: '650', label: "Outros eventos" },
+												{ value: '650', label: "Oficinas, palestras e outros" },
 											],
 										},
 									]}
@@ -118,8 +117,7 @@ export function CadProtocolo() {
 
 							<section>
 								<label htmlFor="data">Data/hora do atendimento:</label>
-								<DatePicker type='datetime' name='data' id='data' placeholder='Selecione'/>
-				
+								<DatePicker picker='date' name='data' id='data' placeholder='Selecione'/>
 							</section>
 							
 						</div>
