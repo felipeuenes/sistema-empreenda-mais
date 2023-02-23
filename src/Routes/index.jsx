@@ -15,7 +15,7 @@ import { CadastroEvento } from '../pages/Eventos/Cadastro-eventos'
 import { Cursos } from '../pages/cursos'
 import { Mentorias } from '../pages/mentorias/index,'
 import { Indicadores } from '../pages/indicadores'
-
+import { cadastroMentorias } from '../pages/mentorias/cadastroMentorias'
 
 
 
@@ -36,6 +36,7 @@ export function AppRoutes() {
             <Route path={'/cursos'} element={<Cursos/>}></Route>
             <Route path={'/mentorias'} element={<Mentorias/>}></Route>
             <Route path={'/indicadores'} element={<Indicadores/>}></Route>
+            <Route path={'/cadastroMentorias'} element={<cadastroMentorias/>}></Route>
         </Routes>
         </>
     )
